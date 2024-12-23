@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://waffinh2n5cy"]
+
+[ext_resource type="Texture2D" uid="uid://0eb2awtmkxme" path="res://Art/Stage 1 Characters/John/SpriteSheet.png" id="1_qe5i1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s80fv"]
+radius = 8.06226
+
+[node name="Oakly" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_s80fv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qe5i1")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -9.0
+offset_top = -15.0
+offset_right = 36.0
+offset_bottom = 8.0
+scale = Vector2(0.4, 0.4)
+text = "Oakly"

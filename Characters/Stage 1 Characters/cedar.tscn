@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://di7oje2oe5037"]
+
+[ext_resource type="Texture2D" uid="uid://bdt8h0c0aweok" path="res://Art/Stage 1 Characters/Steve/SpriteSheet.png" id="1_dakno"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ndbxj"]
+radius = 8.06226
+
+[node name="Cedar" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_ndbxj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dakno")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -9.0
+offset_top = -16.0
+offset_right = 37.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+text = "Cedar"

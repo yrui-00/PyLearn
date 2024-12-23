@@ -1,0 +1,207 @@
+[gd_scene load_steps=24 format=3 uid="uid://ds55q62lvrkn0"]
+
+[ext_resource type="Texture2D" uid="uid://c7b4fvvpjtwvu" path="res://Art/Inventory/InventoryRect.png" id="1_83ot6"]
+[ext_resource type="Script" path="res://Gameplay/Inventory/inventory.gd" id="1_ykac7"]
+[ext_resource type="PackedScene" uid="uid://dia3xft78mve6" path="res://Gameplay/Inventory/slot.tscn" id="2_824vr"]
+[ext_resource type="Resource" uid="uid://dshfm5a27b0nq" path="res://Gameplay/Inventory Resource/Item Descriptions/Mentora's Tutorial.tres" id="4_d88q5"]
+[ext_resource type="Texture2D" uid="uid://bjx4t1fkvgrak" path="res://Art/Inventory/UI books & more.png" id="4_urbrl"]
+[ext_resource type="Resource" uid="uid://dewewxtvsy2dp" path="res://Gameplay/Inventory Resource/Item Descriptions/Master's Tutorial.tres" id="5_33mcr"]
+[ext_resource type="Resource" uid="uid://d0lshqcr40a6g" path="res://Gameplay/Inventory Resource/Item Descriptions/forest/Brambly.tres" id="6_pgtvl"]
+[ext_resource type="Resource" uid="uid://b55d2qmd82j7b" path="res://Gameplay/Inventory Resource/Item Descriptions/forest/Oakly.tres" id="7_bpq03"]
+[ext_resource type="Resource" uid="uid://wv3ynj5dmknt" path="res://Gameplay/Inventory Resource/Item Descriptions/forest/Rustle.tres" id="8_m51ls"]
+[ext_resource type="Resource" uid="uid://bgxbotfa6y6yb" path="res://Gameplay/Inventory Resource/Item Descriptions/forest/Berry.tres" id="9_nthxc"]
+[ext_resource type="Resource" uid="uid://c85ciq54xpian" path="res://Gameplay/Inventory Resource/Item Descriptions/forest/Sapling Sam.tres" id="10_3qiul"]
+[ext_resource type="Resource" uid="uid://wdh80fm3rk0f" path="res://Gameplay/Inventory Resource/Item Descriptions/snow/Blizz.tres" id="11_8mwx4"]
+[ext_resource type="Resource" uid="uid://cdf4ktt0l4ivg" path="res://Gameplay/Inventory Resource/Item Descriptions/snow/Flurry.tres" id="12_qfhum"]
+[ext_resource type="Resource" uid="uid://dsl2nvk5y41nm" path="res://Gameplay/Inventory Resource/Item Descriptions/snow/Chillington.tres" id="13_biqch"]
+[ext_resource type="Resource" uid="uid://dopfkw1v6knd2" path="res://Gameplay/Inventory Resource/Item Descriptions/desert/Scorchi.tres" id="14_aj3h0"]
+[ext_resource type="Resource" uid="uid://b7hdbraetql48" path="res://Gameplay/Inventory Resource/Item Descriptions/desert/Pebble.tres" id="15_ipea2"]
+[ext_resource type="Resource" uid="uid://brwpnmcrmgtdt" path="res://Gameplay/Inventory Resource/Item Descriptions/desert/Cactus Jack.tres" id="16_kk2wb"]
+[ext_resource type="Resource" uid="uid://dkylqkovi2o3h" path="res://Gameplay/Inventory Resource/Item Descriptions/last/Cairn.tres" id="17_y6hp5"]
+[ext_resource type="Resource" uid="uid://bf8e63h02ok70" path="res://Gameplay/Inventory Resource/Item Descriptions/last/Eclipse.tres" id="18_k8jt0"]
+[ext_resource type="Resource" uid="uid://dti6a8csc7fw7" path="res://Gameplay/Inventory Resource/Item Descriptions/last/Duskveil.tres" id="19_qwoni"]
+[ext_resource type="Resource" uid="uid://qo4m7p5l6eyx" path="res://Gameplay/Inventory Resource/Item Descriptions/last/Holloway.tres" id="20_v7cvf"]
+[ext_resource type="Resource" uid="uid://dtb5opi1j4rnk" path="res://Gameplay/Inventory Resource/Item Descriptions/last/Rune.tres" id="21_6acoy"]
+[ext_resource type="Resource" uid="uid://b2qqd40ppb1wl" path="res://Gameplay/Inventory Resource/Item Descriptions/last/Mystra.tres" id="22_xlvk1"]
+
+[node name="Inventory" type="Control" node_paths=PackedStringArray("description")]
+custom_minimum_size = Vector2(255, 167)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 255.0
+offset_bottom = 167.0
+script = ExtResource("1_ykac7")
+description = NodePath("InventoryDescription")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 357.0
+offset_bottom = 167.0
+texture = ExtResource("1_83ot6")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -157.5
+offset_top = -71.5
+offset_right = -37.5
+offset_bottom = 68.5
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+
+[node name="Slot" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("4_d88q5")
+
+[node name="Slot2" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("5_33mcr")
+
+[node name="Slot3" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("6_pgtvl")
+
+[node name="Slot4" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("7_bpq03")
+
+[node name="Slot5" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("8_m51ls")
+
+[node name="Slot6" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("9_nthxc")
+
+[node name="Slot7" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("10_3qiul")
+
+[node name="Slot8" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("11_8mwx4")
+
+[node name="Slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("12_qfhum")
+
+[node name="Slot10" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("13_biqch")
+
+[node name="Slot11" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("14_aj3h0")
+
+[node name="Slot12" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("15_ipea2")
+
+[node name="Slot13" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("16_kk2wb")
+
+[node name="Slot14" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("17_y6hp5")
+
+[node name="Slot15" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("18_k8jt0")
+
+[node name="Slot16" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("19_qwoni")
+
+[node name="Slot17" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("20_v7cvf")
+
+[node name="Slot18" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("22_xlvk1")
+
+[node name="Slot19" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+item = ExtResource("21_6acoy")
+
+[node name="Slot20" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot21" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot22" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot23" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot24" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot25" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot26" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot27" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot28" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot29" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="Slot30" parent="NinePatchRect/GridContainer" instance=ExtResource("2_824vr")]
+layout_mode = 2
+
+[node name="InventoryDescription" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 12.0
+offset_right = 345.0
+offset_bottom = 154.0
+texture = ExtResource("4_urbrl")
+region_rect = Rect2(561.026, 80.8639, 46.0818, 62.4305)
+
+[node name="Name" type="Label" parent="InventoryDescription"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 6.0
+offset_right = 190.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="InventoryDescription"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 30.0
+offset_right = 200.0
+offset_bottom = 136.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 11
+bbcode_enabled = true
+
+[node name="Icon" type="TextureRect" parent="InventoryDescription"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 28.0

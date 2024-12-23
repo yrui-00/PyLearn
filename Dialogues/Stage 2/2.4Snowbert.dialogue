@@ -1,0 +1,98 @@
+~ start
+if blizz == "false":
+	Snowbert: Talk with Blizz first before taking this quiz.
+	=> END
+Snowbert: Welcome! Let's test your knowledge about Python functions.
+Snowbert: You'll need to answer at least 5 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Snowbert: What keyword do we use to create a function in Python?
+- def
+	Snowbert: Correct! 'def' is how we define functions in Python.
+	set score = score + 1
+	=> question_two
+- function
+	Snowbert: Not quite! We use 'def' to define functions.
+	=> question_two
+- create
+	Snowbert: Incorrect! 'def' is the keyword for creating functions.
+	=> question_two
+
+~ question_two
+Snowbert: What will this code do?
+Snowbert: def greet():
+Snowbert:     print("Hello!")
+Snowbert: greet()
+- Print "Hello!"
+	Snowbert: Correct! The function prints "Hello!" when called.
+	set score = score + 1
+	=> question_three
+- Nothing
+	Snowbert: Incorrect! The function is called and will print "Hello!"
+	=> question_three
+- Create a variable
+	Snowbert: Not quite! This function prints "Hello!" when called.
+	=> question_three
+
+~ question_three
+Snowbert: Where do we put arguments in a function?
+- Inside the parentheses
+	Snowbert: Correct! Arguments go inside the parentheses.
+	set score = score + 1
+	=> question_four
+- After the colon
+	Snowbert: Incorrect! Arguments belong inside the parentheses.
+	=> question_four
+- Inside the print
+	Snowbert: Not quite! Arguments go inside the parentheses.
+	=> question_four
+
+~ question_four
+Snowbert: Can a function receive a list as an argument?
+- Yes
+	Snowbert: Correct! Functions can receive any type of data, including lists!
+	set score = score + 1
+	=> question_five
+- No
+	Snowbert: Incorrect! Functions can actually receive lists as arguments.
+	=> question_five
+
+~ question_five
+Snowbert: How do you call a function named player_score?
+- player_score()
+	Snowbert: Correct! We use the name followed by parentheses.
+	set score = score + 1
+	=> question_six
+- call player_score
+	Snowbert: Incorrect! Use player_score() to call the function.
+	=> question_six
+- run player_score
+	Snowbert: Not quite! The correct way is player_score()
+	=> question_six
+
+~ question_six
+Snowbert: What's the main purpose of functions?
+- To make code reusable
+	Snowbert: Correct! Functions help us reuse code efficiently!
+	set score = score + 1
+	=> check_score
+- To make code run faster
+	Snowbert: Not quite! Functions primarily help with code reuse.
+	=> check_score
+- To make variables
+	Snowbert: Incorrect! Functions are mainly for code reuse.
+	=> check_score
+
+~ check_score
+if score >= 5:
+	Snowbert: Congratulations! You got a passing score!
+	Snowbert: You've shown great understanding of Python functions!
+	Snowbert: Go to Flurry now, you can find him in is house west of Blizz.
+	set snowbert = "true"
+	=> END
+Snowbert: You need more practice with functions.
+Snowbert: Review the material with Blizz and try again!
+set blizz = "false"
+=> END

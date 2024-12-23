@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c670goxypqpdi"]
+
+[ext_resource type="Texture2D" uid="uid://cwxplyfom1s41" path="res://Art/Tutorial Characters/Nathan/SpriteSheet.png" id="1_l1uff"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_70mtx"]
+radius = 7.0
+
+[node name="Cluey" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_70mtx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_l1uff")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -8.0
+offset_top = -16.0
+offset_right = 51.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+text = "Cluey"

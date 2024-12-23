@@ -1,0 +1,98 @@
+~ start
+if cactusjack == "false":
+	Sultan: Talk with Cactus Jack first before taking this quiz.
+	=> END
+Sultan: Welcome! Let's test your knowledge about Python polymorphism.
+Sultan: You'll need to answer at least 5 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Sultan: What does "polymorphism" mean in programming?
+- The same method working with different objects
+	Sultan: Correct! Polymorphism means "many forms" - one method, many behaviors!
+	set score = score + 1
+	=> question_two
+- Making objects the same
+	Sultan: Not quite! Polymorphism allows for different behaviors.
+	=> question_two
+- Creating multiple objects
+	Sultan: Incorrect! Polymorphism is about methods taking different forms.
+	=> question_two
+
+~ question_two
+Sultan: How does len() show polymorphism with different objects?
+- It returns different values based on the object type
+	Sultan: Correct! len() adapts its behavior to each type of object!
+	set score = score + 1
+	=> question_three
+- It always returns the same thing
+	Sultan: Incorrect! len() changes behavior based on the object.
+	=> question_three
+- It creates new objects
+	Sultan: Not quite! len() measures different things for different objects.
+	=> question_three
+
+~ question_three
+Sultan: What does len() return for a dictionary?
+- Number of key-value pairs
+	Sultan: Correct! It counts the number of key-value pairs!
+	set score = score + 1
+	=> question_four
+- Number of keys only
+	Sultan: Incorrect! It counts both keys and values as pairs.
+	=> question_four
+- Length of all values
+	Sultan: Not quite! It counts the number of key-value pairs.
+	=> question_four
+
+~ question_four
+Sultan: Can child classes override parent class methods?
+- Yes, that's part of polymorphism
+	Sultan: Correct! Child classes can give new behavior to parent methods!
+	set score = score + 1
+	=> question_five
+- No, they must use parent methods
+	Sultan: Incorrect! Children can override parent methods.
+	=> question_five
+- Only if the parent allows it
+	Sultan: Not quite! Children can always override parent methods.
+	=> question_five
+
+~ question_five
+Sultan: What happens when a child class doesn't override a parent method?
+- It inherits the parent's method
+	Sultan: Correct! The child uses the parent's implementation!
+	set score = score + 1
+	=> question_six
+- The method is deleted
+	Sultan: Incorrect! The child keeps the parent's method.
+	=> question_six
+- It creates a new method
+	Sultan: Not quite! It uses the parent's existing method.
+	=> question_six
+
+~ question_six
+Sultan: What's the benefit of polymorphism in class design?
+- It allows flexible and reusable code
+	Sultan: Correct! One interface, many implementations!
+	set score = score + 1
+	=> check_score
+- It makes code run faster
+	Sultan: Incorrect! It's about flexibility, not speed.
+	=> check_score
+- It reduces memory usage
+	Sultan: Not quite! Polymorphism is about code flexibility.
+	=> check_score
+
+~ check_score
+if score >= 5:
+	Sultan: Congratulations! You got a passing score!
+	Sultan: You've shown great understanding of Python polymorphism!
+	Sultan: Go talk to Shadewalker again. He'll take you to your last assessment before going to the last stage.
+	set sultan = "true"
+	=> END
+Sultan: You need more practice with polymorphism.
+Sultan: Review the material with Cactus Jack and try again!
+set cactusjack = "false"
+=> END

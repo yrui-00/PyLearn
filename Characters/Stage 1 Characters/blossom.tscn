@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c556anoouq2b2"]
+
+[ext_resource type="Texture2D" uid="uid://bmso6k1y7agmf" path="res://Art/Stage 1 Characters/Agatha/SpriteSheet.png" id="1_tilbs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bd55p"]
+radius = 9.0
+
+[node name="Blossom" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_bd55p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tilbs")
+hframes = 4
+vframes = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = -11.0
+offset_top = -16.0
+offset_right = 44.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+text = "Blossom"

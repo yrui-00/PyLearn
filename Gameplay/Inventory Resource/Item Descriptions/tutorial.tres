@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Description" load_steps=3 format=3 uid="uid://0oebflutrk7v"]
+
+[ext_resource type="Texture2D" uid="uid://ds37qp0erbr1h" path="res://Gameplay/Inventory Resource/Item Descriptions/ScrollEmpty.png" id="1_isqnu"]
+[ext_resource type="Script" path="res://Gameplay/Inventory Resource/Item Descriptions/description.gd" id="2_pqtsq"]
+
+[resource]
+script = ExtResource("2_pqtsq")
+title = "TUTORIAL"
+icon = ExtResource("1_isqnu")
+description = "THIS IS THE TUTORIAL BOOK. 
+
+PRESS \"W,A,S,D\" TO MOVE.
+PRESS \"SPACEBAR\" TO INTERACT, PRESS \"I\" TO OPEN THE INVENTORY AND PRESS \"ALT\" TO OPEN THE CODE EDITOR\""

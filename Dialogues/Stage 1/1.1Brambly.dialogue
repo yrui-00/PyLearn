@@ -1,0 +1,124 @@
+~ start
+
+if game_master == "false":
+	Brambly: You need to talk to the Game Master first before I can help you.
+	=> END
+else:
+	Brambly: Ah, welcome! I'm here to teach you about Python indentation.
+	Brambly: Remember, you can press F1 anytime to open the Code Editor and try these examples yourself!
+	- What is indentation?
+		Brambly: Think of indentation as organizing your code with spaces at the beginning of a line.
+		Brambly: But here's what makes Python special - indentation isn't just for neat organization.
+		Brambly: In Python, indentation is mandatory! It tells Python which code belongs together.
+		Brambly: Why don't you open the Code Editor with F1 and try it out?
+		- Could you show me an example?
+			=> show_example
+		- Why is it important?
+			=> explain_importance
+
+~ show_example
+Brambly: Let's look at a simple example - feel free to type this in your Code Editor:
+
+Brambly: weather = "rainy"
+		[[if weather == "rainy":]]
+		>>>print("Bring an umbrella!")
+		>>>print("And wear a raincoat!")
+
+Brambly: See those >>> marks? They show which lines belong to the if statement.
+Brambly: Try writing this in the Code Editor - use actual spaces or tabs for indentation!
+- What happens if I don't indent?
+	=> explain_errors
+- Show me more examples
+	=> more_examples
+
+~ explain_importance
+Brambly: Indentation in Python serves two crucial purposes:
+Brambly: First, it makes your code readable - everyone can see what belongs where.
+Brambly: Second, and most importantly, it's how Python understands code structure!
+Brambly: Without proper indentation, Python won't know which code belongs to what.
+Brambly: Open the Code Editor with F1 and experiment with different indentation levels!
+- What happens if I get it wrong?
+	=> explain_errors
+- Show me how it works
+	=> show_example
+
+~ explain_errors
+Brambly: Let me show you what NOT to do - try these in the Code Editor to see the errors:
+
+Brambly: weather = "rainy"
+		[[if weather == "rainy":]]
+		print("Bring an umbrella!")
+
+Brambly: See how that print isn't indented? Python will give you an error!
+Brambly: Another common mistake is mixing different indentation levels:
+
+Brambly: [[if weather == "rainy":]]
+		>>>print("Bring an umbrella!")
+		>>>>>>print("This will cause an error!")
+
+Brambly: The second print has too many spaces - Python won't like that!
+Brambly: Try both examples in the Code Editor (F1) to see the errors yourself!
+- What's the correct way?
+	=> proper_indentation
+- Tell me the rules
+	=> indentation_rules
+
+~ proper_indentation
+Brambly: Here's how to do it right - test this in your Code Editor:
+Brambly: 1. Use the same number of spaces for each level
+Brambly: 2. Most Python programmers use 4 spaces
+Brambly: 3. Be consistent throughout your code
+
+Brambly: Type this example in your Code Editor:
+Brambly: weather = "rainy"
+		[[if weather == "rainy":]]
+		>>>print("Bring an umbrella!")
+		>>>print("Stay dry!")
+
+Brambly: Both print statements use the same indentation - that's perfect!
+Brambly: Try changing the indentation to see what happens!
+- What are the rules?
+	=> indentation_rules
+- I'm ready to move on
+	=> wrap_up
+
+~ indentation_rules
+Brambly: Here are the key rules for Python indentation:
+Brambly: 1. Indentation is REQUIRED after statements that end with a colon
+Brambly: 2. All related code must have the SAME indentation level
+Brambly: 3. Usually use 4 spaces (that's the Python standard)
+Brambly: 4. Be consistent - don't mix different indentation styles
+Brambly: Press F1 to open the Code Editor and practice these rules!
+- Show me examples to practice
+	=> more_examples
+- I'm ready to continue
+	=> wrap_up
+
+~ more_examples
+Brambly: Here's a more complex example to try in your Code Editor:
+
+Brambly: score = 85
+		[[if score >= 90:]]
+		>>>print("Excellent!")
+		[[elif score >= 80:]]
+		>>>print("Good job!")
+		[[else:]]
+		>>>print("Keep practicing!")
+
+Brambly: Try changing the score value and indentation in the Code Editor!
+Brambly: Experiment with different scores to see different outputs!
+- Tell me the rules again
+	=> indentation_rules
+- I understand now
+	=> wrap_up
+
+~ wrap_up
+Brambly: That's all I have to teach about indentation!
+Brambly: Remember - in Python, proper indentation isn't just for style, it's required!
+Brambly: Keep practicing with the Code Editor - press F1 anytime to experiment.
+Brambly: Now you have two options:
+Brambly: If you want to learn more about python,visit Oakly next door after taking your quiz from Thistle in the south.
+Brambly: You can find Thistle in his house south of here.
+Brambly: And remember - the Code Editor is always available if you want to practice!
+set brambly = "true"
+=> END

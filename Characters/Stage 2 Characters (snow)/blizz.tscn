@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq81v8e888f0h"]
+
+[ext_resource type="Texture2D" uid="uid://beqxbh5r4ujak" path="res://Art/Stage 2 Characters (snow)/Blizz/SpriteSheet.png" id="1_yxlrn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ny5n3"]
+radius = 9.0
+
+[node name="Blizz" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_ny5n3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yxlrn")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -7.0
+offset_top = -16.0
+offset_right = 32.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Blizz"

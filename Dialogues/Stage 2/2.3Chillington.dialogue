@@ -1,0 +1,120 @@
+~ start
+Chillington: Welcome to the exciting world of Python classes! Ready to learn?
+- Yes, let's begin!
+	=> class_intro
+- What are classes?
+	=> class_explanation
+
+~ class_explanation
+Chillington: Think of a class like a blueprint for creating things!
+Chillington: Just like a blueprint for a house tells you how to build it...
+Chillington: A class tells Python how to create an object with specific features.
+=> class_intro
+
+~ class_intro
+Chillington: Remember to open your code editor - you'll want to try these examples!
+Chillington: Let's start with a simple class:
+		[[class Car:]]
+		[[>>>color = "red"]]
+- How do we use this class?
+	=> create_object
+- Can we add more features?
+	=> add_init
+
+~ create_object
+Chillington: Great question! Here's how we create an object from our class:
+		[[my_car = Car()]]
+		[[print(my_car.color)  # Prints "red"]]
+		Try this in your code editor!
+- What's next?
+	=> add_init
+- Can we change the color?
+	=> modify_properties
+
+~ add_init
+Chillington: Let's make our class more useful with __init__:
+		[[class Car:]]
+		[[>>>def __init__(self, color, model):]]
+		[[>>>>>>self.color = color]]
+		[[>>>>>>self.model = model]]
+Chillington: This lets us create cars with different colors and models!
+		Open your code editor and try:
+		[[my_car = Car("blue", "sedan")]]
+- How do we access the values?
+	=> access_properties
+- Can we add methods?
+	=> add_methods
+
+~ access_properties
+Chillington: It's super easy! Just use the dot notation:
+		[[print(my_car.color)   # Prints "blue"]]
+		[[print(my_car.model)   # Prints "sedan"]]
+		Try these in your code editor!
+- What about methods?
+	=> add_methods
+- Can we change values?
+	=> modify_properties
+
+~ add_methods
+Chillington: Methods are functions that belong to our class:
+		[[class Car:]]
+		[[>>>def __init__(self, color, model):]]
+		[[>>>>>>self.color = color]]
+		[[>>>>>>self.model = model]]
+		[[>>>def honk(self):]]
+		[[>>>>>>print(f"The {self.color} car goes beep!")]]
+Chillington: Test this in your code editor:
+		[[my_car = Car("red", "sports")]]
+		[[my_car.honk()  # Prints "The red car goes beep!"]]
+- Can we modify properties?
+	=> modify_properties
+- What about string representation?
+	=> string_representation
+
+~ modify_properties
+Chillington: You can change object properties anytime:
+		[[my_car.color = "green"]]
+		Or remove them:
+		[[del my_car.color]]
+Chillington: Remember to test these in your code editor!
+- Tell me about string representation
+	=> string_representation
+- I want to try everything!
+	=> final_example
+
+~ string_representation
+Chillington: We can make our objects print nicely using __str__:
+		[[class Car:]]
+		[[>>>def __init__(self, color, model):]]
+		[[>>>>>>self.color = color]]
+		[[>>>>>>self.model = model]]
+		[[>>>def __str__(self):]]
+		[[>>>>>>return f"{self.color} {self.model} car"]]
+Chillington: Try it in your code editor:
+		[[my_car = Car("red", "sports")]]
+		[[print(my_car)  # Prints "red sports car"]]
+- Let's see a complete example!
+	=> final_example
+
+~ final_example
+Chillington: Here's everything together - remember to test this in your editor:
+		[[class Car:]]
+		[[>>>def __init__(self, color, model):]]
+		[[>>>>>>self.color = color]]
+		[[>>>>>>self.model = model]]
+		[[>>>def __str__(self):]]
+		[[>>>>>>return f"{self.color} {self.model} car"]]
+		[[>>>def honk(self):]]
+		[[>>>>>>print(f"The {self.color} car goes beep!")]]
+Chillington: [[# Create and use your car]]
+		[[my_car = Car("blue", "sports")]]
+		[[print(my_car)]]
+		[[my_car.honk()]]
+		That's the basics of Python classes!
+Chillington: Go meet Crytsal in the east. Ready to test your knowledge?
+- Yes, I'm ready!
+	set chillington = "true"
+	=> END
+- I need more practice
+	Chillington: No problem! Review the examples in your code editor and come back when you're ready.
+	=> final_example

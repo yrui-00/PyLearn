@@ -1,0 +1,120 @@
+~ start
+Pebble: Welcome to the world of Python iterators! Ready to learn about traversing data?
+- Yes, let's begin!
+	=> iterator_intro
+- What are iterators?
+	=> iterator_explanation
+
+~ iterator_explanation
+Pebble: Think of an iterator like a bookmark in a book!
+Pebble: It helps you keep track of where you are in a sequence of data.
+Pebble: Open your code editor and I'll show you how they work!
+=> iterator_intro
+
+~ iterator_intro
+Pebble: First, let's look at iterable objects. Try this in your code editor:
+		[[mytuple = ("apple", "banana", "cherry")]]
+		[[myit = iter(mytuple)    # Creates an iterator]]
+		[[print(next(myit))       # Prints "apple"]]
+		[[print(next(myit))       # Prints "banana"]]
+- What else can be iterated?
+	=> string_iteration
+- How do loops work?
+	=> loop_explanation
+
+~ string_iteration
+Pebble: Even strings are iterable! Test this in your editor:
+		[[mystr = "Python"]]
+		[[myit = iter(mystr)]]
+		[[print(next(myit))    # Prints "P"]]
+		[[print(next(myit))    # Prints "y"]]
+- Tell me about loops!
+	=> loop_explanation
+- Can we make custom iterators?
+	=> custom_iterator
+
+~ loop_explanation
+Pebble: For loops make iteration easier! Try this:
+		[[# Using for loop with tuple]]
+		[[for x in ("apple", "banana", "cherry"):]]
+		[[>>>print(x)]]
+		[[# Using for loop with string]]
+		[[for char in "Python":]]
+		[[>>>print(char)]]
+Pebble: Remember to test these in your code editor!
+- How can we make our own?
+	=> custom_iterator
+- What about preventing infinite loops?
+	=> stop_iteration
+
+~ custom_iterator
+Pebble: Let's create our own iterator! Open your editor:
+		[[class MyNumbers:]]
+		[[>>>def __iter__(self):]]
+		[[>>>>>>self.a = 1]]
+		[[>>>>>>return self]]
+		To be continued...
+Pebble: [[>>>def __next__(self):]]
+		[[>>>>>>x = self.a]]
+		[[>>>>>>self.a += 1]]
+		[[>>>>>>return x]]
+- How do we use it?
+	=> use_custom
+- What about stopping?
+	=> stop_iteration
+
+~ use_custom
+Pebble: Here's how to use your custom iterator:
+		[[myclass = MyNumbers()]]
+		[[myiter = iter(myclass)]]
+		[[print(next(myiter))    # Prints 1]]
+		[[print(next(myiter))    # Prints 2]]
+Pebble: Test this in your code editor!
+- How do we stop it?
+	=> stop_iteration
+- Show me everything!
+	=> final_example
+
+~ stop_iteration
+Pebble: We can prevent infinite iteration with StopIteration:
+		[[class MyNumbers:]]
+		[[>>>def __iter__(self):]]
+		[[>>>>>>self.a = 1]]
+		[[>>>>>>return self]]
+		[[>>>def __next__(self):]]
+		To be continued...
+Pebble: [[>>>>>>if self.a <= 5:]]
+		[[>>>>>>>>>>x = self.a]]
+		[[>>>>>>>>>>self.a += 1]]
+		[[>>>>>>>>>>return x]]
+		[[>>>>>>else:]]
+		[[>>>>>>>>>>raise StopIteration]]
+- Show me the complete example!
+	=> final_example
+
+~ final_example
+Pebble: Here's everything together - try it in your editor:
+		[[class MyNumbers:]]
+		[[>>>def __iter__(self):]]
+		[[>>>>>>self.a = 1]]
+		[[>>>>>>return self]]
+		[[>>>def __next__(self):]]
+		To be conitnued...
+Pebble: [[>>>>>>if self.a <= 5:]]
+		[[>>>>>>>>>x = self.a]]
+		[[>>>>>>>>>self.a += 1]]
+		[[>>>>>>>>>return x]]
+		[[>>>>>>else:]]
+		[[>>>>>>>>>raise StopIteration]]
+Pebble: [[# Use the iterator]]
+		[[numbers = MyNumbers()]]
+		[[for num in numbers:]]
+		[[>>>print(num)]]
+Pebble: That's iterators in action! Ready to test your knowledge?
+Pebble: If you're ready find Zahara in the south.
+- Yes, I'm ready!
+	set pebble = "true"
+	=> END
+- I need more practice
+	Pebble: No problem! Review the examples in your code editor and come back when you're ready.
+	=> final_example

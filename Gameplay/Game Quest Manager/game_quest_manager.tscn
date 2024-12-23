@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2wip15byxwix"]
+
+[ext_resource type="Script" path="res://Gameplay/Game Quest Manager/game_quest_manager.gd" id="1_dhjm1"]
+[ext_resource type="Texture2D" uid="uid://bjx4t1fkvgrak" path="res://Art/Inventory/UI books & more.png" id="2_1ia5h"]
+
+[node name="GameQuestManager" type="Node"]
+script = ExtResource("1_dhjm1")
+
+[node name="QuestBox" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="NinePatchRect" type="NinePatchRect" parent="QuestBox"]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 367.0
+offset_bottom = 348.0
+texture = ExtResource("2_1ia5h")
+region_rect = Rect2(768.352, 64.4709, 47.0079, 47.6608)
+
+[node name="QuestTitle" type="RichTextLabel" parent="QuestBox"]
+offset_left = 36.0
+offset_top = 87.0
+offset_right = 326.0
+offset_bottom = 132.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "QUEST TITLE"
+
+[node name="QuestDescription" type="RichTextLabel" parent="QuestBox"]
+offset_left = 36.0
+offset_top = 137.0
+offset_right = 328.0
+offset_bottom = 311.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "QUEST DESCRIPTION"
+
+[node name="Label" type="Label" parent="QuestBox"]
+offset_left = 33.0
+offset_top = 38.0
+offset_right = 338.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "ACTIVE QUEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Gold" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "GOLD"
+
+[node name="XP" type="Label" parent="CanvasLayer"]
+offset_left = 1222.0
+offset_top = 9.0
+offset_right = 1262.0
+offset_bottom = 32.0
+text = "XP
+"
+
+[node name="XPLabel" type="Label" parent="CanvasLayer"]
+offset_left = 1223.0
+offset_top = 13.0
+offset_right = 1263.0
+offset_bottom = 36.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]

@@ -1,0 +1,96 @@
+~ start
+Blizz: Hey! You've reached Stage 2 of PyGram! Congratulations on making it this far!
+Blizz: Ready to learn about Python functions?
+- Yes, let's begin
+	=> function_intro
+- What is Stage 2?
+	Blizz: Stage 2 is where we learn more advanced Python concepts.
+	Blizz: We'll start with functions - they're like mini-programs inside your program!
+	=> function_intro
+
+~ function_intro
+Blizz: Remember to use your code editor to try these examples!
+Blizz: A function is like a reusable block of code that runs when you call it.
+Blizz: Let me show you the basic structure:
+		def my_function():
+		>>>print("Hello from a function")
+- How do we use it?
+	=> function_calling
+- Can you explain more?
+	=> function_explanation
+
+~ function_explanation
+Blizz: Think of a function like a recipe:
+		1. You write it once using 'def'
+		2. You can use it many times
+		3. It can take ingredients (arguments)
+		4. It can give you something back (return values)
+- Show me how to call it
+	=> function_calling
+
+~ function_calling
+Blizz: To use a function, you call it by name with parentheses:
+Blizz: my_function()
+Blizz: Try it in your code editor! Create the function and call it.
+Blizz: Want to see something cool with arguments?
+- Yes, show me arguments
+	=> arguments_intro
+- What are arguments?
+	=> arguments_explanation
+
+~ arguments_explanation
+Blizz: Arguments are values you send to your function.
+Blizz: They go in the parentheses when you define and call the function.
+Blizz: Let me show you!
+=> arguments_intro
+
+~ arguments_intro
+Blizz: Here's a function that uses an argument:
+		def greet_player(name):
+		>>>print("Hello, " + name + "!")
+Blizz: You can call it like this:
+		greet_player("Alex")
+		greet_player("Sam")
+		greet_player("Pat")
+- What will it print?
+	=> arguments_output
+
+~ arguments_output
+Blizz: It will print:
+		Hello, Alex!
+		Hello, Sam!
+		Hello, Pat!
+Blizz: Try it in your code editor!
+- Show me more examples
+	=> list_example
+- How many arguments can we use?
+	=> multiple_arguments
+
+~ multiple_arguments
+Blizz: You can have as many arguments as you need!
+		def player_info(name, level, score):
+		>>>print(name + " is level " + str(level) + " with score " + str(score))
+		Just separate them with commas.
+- Show me lists in functions
+	=> list_example
+
+~ list_example
+Blizz: You can even pass lists to functions!
+		def print_inventory(items):
+		>>>for item in items:
+		>>>>>>print(item)
+		inventory = ["sword", "shield", "potion"]
+		print_inventory(inventory)
+Blizz: Try this in your code editor too!
+- What's next?
+	=> ending
+
+~ ending
+Blizz: You've learned the basics of functions!
+Blizz: Remember:
+Blizz: - Functions make code reusable
+Blizz: - They can take arguments
+Blizz: - Always use your code editor to practice
+Blizz: Head to Chillington in the north to test your knowledge about functions!
+set blizz = "true"
+=> END

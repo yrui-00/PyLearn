@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Items" load_steps=3 format=3 uid="uid://dxh4tthh0536v"]
+
+[ext_resource type="Script" path="res://Gameplay/Inventory Resource/inventoryitems.gd" id="1_dgy8p"]
+[ext_resource type="Texture2D" uid="uid://ds37qp0erbr1h" path="res://Gameplay/Inventory Resource/Item Descriptions/ScrollEmpty.png" id="2_3nsh3"]
+
+[resource]
+script = ExtResource("1_dgy8p")
+name = "Tutorial"
+texture = ExtResource("2_3nsh3")

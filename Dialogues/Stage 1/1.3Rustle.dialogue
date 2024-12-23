@@ -1,0 +1,164 @@
+~ start
+if blossom == "false":
+	Rustle: Take your quiz from Blossom first before you can proceed.
+	=> END
+Rustle: Welcome! Let's explore Python's data types in detail.
+Rustle: Understanding data types is crucial in programming - they determine what we can do with our data.
+=> intro
+
+~ intro
+Rustle: Would you like to learn about Python's data types?
+- Yes, let's begin
+	Rustle: Excellent! Let's start with the basics.
+	=> basic_types
+- No, maybe later
+	Rustle: Come back when you're ready to learn!
+	=> END
+
+~ basic_types
+Rustle: Let's start with the four fundamental data types in Python:
+Rustle: 1. Integers (int) - Whole numbers
+Rustle: 2. Floating-point numbers (float) - Decimal numbers
+Rustle: 3. Strings (str) - Text
+Rustle: 4. Booleans (bool) - True/False values
+Rustle: Which would you like to learn about first?
+- Integers
+	=> integers
+- Floating-point numbers
+	=> floats
+- Strings
+	=> strings
+- Booleans
+	=> booleans
+
+~ integers
+Rustle: Integers are whole numbers, positive or negative, without decimals.
+Rustle: For example:
+		x = 5
+		y = -17
+		z = 1000000
+Rustle: Can you identify which of these is NOT an integer?
+- 42
+	Rustle: That's an integer! Try again.
+	=> integer_quiz
+- -3.14
+	Rustle: Correct! -3.14 is a float because it has a decimal point.
+	=> integer_quiz
+- 1000
+	Rustle: That's an integer! Try again.
+	=> integer_quiz
+
+~ integer_quiz
+Rustle: Let's test your understanding.
+Rustle: What will type(5) return in Python?
+- <class 'int'>
+	Rustle: Excellent! You understand how Python represents integer types.
+	=> floats
+- <class 'number'>
+	Rustle: Not quite. Python uses 'int' to represent integers.
+	=> floats
+- <class 'float'>
+	Rustle: That's not correct. Whole numbers are represented as 'int' in Python.
+	=> floats
+
+~ floats
+Rustle: Floating-point numbers are decimal numbers.
+Rustle: Examples:
+		x = 3.14
+		y = -0.001
+		z = 2.0
+Rustle: Any number with a decimal point is a float, even if the decimal portion is .0
+Rustle: Which of these is a float?
+- x = 42
+	Rustle: That's an integer, not a float.
+	=> float_quiz
+- y = 3.0
+	Rustle: Correct! Any number with a decimal point is a float.
+	=> float_quiz
+- z = -5
+	Rustle: That's an integer, not a float.
+	=> float_quiz
+
+~ float_quiz
+Rustle: When you divide two integers in Python, what type do you get?
+- Always an integer
+	Rustle: Not quite! Division always returns a float in Python 3.
+	=> strings
+- Always a float
+	Rustle: Correct! Division (/) always returns a float in Python 3.
+	=> strings
+- Depends on the numbers
+	Rustle: Actually, division (/) always returns a float in Python 3.
+	=> strings
+
+~ strings
+Rustle: Strings are text values, enclosed in quotes.
+Rustle: You can use either single quotes ('hello') or double quotes ("hello").
+Rustle: Examples:
+		name = "Alice"
+		message = 'Hello, World!'
+		multi_line = """This is a
+		multi-line string"""
+Rustle: Which is a valid string?
+- print(Hello)
+	Rustle: Not quite! Strings need quotes.
+	=> string_quiz
+- "Hello, World!"
+	Rustle: Correct! The text is properly enclosed in quotes.
+	=> string_quiz
+- 'Hello + World'
+	Rustle: Correct! Single quotes work too!
+	=> string_quiz
+
+~ string_quiz
+Rustle: How can you check if a value is a string?
+- type(x) == str
+	Rustle: Excellent! This is the correct way to check the type.
+	=> booleans
+- x.isstring()
+	Rustle: Not quite. We use type(x) == str to check for strings.
+	=> booleans
+- str(x)
+	Rustle: That would convert x to a string, not check its type.
+	=> booleans
+
+~ booleans
+Rustle: Boolean values represent True or False.
+Rustle: They're essential for making decisions in your code.
+Rustle: Examples:
+		is_active = True
+		is_complete = False
+		has_error = bool(0)  # This will be False
+Rustle: What would bool("") return?
+- True
+	Rustle: Not quite! Empty strings are considered False in Python.
+	=> final_quiz
+- False
+	Rustle: Correct! Empty strings are considered False in Python.
+	=> final_quiz
+
+~ final_quiz
+Rustle: Let's have a final test. What will this code return?
+Rustle: x = "123"
+Rustle: type(x)
+- <class 'int'>
+	Rustle: Not quite! The value is in quotes, so it's a string.
+	=> ending
+- <class 'str'>
+	Rustle: Correct! Even though it contains numbers, it's a string because of the quotes.
+	=> ending
+- <class 'float'>
+	Rustle: Not quite! The value is in quotes, so it's a string.
+	=> ending
+
+~ ending
+Rustle: You've learned about Python's basic data types:
+Rustle: - Integers for whole numbers
+Rustle: - Floats for decimal numbers
+Rustle: - Strings for text
+Rustle: - Booleans for True/False values
+Rustle: Remember: You can always use type() to check a value's data type!
+Rustle: Now you should go see Twiggy for a quiz about data types. He's in his house north.
+Rustle: Good luck!
+set rustle = "true"
+=> END

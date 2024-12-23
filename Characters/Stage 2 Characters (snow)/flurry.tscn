@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dayi06yw8gpdu"]
+
+[ext_resource type="Texture2D" uid="uid://b6yvl8db4b1q2" path="res://Art/Stage 2 Characters (snow)/Flurry/SpriteSheet.png" id="1_lsffi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4q162"]
+radius = 9.0
+
+[node name="Flurry" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_4q162")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lsffi")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -9.0
+offset_top = -16.0
+offset_right = 37.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Flurry
+"

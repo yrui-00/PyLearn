@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://btop43dui4vvs"]
+
+[ext_resource type="Texture2D" uid="uid://cfa4gt8g4aea4" path="res://Art/Last Stage Characters/Eclipse/SpriteSheet.png" id="1_qrw6n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eav6g"]
+
+[node name="Eclipse" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eav6g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qrw6n")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -11.0
+offset_top = -19.0
+offset_right = 48.0
+offset_bottom = 4.0
+scale = Vector2(0.4, 0.4)
+text = "Eclipse"

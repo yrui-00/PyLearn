@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0x2t84gcvdff"]
+
+[ext_resource type="PackedScene" uid="uid://6jnts25wl4lx" path="res://Gameplay/Inventory/collectable.tscn" id="1_64ulh"]
+[ext_resource type="Texture2D" uid="uid://ds37qp0erbr1h" path="res://Gameplay/Inventory Resource/Item Descriptions/ScrollEmpty.png" id="2_4me6r"]
+[ext_resource type="Resource" uid="uid://dxh4tthh0536v" path="res://Gameplay/Inventory Resource/items resource/tutorial.tres" id="2_4rves"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tkdpf"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="the real book" groups=["books"] instance=ExtResource("1_64ulh")]
+itemresource = ExtResource("2_4rves")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_tkdpf")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_4me6r")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

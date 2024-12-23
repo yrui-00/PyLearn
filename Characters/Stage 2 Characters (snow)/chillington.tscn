@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnvyc73qq7nu3"]
+
+[ext_resource type="Texture2D" uid="uid://deivch1ajpkxy" path="res://Art/Stage 2 Characters (snow)/Chillington/SpriteSheet.png" id="1_30jb6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ekv46"]
+radius = 9.0
+
+[node name="Chillington" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ekv46")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_30jb6")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -17.0
+offset_top = -16.0
+offset_right = 67.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Chillington"

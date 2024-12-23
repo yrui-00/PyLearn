@@ -1,0 +1,85 @@
+~ start
+
+if ashanti == "true":
+	Ashanti: Back already? How are you holding up in our digital world?
+	- I'm getting used to it.
+		Ashanti: That's great! The sooner you master these controls, the closer you get to finding your way home.
+		Ashanti: Speaking of which, my friend Cluey might have some insights that could help you.
+		- I'll go talk to him.
+			Ashanti: Perfect! Just remember - everything you learn here brings you one step closer to home.
+			=> END
+	- Still feels strange being inside a game...
+		Ashanti: I can only imagine! But don't worry, we're all here to help you navigate this world.
+		Ashanti: Cluey's waiting nearby - he's really good at explaining how our world works.
+		=> END
+else:
+	Ashanti: *notices you looking disoriented* Hey there! You must be the one who got transported here.
+	- Yeah... how did you know?
+		Ashanti: We don't get many visitors from the outside world! I'm Ashanti, and I'll help you get your bearings.
+		Ashanti: First things first - you'll need to learn how to move in our digital world.
+		- Please help me!
+			Ashanti: The rules here are different from your world. Let me show you how to navigate.
+			Ashanti: To move around, use W, A, S, D on your keyboard - think of them as your digital legs.
+			Ashanti: When you see a person like me, press Spacebar to interact with them.
+			Ashanti: Most importantly, F1 opens the Code Editor. You'll need programming to overcome challenges here.
+			Ashanti: Various people will give you quests to collect. Do them and you'll have the information right at your hands!
+			Ashanti: Or inventory, I should say...
+			Ashanti: F2 shows your inventory. Trust me, you'll want to keep track of what you collect.
+			- This is a lot to remember...
+				Ashanti: Don't worry! Everyone feels overwhelmed at first. We'll help you every step of the way.
+				Ashanti: The key to getting home lies in mastering these tools.
+				Ashanti: You're doing great! Ready to start your journey home?
+				- Ready as I'll ever be.
+					Ashanti: That's the spirit! Remember, while you're finding your way home, you might actually enjoy learning to code.
+					Ashanti: Cluey's up next - he'll show you some programming basics that'll help you progress.
+					set ashanti = "true"
+					set forestkey = "true"
+					=> END
+				- I'm still nervous about all this...
+					Ashanti: *gently* Hey, that's completely normal. You've been thrown into a whole new world!
+					Ashanti: Just take it one step at a time. We're all here to help you get back home.
+					set ashanti = "true"
+					set forestkey = "true"
+					=> END
+		- This has to be a dream...
+			Ashanti: I know it's a lot to take in, but I promise this is real. Let's start with the basics, okay?
+			Ashanti: The rules here are different from your world. Let me show you how to navigate.
+			Ashanti: To move around, use W, A, S, D on your keyboard - think of them as your digital legs.
+			Ashanti: When you see a person like me, press Spacebar to interact with them.
+			Ashanti: Most importantly, F1 opens the Code Editor. You'll need programming to overcome challenges here.
+			Ashanti: And F2 shows your inventory. Trust me, you'll want to keep track of what you collect.
+			- So programming is the key to getting home?
+				Ashanti: *nods knowingly* Exactly! The better you understand our world's code, the closer you get to finding your way back.
+				Ashanti: You're doing great! Ready to start your journey home?
+				- Ready as I'll ever be.
+					Ashanti: That's the spirit! Remember, while you're finding your way home, you might actually enjoy learning to code.
+					Ashanti: Cluey's up next - he'll show you some programming basics that'll help you progress.
+					set ashanti = "true"
+					set forestkey = "true"
+					=> END
+				- I'm still nervous about all this...
+					Ashanti: *gently* Hey, that's completely normal. You've been thrown into a whole new world!
+					Ashanti: Just take it one step at a time. We're all here to help you get back home.
+					set ashanti = "true"
+					set forestkey = "true"
+					=> END
+	- How do I get back home?
+		Ashanti: *sympathetically* That's... complicated. But learning how this world works is your first step.
+		Ashanti: The rules here are different from your world. Let me show you how to navigate.
+		Ashanti: To move around, use W, A, S, D on your keyboard - think of them as your digital legs.
+		Ashanti: When you see a person like me, press Spacebar to interact with them.
+		Ashanti: Most importantly, F1 opens the Code Editor. You'll need programming to overcome challenges here.
+		Ashanti: And F2 shows your inventory. Trust me, you'll want to keep track of what you collect.
+		- I think I understand.
+			Ashanti: That's great! You're already adapting to our digital world.
+			Ashanti: Ready to continue your journey?
+			- Yes, let's go!
+				Ashanti: Perfect! Cluey will be your next guide. He'll teach you some programming basics.
+				set ashanti = "true"
+				set forestkey = "true"
+				=> END
+			- Give me a moment...
+				Ashanti: Take your time. This is all new for you.
+				set ashanti = "true"
+				set forestkey = "true"
+				=> END

@@ -1,0 +1,138 @@
+~ start
+if twiggy == "false":
+	Berry: Talk to Twiggy first before learning about if statements.
+	=> END
+Berry: Welcome! Let's learn about Python's if statements and conditions.
+=> intro
+
+~ intro
+Berry: Would you like to learn about if statements and conditions in Python?
+- Yes, let's begin
+	Berry: Excellent! Let's start with the basics of conditions.
+	=> conditions
+- No, maybe later
+	Berry: Come back when you're ready to learn!
+	=> END
+
+~ conditions
+Berry: First, let's understand the comparison operators in Python:
+Berry: These are the basic comparison operators:
+Berry: equals: ==
+Berry: not equals: !=
+Berry: less than: <
+Berry: less than or equal to: <=
+Berry: greater than: >
+Berry: greater than or equal to: >=
+Berry: Want to try a simple comparison?
+- Yes, show me
+	=> first_example
+- Tell me more about operators first
+	=> operator_detail
+
+~ operator_detail
+Berry: Let me explain each operator:
+		== checks if two values are equal
+		!= checks if two values are different
+Berry: < checks if left value is less than right
+		 <= checks if left value is less than or equal
+		 > checks if left value is greater than right
+		 >= checks if left value is greater than or equal
+- Ready for an example
+	=> first_example
+
+~ first_example
+Berry: Let's look at a simple if statement:
+Berry: x = 5
+		y = 10
+		[[if x < y:]]
+		>>>print("x is less than y")
+Berry: What will this code print?
+- Nothing
+	Berry: Incorrect! Since 5 is less than 10, it will print the message.
+	=> if_structure
+- x is less than y
+	Berry: Correct! Since 5 is less than 10, it prints the message.
+	=> if_structure
+- Error
+	Berry: Incorrect! This is valid code and will print the message.
+	=> if_structure
+
+~ if_structure
+Berry: Now, let's talk about the structure of if statements.
+Berry: Every if statement has these parts:
+Berry: 1. The 'if' keyword
+Berry: 2. A condition that's either True or False
+Berry: 3. A colon (:)
+Berry: 4. Indented code to run if condition is True
+Berry: Want to try writing one?
+- Yes
+	=> practice_if
+- Show me more examples first
+	=> more_examples
+
+~ more_examples
+Berry: Here's another example:
+Berry: age = 18
+		[[if age >= 18:]]
+		>>>print("You are an adult")
+		>>>print("You can vote")
+Berry: Notice how both print statements are indented!
+- Try a practice question
+	=> practice_if
+- Tell me about indentation
+	=> indentation
+
+~ indentation
+Berry: Indentation is very important in Python!
+Berry: It shows which code belongs inside the if statement.
+Berry: Without proper indentation, you'll get an error.
+Berry: For example, this will cause an error:
+		[[if age >= 18:]]
+		print("No indentation = Error!")
+- Let me try now
+	=> practice_if
+
+~ practice_if
+Berry: Complete this if statement:
+Berry: temperature = 25
+		[[if ___ > 20:]]
+		>>>print("It's warm")
+- temperature
+	Berry: Correct! This checks if the temperature is above 20.
+	=> final_test
+- temp
+	Berry: Not quite. We use the variable name 'temperature'.
+	=> final_test
+- "temperature"
+	Berry: No, we don't need quotes for variable names.
+	=> final_test
+
+~ final_test
+Berry: Last question! What's wrong with this code:
+Berry: x = 10
+		[[if x > 5]]
+		>>>print("x is greater than 5")
+- Missing colon
+	Berry: Correct! Every if statement needs a colon (:)
+	Berry: And the print statement should be indented!
+	Berry: You've learned the basics of if statements!
+	Berry: Now head north to find Fern and take a quiz about if statements.
+	Berry: Good luck!
+	set berry = "true"
+	=> END
+- Missing quotes
+	Berry: Not quite. The issue is a missing colon (:)
+	Berry: And the print statement should be indented!
+	Berry: Let's review this again later.
+	Berry: Now head north to find Fern and take a quiz about if statements.
+	Berry: Good luck!
+	set berry = "true"
+	=> END
+- Nothing wrong
+	Berry: Actually, it's missing a colon (:)
+	Berry: And the print statement should be indented!
+	Berry: Let's review this again later.
+	Berry: Now head north to find Fern and take a quiz about if statements.
+	Berry: Good luck!
+	set berry = "true"
+	=> END

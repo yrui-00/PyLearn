@@ -1,0 +1,85 @@
+~ start
+
+if cluey == "false":
+	Mentora: *looks up from her scrolls* Ah, you haven't met Cluey yet, have you?
+	- Where can I find them?
+		Mentora: Head northeast from here. Look for the floating code fragments!
+		=> END
+
+elif repeat == "true":
+	Mentora: Welcome back! Let me share the essential knowledge about Python.
+	- I'm ready to learn.
+		set repeater = "true"
+		=> python_fundamentals
+	- I failed Master Dev's quiz...
+		Mentora: *smiles warmly* Don't worry, let's review everything carefully.
+		set repeater = "true"
+		=> python_fundamentals
+
+elif mentora == "true":
+	Mentora: Hello again! Have you met Guideon yet?
+	- Yes, I have.
+		Mentora: Excellent! Keep following your path.
+		=> END
+	- Not yet.
+		Mentora: Head east to the stone bridge near the abandoned houses.
+		=> END
+
+else:
+	Mentora: Welcome, seeker of knowledge! Let me teach you about Python.
+	- What is Python exactly?
+		=> python_fundamentals
+	- I need to understand the basics.
+		=> python_fundamentals
+
+~ python_fundamentals
+Mentora: *creates a glowing diagram* Let me share the five key aspects of Python.
+Mentora: First: Python is a high-level programming language known primarily for two things:
+Mentora: Its readability and simple syntax. Unlike other languages, Python is designed to be clear and straightforward.
+- Tell me more.
+	=> design_philosophy
+- Why is that important?
+	=> design_philosophy
+
+~ design_philosophy
+Mentora: *draws symbols in the air* This leads us to Python's core design philosophy:
+Mentora: Code readability with significant indentation. This isn't just a style choice.
+Mentora: In Python, proper indentation is essential - it's how the language understands code structure.
+Mentora: This makes Python particularly beginner-friendly, because its clear and readable syntax is almost like English!
+- What else makes Python special?
+	=> programming_paradigms
+- How flexible is Python?
+	=> programming_paradigms
+
+~ programming_paradigms
+Mentora: *summons multiple code examples* Python is incredibly versatile!
+Mentora: It supports multiple programming paradigms:
+Mentora: Structured programming, object-oriented programming, and functional programming.
+Mentora: This flexibility is a key reason why Python is so widely used.
+- What can you do with Python?
+	=> applications
+- Is it limited to specific uses?
+	=> applications
+
+~ applications
+Mentora: *creates a floating display* Python's simplicity and broad application range make it truly versatile!
+Mentora: It's used in web development, data science, artificial intelligence, and automation.
+Mentora: This combination of simplicity and power makes Python unique.
+Mentora: It's perfect for beginners because of its clear syntax, yet powerful enough for experts.
+- Can you summarize the key points?
+	=> summary
+
+~ summary
+Mentora: *creates a glowing list* Let me summarize the essential points:
+Mentora: 1. Python is primarily known for its readability and simple syntax
+Mentora: 2. Its key design philosophy is readability and significant indentation
+Mentora: 3. It supports structured, object-oriented, and functional programming
+Mentora: 4. Python's versatility comes from its simplicity and broad application range
+Mentora: 5. It's beginner-friendly because of its clear and readable syntax
+- Thank you, I feel prepared now.
+	Mentora: Remember these points well for Master Dev's test.
+	Mentora: Each one is crucial for your journey forward.
+	set mentora = "true"
+	=> END
+- Could you repeat that?
+	=> summary

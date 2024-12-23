@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnpe4y0aqnfn"]
+
+[ext_resource type="Texture2D" uid="uid://brnwkdt1y6hch" path="res://Art/Stage 3 Charaters (desert)/Willow/SpriteSheet.png" id="1_ugmyr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yp1ev"]
+radius = 9.0
+height = 18.0
+
+[node name="Willow" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_yp1ev")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ugmyr")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -12.0
+offset_top = -18.0
+offset_right = 47.0
+offset_bottom = 5.0
+scale = Vector2(0.4, 0.4)
+text = "Willow"

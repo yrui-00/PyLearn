@@ -1,0 +1,200 @@
+~ start
+
+if brambly == "false":
+	Thistle: You should learn about indentation from Brambly first.
+	=> END
+
+else:
+	Thistle: Welcome, Python adventurer! I'm Thistle, and I'll be testing your knowledge about Python indentation.
+	Thistle: Before we begin, feel free to review your notes or practice in the Code Editor (F1).
+	- I'm ready for the quiz
+		Thistle: Excellent! Here are the rules:
+		Thistle: This quiz has 10 questions about Python indentation.
+		Thistle: You need to answer at least 7 questions correctly to pass.
+		Thistle: If you don't pass, you'll need to study more and try again.
+		Thistle: Are you ready to begin?
+		- Let's start!
+			Thistle: Good luck! Remember to think carefully before answering.
+			set correct_answers = 0
+			=> question_one
+		- I need more practice
+			Thistle: No problem! Visit Oakly for more examples, or use the Code Editor to practice.
+			Thistle: Come back when you're ready!
+			=> END
+	- I need more time to prepare
+		Thistle: Take your time! Remember:
+		Thistle: - You can practice in the Code Editor (F1)
+		Thistle: - Visit Oakly for more examples
+		Thistle: - Review Brambly's teachings
+		=> END
+
+~ question_one
+Thistle: Question 1: Indentation in Python is only used to improve code readability.
+- True
+	Thistle: *shakes head* That's not correct.
+	Thistle: While indentation does improve readability, that's not its main purpose in Python.
+	Thistle: Indentation is crucial for defining code blocks - it's a fundamental part of Python's syntax!
+	=> question_two
+- False
+	Thistle: *nods approvingly* Excellent answer!
+	Thistle: You're right! Indentation in Python is crucial for defining code blocks.
+	Thistle: It's not just about making code look nice - it's a fundamental part of Python's syntax.
+	set correct_answers += 1
+	=> question_two
+
+~ question_two
+Thistle: Question 2: Python requires consistent indentation within a code block.
+- True
+	Thistle: *beams* Exactly right!
+	Thistle: Consistency is key in Python. All lines in the same block must have the same indentation.
+	Thistle: Try this in your Code Editor:
+	Thistle: [[if x > 0:]]
+			>>>print("First line")
+			>>>print("Second line")  # Same indentation as first line
+	set correct_answers += 1
+	=> question_three
+- False
+	Thistle: *shakes head* That's not correct.
+	Thistle: Remember what Brambly said about consistency!
+	Thistle: All lines in the same code block must have the same indentation level.
+	=> question_three
+
+~ question_three
+Thistle: Question 3: Mixing tabs and spaces for indentation is recommended in Python.
+- True
+	Thistle: *frowns* That's incorrect.
+	Thistle: Mixing tabs and spaces can cause unexpected problems!
+	Thistle: Python recommends using either spaces (preferred) or tabs, but never both.
+	=> question_four
+- False
+	Thistle: *smiles brightly* Perfect answer!
+	Thistle: You're right - mixing tabs and spaces is a recipe for trouble.
+	Thistle: Always stick to one style - preferably spaces in Python.
+	set correct_answers += 1
+	=> question_four
+
+~ question_four
+Thistle: Question 4: Most Python programmers use 4 spaces for indentation.
+- True
+	Thistle: *nods enthusiastically* Correct!
+	Thistle: 4 spaces is indeed the standard practice in Python.
+	Thistle: This convention helps maintain consistency across Python projects.
+	set correct_answers += 1
+	=> question_five
+- False
+	Thistle: *shakes head* That's not right.
+	Thistle: While Python accepts any consistent number of spaces...
+	Thistle: 4 spaces is the widely accepted standard in the Python community.
+	=> question_five
+
+~ question_five
+Thistle: Question 5: An indentation error occurs only when there are zero spaces before a code line.
+- True
+	Thistle: *shakes head* Not correct.
+	Thistle: Indentation errors can occur in many ways:
+	Thistle: - Inconsistent spacing within a block
+	Thistle: - Mixing tabs and spaces
+	Thistle: - Incorrect indentation levels
+	=> question_six
+- False
+	Thistle: *claps* Exactly right!
+	Thistle: Indentation errors can occur in multiple ways.
+	Thistle: Good programmers maintain consistent indentation throughout their code.
+	set correct_answers += 1
+	=> question_six
+
+~ question_six
+Thistle: Question 6: What is the main purpose of indentation in Python code?
+- Improve readability
+	Thistle: *shakes head* While that's part of it, it's not the main purpose.
+	Thistle: Indentation in Python defines code blocks and structure!
+	=> question_seven
+- Define code blocks
+	Thistle: *beams with approval* Exactly right!
+	Thistle: Indentation tells Python which lines belong together in a block.
+	Thistle: Try testing this in the Code Editor!
+	set correct_answers += 1
+	=> question_seven
+- All of the above
+	Thistle: *shakes head* Not quite.
+	Thistle: While indentation does improve readability, its main purpose is to define code blocks.
+	=> question_seven
+
+~ question_seven
+Thistle: Question 7: Which statement is true about Python indentation?
+- Python ignores indentation errors
+	Thistle: *frowns* That's not correct.
+	Thistle: Python takes indentation very seriously!
+	Thistle: Indentation errors will prevent your code from running.
+	=> question_eight
+- Indentation errors will stop your code from running
+	Thistle: *smiles* Exactly right!
+	Thistle: Python requires proper indentation for your code to work.
+	Thistle: Try making some indentation errors in the Code Editor to see what happens!
+	set correct_answers += 1
+	=> question_eight
+
+~ question_eight
+Thistle: Question 8: What happens if you indent a line that shouldn't be indented?
+- Nothing, Python will ignore it
+	Thistle: *shakes head* Incorrect!
+	Thistle: Python will raise an unexpected indentation error.
+	Thistle: Every indentation must have a purpose!
+	=> question_nine
+- Python will raise an error
+	Thistle: *nods* Perfect answer!
+	Thistle: Python treats unexpected indentation as an error.
+	Thistle: Try it in the Code Editor to see the error message!
+	set correct_answers += 1
+	=> question_nine
+
+~ question_nine
+Thistle: Question 9: When writing an if statement in Python, the code to be executed if the condition is true...
+- Can be at any indentation level
+	Thistle: *frowns* That's not correct.
+	Thistle: The code block must be indented consistently.
+	Thistle: Try different indentation levels in the Code Editor to see what works!
+	=> question_ten
+- Must be indented
+	Thistle: *beams* Exactly right!
+	Thistle: The code block after an if statement must be indented.
+	Thistle: This tells Python which code belongs to the if statement.
+	set correct_answers += 1
+	=> question_ten
+
+~ question_ten
+Thistle: Final Question! In Python, the recommended indentation style is...
+- Any number of spaces
+	Thistle: *shakes head* Not quite right.
+	Thistle: While Python accepts any consistent number, there's a standard.
+	Thistle: The Python community recommends 4 spaces.
+	=> final_evaluation
+- 4 spaces
+	Thistle: *claps excitedly* Perfect!
+	Thistle: 4 spaces is indeed the Python standard!
+	Thistle: This makes code consistent and readable across projects.
+	set correct_answers += 1
+	=> final_evaluation
+- 2 spaces
+	Thistle: *shakes head* That's not correct.
+	Thistle: While 2 spaces would work, 4 spaces is the Python standard.
+	Thistle: Consistency across the Python community is important!
+	=> final_evaluation
+
+~ final_evaluation
+if correct_answers >= 7:
+	Thistle: Congratulations! You passed the quiz!
+    Thistle: You've demonstrated a good understanding of Python indentation.
+    Thistle: You may now proceed to learn about variables from your next teacher, Oakly.
+    Thistle: Remember to keep practicing in the Code Editor!
+    set thistle = "true"
+    => END
+else:
+	Thistle: Sorry, you didn't get enough correct answers to pass.
+	Thistle: You need at least 7 correct answers to pass.
+	Thistle: Don't worry though! Here's what you can do:
+	Thistle: - Use the Code Editor (F1) to experiment
+	Thistle: - Review Brambly's teachings about indentation
+	Thistle: Come back when you feel more prepared!
+	set brambly = "false"
+    => END

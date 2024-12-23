@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://btfmwk5vt2o8t"]
+
+[ext_resource type="Texture2D" uid="uid://4fmmjiwptnp7" path="res://Art/Stage 1 Characters/Shadewalker/SpriteSheet.png" id="1_rt8py"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yp1ev"]
+radius = 9.0
+height = 18.0
+
+[node name="Shadewalker" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_yp1ev")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rt8py")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -18.0
+offset_right = 80.0
+offset_bottom = 5.0
+scale = Vector2(0.4, 0.4)
+text = "Shadewalker"

@@ -1,0 +1,149 @@
+~ start
+
+if master == "true":
+	Master Dev: What are you still doing here?
+	Master Dev: Go to the next stage already.
+	=> END
+
+if guideon == "false":
+	Master Dev: You're not ready yet.
+	=> END
+
+if repeater == "true":
+	Master Dev: Are you ready to try again?
+	- Yes.
+		Master Dev: Very well. Let's begin.
+		=> quiz_start
+	- No.
+		Master Dev: Then go talk to Mentora for more information.
+		=> END
+
+else:
+	Master Dev: Hm? Welcome, stranger. Haven't seen you around these parts before.
+	- Are you Master Dev?
+		Master Dev: Yes.
+		Master Dev: This is the world of PyGram.
+		Master Dev: There are 5 stages in this game.
+		Master Dev: And this is Stage 1, Tutorial!
+		Master Dev: The next stage is all about introduction to Python.
+		Master Dev: Complete all stages to return to your world.
+		Master Dev: Are you ready?
+		- I'm not sure.
+			Master Dev: Let's test your knowledge then.
+			Master Dev: Answer at least 4 out of 5 questions correctly to proceed.
+			Master Dev: Don't worry, Mentora has taught you everything you need to know.
+			- Let's begin.
+				=> quiz_start
+		- I need more time.
+			Master Dev: Then return to Mentora for guidance.
+			=> END
+
+~ quiz_start
+set correct_answers = 0
+
+Master Dev: Question 1: What is Python primarily known for?
+- Its complex syntax and strict rules
+	Master Dev: Not quite. Python actually prides itself on simplicity.
+	Master Dev: Unlike some languages, Python aims to be straightforward and readable.
+	Master Dev: Remember what Mentora said about Python's design philosophy.
+	=> question_two
+- Its readability and simple syntax
+	Master Dev: Correct! Python's creators made readability a top priority.
+	Master Dev: This is why many beginners start their journey with Python.
+	set correct_answers += 1
+	=> question_two
+- Its limited programming capabilities
+	Master Dev: That's incorrect. Python is actually very capable.
+	Master Dev: It's used in everything from web development to artificial intelligence.
+	Master Dev: Don't confuse simplicity with limitation.
+	=> question_two
+
+~ question_two
+Master Dev: Question 2: Which programming paradigms does Python support?
+- Only object-oriented programming
+	Master Dev: Not quite right. Python is more flexible than that.
+	Master Dev: While it does support object-oriented programming...
+	Master Dev: It also supports other programming styles.
+	=> question_three
+- Only functional and structured programming
+	Master Dev: That's incomplete. Think bigger.
+	Master Dev: Python supports these, but there's more to it.
+	Master Dev: Remember Mentora's lesson about Python's versatility.
+	=> question_three
+- Structured, object-oriented, and functional programming
+	Master Dev: Excellent! Python's flexibility is one of its strengths.
+	Master Dev: This versatility makes it useful in many different situations.
+	set correct_answers += 1
+	=> question_three
+
+~ question_three
+Master Dev: Question 3: What is a key design philosophy of Python?
+- Speed over readability
+	Master Dev: Not correct. While Python cares about performance...
+	Master Dev: Its main focus is making code easy to read and understand.
+	Master Dev: Think about what Mentora said about Python's core principles.
+	=> question_four
+- Readability and significant indentation
+	Master Dev: Perfect! This is fundamental to Python's design.
+	Master Dev: The indentation isn't just for looks - it's part of the language.
+	set correct_answers += 1
+	=> question_four
+- Complex expressions over simple ones
+	Master Dev: That's the opposite of Python's philosophy.
+	Master Dev: Python believes in simple, clear expressions.
+	Master Dev: As Mentora taught, "Simple is better than complex."
+	=> question_four
+
+~ question_four
+Master Dev: Question 4: Why is Python considered versatile?
+- It only works on specific platforms
+	Master Dev: Not at all. Python works on many platforms.
+	Master Dev: This limitation would make it less versatile, not more.
+	Master Dev: Remember what Mentora said about Python's broad applications.
+	=> question_five
+- It's only good for web development
+	Master Dev: That's too narrow a view.
+	Master Dev: Python is used in web development, but also in many other fields.
+	Master Dev: Think about all the applications Mentora mentioned.
+	=> question_five
+- Its simplicity and broad application range
+	Master Dev: Correct! Python's versatility comes from its adaptability.
+	Master Dev: It can be used for websites, data science, AI, and much more!
+	set correct_answers += 1
+	=> question_five
+
+~ question_five
+Master Dev: Final question: What makes Python beginner-friendly?
+- Its clear and readable syntax
+	Master Dev: Exactly right! Python reads almost like English.
+	Master Dev: This clarity makes it perfect for learning programming.
+	set correct_answers += 1
+	=> check_results
+- Its complex error messages
+	Master Dev: Actually, Python tries to make errors clear and helpful.
+	Master Dev: Being beginner-friendly means being easy to understand.
+	Master Dev: Remember Mentora's examples of Python's simplicity.
+	=> check_results
+- Its strict typing system
+	Master Dev: Not quite. Python uses dynamic typing, not strict typing.
+	Master Dev: This flexibility is part of what makes it beginner-friendly.
+	Master Dev: Think back to what Mentora said about Python's design.
+	=> check_results
+
+~ check_results
+if correct_answers >= 4:
+	Master Dev: Congratulations! You passed the quiz!
+    Master Dev: You've demonstrated a good understanding of Python.
+    Master Dev: You may now proceed to learn about variables from our next teacher.
+    Master Dev: Remember to keep practicing in the Code Editor!
+    set thistle = "true"
+    => END
+else:
+	Master Dev: Sorry, you didn't get enough correct answers to pass.
+    Master Dev: You need at least 4 correct answers to pass.
+    Master Dev: Don't worry though! Here's what you can do:
+    Master Dev: - Visit Oakly for more examples and practice
+    Master Dev: - Use the Code Editor (F1) to experiment
+    Master Dev: - Review Brambly's teachings about indentation
+    Master Dev: Come back when you feel more prepared!
+    => END

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dewyg3cnargcg"]
+
+[ext_resource type="Script" path="res://Gameplay/Book Scripts/book_1.gd" id="1_v3dcp"]
+[ext_resource type="Texture2D" uid="uid://dati8ctumexle" path="res://Gameplay/Placeholder Book/ScrollThunder.png" id="2_8g5kp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yf3tq"]
+
+[node name="Book1" type="Area2D"]
+script = ExtResource("1_v3dcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8g5kp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yf3tq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

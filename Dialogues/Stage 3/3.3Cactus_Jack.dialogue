@@ -1,0 +1,106 @@
+~ start
+Cactus Jack: Welcome to the world of polymorphism! Ready to learn about methods taking different forms?
+- Yes, let's begin!
+	=> polymorphism_intro
+- What is polymorphism?
+	=> polymorphism_explanation
+
+~ polymorphism_explanation
+Cactus Jack: Think of "polymorphism" like a shape-shifter!
+Cactus Jack: In Python, it means one function can work differently with different types of objects.
+Cactus Jack: Open your code editor and I'll show you how it works!
+=> polymorphism_intro
+
+~ polymorphism_intro
+Cactus Jack: Let's start with function polymorphism using len().
+Cactus Jack: Try these examples in your code editor:
+		[[# With strings]]
+		[[text = "Hello World!"]]
+		[[print(len(text))        # Prints 12 (number of characters)]]
+- What else can len() do?
+	=> more_len_examples
+- Tell me about class polymorphism!
+	=> class_intro
+
+~ more_len_examples
+Cactus Jack: len() is super flexible! Check this out in your editor:
+		[[# With tuples]]
+		[[mytuple = ("apple", "banana", "cherry")]]
+		[[print(len(mytuple))     # Prints 3 (number of items)]]
+Cactus Jack: [[# With dictionaries]]
+		[[mydict = {]]
+		[[    "brand": "Ford",]]
+		[[    "model": "Mustang",]]
+		[[    "year": 1964]]
+		[[}]]
+		[[print(len(mydict))      # Prints 3 (number of key-value pairs)]]
+- Let's learn about classes!
+	=> class_intro
+
+~ class_intro
+Cactus Jack: Now for the cool part - class polymorphism! Try this:
+		[[class Car:]]
+		[[>>>def __init__(self, brand, model):]]
+		[[>>>>>>self.brand = brand]]
+		[[>>>>>>self.model = model]]
+		[[>>>def move(self):]]
+		[[>>>>>>print("Drive!")]]
+		To be continued...
+Cactus Jack: [[class Boat:]]
+		[[>>>def __init__(self, brand, model):]]
+		[[>>>>>>self.brand = brand]]
+		[[>>>>>>self.model = model]]
+		[[>>>def move(self):]]
+		[[>>>>>>print("Sail!")]]
+- How do we use these classes?
+	=> use_classes
+- What about inheritance?
+	=> inheritance_intro
+
+~ use_classes
+Cactus Jack: Here's how to use those classes with polymorphism:
+		[[car1 = Car("Ford", "Mustang")]]
+		[[boat1 = Boat("Ibiza", "Touring 20")]]
+		[[# Same method works on different objects]]
+		[[for vehicle in (car1, boat1):]]
+		[[>>>vehicle.move()]]
+- Tell me about inheritance!
+	=> inheritance_intro
+
+~ inheritance_intro
+Cactus Jack: Let's make it even cooler with inheritance! Try this:
+		[[class Vehicle:]]
+		[[>>>def __init__(self, brand, model):]]
+		[[>>>>>>self.brand = brand]]
+		[[>>>>>>self.model = model]]
+		[[>>>def move(self):]]
+		[[>>>>>>print("Move!")]]
+		To be continued...
+Cactus Jack: [[class Car(Vehicle):]]
+		[[>>>pass  # Inherits everything from Vehicle]]
+		[[class Boat(Vehicle):]]
+		[[>>>def move(self):]]
+		[[>>>>>>print("Sail!")]]
+- How do we use this?
+	=> final_example
+
+~ final_example
+Cactus Jack: Here's everything in action - try it in your editor:
+Cactus Jack: [[# Create objects]]
+		[[car1 = Car("Ford", "Mustang")]]
+		[[boat1 = Boat("Ibiza", "Touring 20")]]
+		[[# Polymorphic loop]]
+		[[for vehicle in (car1, boat1):]]
+		To be continued...
+		[[>>>print(vehicle.brand)]]
+		[[>>>print(vehicle.model)]]
+		[[>>>vehicle.move()]]
+Cactus Jack: The Car keeps the default "Move!" while Boat says "Sail!"
+Cactus Jack: That's polymorphism - same method name, different behaviors!
+Cactus Jack: If you're ready to test your knowledge, go to Sultan northwest of here.
+- I'm ready to practice!
+	set cactusjack = "true"
+	=> END
+- I need more examples
+	Cactus Jack: No problem! Review these in your code editor and come back when you're ready.
+	=> final_example

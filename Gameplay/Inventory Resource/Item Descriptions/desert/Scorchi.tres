@@ -1,0 +1,168 @@
+[gd_resource type="Resource" script_class="Description" load_steps=3 format=3 uid="uid://dopfkw1v6knd2"]
+
+[ext_resource type="Texture2D" uid="uid://ds37qp0erbr1h" path="res://Gameplay/Inventory Resource/Item Descriptions/ScrollEmpty.png" id="1_lv2xf"]
+[ext_resource type="Script" path="res://Gameplay/Inventory Resource/Item Descriptions/description.gd" id="2_ox7km"]
+
+[resource]
+script = ExtResource("2_ox7km")
+title = "Scorchi's Lesson"
+icon = ExtResource("1_lv2xf")
+description = "# Python Inheritance: Building Class Hierarchies
+
+## Introduction to Inheritance
+
+Inheritance is a fundamental concept in object-oriented programming that allows classes to inherit attributes and methods from other classes. Just as children inherit traits from their parents, a child class can inherit properties and behaviors from a parent class. This chapter explores how inheritance works in Python and how to implement it effectively.
+
+## Basic Inheritance
+
+### Parent Class Definition
+First, let's create a parent (base) class:
+
+```python
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+    
+    def printname(self):
+        print(self.firstname, self.lastname)
+
+# Using the parent class
+x = Person(\"John\", \"Doe\")
+x.printname()  # Outputs: \"John Doe\"
+```
+
+### Creating a Child Class
+To create a class that inherits from another class, specify the parent class as a parameter:
+
+```python
+class Student(Person):
+    pass  # Inherits all methods from Person
+
+# Child class inherits parent's functionality
+student = Student(\"Mike\", \"Olsen\")
+student.printname()  # Works just like Person!
+```
+
+## Adding Functionality
+
+### Extending the Parent Class
+We can add more features to the parent class:
+
+```python
+class Person:
+    def __init__(self, fname, lname, age):
+        self.firstname = fname
+        self.lastname = lname
+        self.age = age
+    
+    def printname(self):
+        print(self.firstname, self.lastname)
+    
+    def birthday(self):
+        self.age += 1
+        print(f\"Happy {self.age}th birthday, {self.firstname}!\")
+```
+
+## Customizing Child Classes
+
+### Adding Child-Specific Initialization
+Child classes can have their own `__init__` method:
+
+```python
+class Student(Person):
+    def __init__(self, fname, lname, year):
+        Person.__init__(self, fname, lname)
+        self.graduationyear = year
+```
+
+### Using super()
+The `super()` function provides a cleaner way to call parent class methods:
+
+```python
+class Student(Person):
+    def __init__(self, fname, lname, year):
+        super().__init__(fname, lname)
+        self.graduationyear = year
+```
+
+### Adding Child-Specific Methods
+Child classes can have their own unique methods:
+
+```python
+class Student(Person):
+    def __init__(self, fname, lname, year):
+        super().__init__(fname, lname)
+        self.graduationyear = year
+    
+    def welcome(self):
+        print(f\"Welcome {self.firstname} to class {self.graduationyear}\")
+```
+
+## Complete Implementation Example
+
+Here's a comprehensive example demonstrating inheritance:
+
+```python
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+    
+    def printname(self):
+        print(self.firstname, self.lastname)
+
+class Student(Person):
+    def __init__(self, fname, lname, year):
+        super().__init__(fname, lname)
+        self.graduationyear = year
+    
+    def welcome(self):
+        print(f\"Welcome {self.firstname} to class {self.graduationyear}\")
+
+# Create and use a student object
+student = Student(\"Mike\", \"Olsen\", 2024)
+student.printname()  # Inherited method
+student.welcome()    # Child-specific method
+```
+
+## Best Practices
+
+When working with inheritance:
+1. Use meaningful class names that reflect the relationship
+2. Keep the inheritance hierarchy simple and logical
+3. Use `super()` for cleaner code
+4. Document the expected behavior of inherited methods
+5. Don't override methods unless necessary
+6. Consider composition as an alternative to deep inheritance
+
+### Example with Best Practices
+```python
+class Person:
+    \"\"\"Base class for representing people.\"\"\"
+    
+    def __init__(self, fname: str, lname: str):
+        \"\"\"Initialize a person with first and last name.\"\"\"
+        self.firstname = fname
+        self.lastname = lname
+    
+    def full_name(self) -> str:
+        \"\"\"Return the person's full name.\"\"\"
+        return f\"{self.firstname} {self.lastname}\"
+
+class Student(Person):
+    \"\"\"Represents a student, extending the Person class.\"\"\"
+    
+    def __init__(self, fname: str, lname: str, student_id: str):
+        \"\"\"Initialize a student with personal and academic information.\"\"\"
+        super().__init__(fname, lname)
+        self.student_id = student_id
+    
+    def get_id_card_detail(self) -> str:
+        \"\"\"Return formatted ID card information.\"\"\"
+        return f\"{self.full_name()} - ID: {self.student_id}\"
+```
+
+## Conclusion
+
+Inheritance is a powerful feature in Python that promotes code reuse and helps create well-organized class hierarchies. Understanding how to effectively use inheritance, including when to use `super()` and how to add child-specific functionality, is crucial for writing maintainable object-oriented Python code."

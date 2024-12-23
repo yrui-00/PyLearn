@@ -1,0 +1,158 @@
+~ start
+if berry == "false":
+	Fern: Talk with Berry first before taking this quiz.
+	=> END
+Fern: Welcome! Let's test your knowledge about Python if statements.
+Fern: You'll need to answer at least 7 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Fern: Which operator is used to check if two values are equal in Python?
+- ==
+	Fern: Correct! The double equals operator checks for equality.
+	set score = score + 1
+	=> question_two
+- =
+	Fern: Not quite! Single equals is for assignment, not comparison.
+	=> question_two
+- ===
+	Fern: Incorrect! Python uses == for equality comparison.
+	=> question_two
+
+~ question_two
+Fern: What's required at the end of an if statement line?
+- Semicolon ;
+	Fern: Incorrect! Python uses a colon at the end of if statements.
+	=> question_three
+- Colon :
+	Fern: Correct! Every if statement needs a colon to mark its beginning.
+	set score = score + 1
+	=> question_three
+- Nothing
+	Fern: Not quite! We need a colon to mark where the if statement begins.
+	=> question_three
+
+~ question_three
+Fern: How does Python define the code block inside an if statement?
+- Using curly braces {}
+	Fern: Incorrect! Python uses indentation, not braces.
+	=> question_four
+- Using indentation
+	Fern: Correct! Python uses indentation to show which code belongs to the if statement.
+	set score = score + 1
+	=> question_four
+- Using parentheses ()
+	Fern: Not quite! Python relies on indentation for code blocks.
+	=> question_four
+
+~ question_four
+Fern: What does this code print?
+		x = 15
+		y = 10
+		[[if x > y:]]
+		>>>print("x is bigger")
+- Nothing
+	Fern: Incorrect! Since 15 > 10, it will print "x is bigger"
+	=> question_five
+- x is bigger
+	Fern: Correct! Since 15 is greater than 10, the message prints.
+	set score = score + 1
+	=> question_five
+- Error
+	Fern: Incorrect! This is valid code that will print "x is bigger"
+	=> question_five
+
+~ question_five
+Fern: Which operator checks if values are different?
+- ==
+	Fern: Incorrect! != is used to check if values are different.
+	=> question_six
+- !=
+	Fern: Correct! != checks if two values are not equal.
+	set score = score + 1
+	=> question_six
+- <>
+	Fern: Incorrect! Python uses != to check if values are different.
+	=> question_six
+
+~ question_six
+Fern: What does this comparison return?
+Fern: 5 < 10
+- True
+	Fern: Correct! 5 is less than 10, so this returns True.
+	set score = score + 1
+	=> question_seven
+- False
+	Fern: Incorrect! 5 is less than 10, so this returns True.
+	=> question_seven
+- Error
+	Fern: Incorrect! This is a valid comparison that returns True.
+	=> question_seven
+
+~ question_seven
+Fern: If the indentation is wrong in an if statement, what happens?
+- Code runs normally
+	Fern: Incorrect! Python will raise an error for incorrect indentation.
+	=> question_eight
+- Nothing
+	Fern: Incorrect! Incorrect indentation causes an error in Python.
+	=> question_eight
+- Python raises an error
+	Fern: Correct! Python requires proper indentation to work.
+	set score = score + 1
+	=> question_eight
+
+~ question_eight
+Fern: What operator checks if one value is greater than or equal to another?
+- >
+	Fern: Incorrect! >= is used for greater than or equal to.
+	=> question_nine
+- [[=>]]
+	Fern: Incorrect! The correct operator is >=
+	=> question_nine
+- >=
+	Fern: Correct! >= checks if a value is greater than or equal to another.
+	set score = score + 1
+	=> question_nine
+
+~ question_nine
+Fern: What's wrong with this code?
+		[[if x > 10]]
+		print("Greater than 10")
+- Missing quotes
+	Fern: Incorrect! It's missing a colon and proper indentation.
+	=> question_ten
+- Missing colon and indentation
+	Fern: Correct! If statements need a colon and indented code blocks.
+	set score = score + 1
+	=> question_ten
+- Nothing wrong
+	Fern: Incorrect! It needs a colon and proper indentation.
+	=> question_ten
+
+~ question_ten
+Fern: How many lines of code can be in an if statement's block?
+- Only one line
+	Fern: Incorrect! An if block can contain multiple lines.
+	=> check_score
+- As many as needed
+	Fern: Correct! You can have multiple lines in an if block.
+	set score = score + 1
+	=> check_score
+- Maximum of three
+	Fern: Incorrect! An if block can contain any number of lines.
+	=> check_score
+
+~ check_score
+if score >= 7:
+	Fern: Congratulations! You've mastered Python if statements!
+	Fern: Keep practicing these concepts!
+	Fern: You can go to Sapling Sam now, he's chilling by the lighthouse in the south.
+	set fern = "true"
+	=> END
+
+Fern: You need more practice with if statements.
+Fern: Review the material with Berry and try again!
+set berry = "false"
+=> END

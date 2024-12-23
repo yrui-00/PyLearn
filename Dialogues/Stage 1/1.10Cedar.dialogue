@@ -1,0 +1,163 @@
+~ start
+if sam == "false":
+	Cedar: Talk with Sapling Sam first before taking this quiz.
+	=> END
+Cedar: Welcome! Let's test your knowledge about advanced if statements.
+Cedar: You'll need to answer at least 7 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Cedar: What is the purpose of an elif statement in Python?
+- To check multiple conditions after an if statement
+	Cedar: Correct! elif lets us check multiple conditions in sequence.
+	set score = score + 1
+	=> question_two
+- To end an if statement
+	Cedar: Incorrect! elif is used to check additional conditions.
+	=> question_two
+- To define a variable
+	Cedar: Not quite! elif is for checking multiple conditions.
+	=> question_two
+
+~ question_two
+Cedar: What will this code print?
+		x = 15
+		[[if x > 20:]]
+		>>>print("Large")
+		[[elif x > 10:]]
+		>>>print("Medium")
+		[[else:]]
+		>>>print("Small")
+- Large
+	Cedar: Incorrect! 15 is not greater than 20.
+	=> question_three
+- Medium
+	Cedar: Correct! 15 is greater than 10, so "Medium" prints.
+	set score = score + 1
+	=> question_three
+- Small
+	Cedar: Incorrect! 15 is greater than 10.
+	=> question_three
+
+~ question_three
+Cedar: Can you write an if statement without an else clause?
+- No, else is required
+	Cedar: Incorrect! You can use if by itself.
+	=> question_four
+- Yes, else is optional
+	Cedar: Correct! You don't need to include else.
+	set score = score + 1
+	=> question_four
+
+~ question_four
+Cedar: What's a shorthand if statement in Python?
+- A one-line if statement
+	Cedar: Correct! Like: print("Yes") if x > 0 else print("No")
+	set score = score + 1
+	=> question_five
+- A statement without else
+	Cedar: Incorrect! Shorthand means writing it in one line.
+	=> question_five
+- A statement without elif
+	Cedar: Not quite! Shorthand refers to one-line format.
+	=> question_five
+
+~ question_five
+Cedar: When using 'and', when is the condition True?
+- When either condition is True
+	Cedar: Incorrect! Both conditions must be True.
+	=> question_six
+- When both conditions are True
+	Cedar: Correct! Both conditions must be True with 'and'.
+	set score = score + 1
+	=> question_six
+- When no conditions are True
+	Cedar: Incorrect! Both conditions must be True.
+	=> question_six
+
+~ question_six
+Cedar: What will this code print?
+		age = 15
+		[[if age >= 18:]]
+		>>>print("Adult")
+		[[else:]]
+		>>>print("Minor")
+- Adult
+	Cedar: Incorrect! 15 is less than 18.
+	=> question_seven
+- Minor
+	Cedar: Correct! Since 15 < 18, it prints "Minor".
+	set score = score + 1
+	=> question_seven
+- Nothing
+	Cedar: Incorrect! It will print "Minor".
+	=> question_seven
+
+~ question_seven
+Cedar: What's the difference between = and == in if statements?
+- They are the same
+	Cedar: Incorrect! = assigns values, == compares them.
+	=> question_eight
+- = assigns values, == compares them
+	Cedar: Correct! = is for assignment, == for comparison.
+	set score = score + 1
+	=> question_eight
+- == assigns values, = compares them
+	Cedar: Incorrect! = assigns values, == compares them.
+	=> question_eight
+
+~ question_eight
+Cedar: What is nested if?
+- Using or with if statements
+	Cedar: Incorrect! Nested means if inside another if.
+	=> question_nine
+- If statements inside other if statements
+	Cedar: Correct! That's what nesting means.
+	set score = score + 1
+	=> question_nine
+- If statements without else
+	Cedar: Incorrect! Nested means if inside another if.
+	=> question_nine
+
+~ question_nine
+Cedar: What operator would you use to check if either of two conditions is True?
+- and
+	Cedar: Incorrect! 'or' checks if either condition is True.
+	=> question_ten
+- not
+	Cedar: Incorrect! 'or' checks if either condition is True.
+	=> question_ten
+- or
+	Cedar: Correct! 'or' checks if either condition is True.
+	set score = score + 1
+	=> question_ten
+
+~ question_ten
+Cedar: What will this print?
+		x = 5
+		print("Hi") if x == 5 else print("Bye")
+- Hi
+	Cedar: Correct! Since x equals 5, it prints "Hi".
+	set score = score + 1
+	=> check_score
+- Bye
+	Cedar: Incorrect! Since x equals 5, it prints "Hi".
+	=> check_score
+- Error
+	Cedar: Incorrect! This is valid shorthand syntax.
+	=> check_score
+
+~ check_score
+if score >= 7:
+	Cedar: Congratulations! You've mastered if-else statements!
+	Cedar: Keep practicing these concepts!
+	Cedar: Find Shadewalker in the east, he'll guide you to the next stage.
+	Cedar: But you'll need to pass the final assessment for this stage first. Goodluck!
+	set cedar = "true"
+	=> END
+
+Cedar: You need more practice with if-else statements.
+Cedar: Review the material with Sapling Sam and try again!
+set sam = "false"
+=> END

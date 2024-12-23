@@ -1,0 +1,290 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhy0ps18l802e"]
+
+[ext_resource type="Script" path="res://Gameplay/Code Editor/code_editor.gd" id="1_2vk1t"]
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_s64mw"]
+number_color = Color(0.631373, 1, 0.878431, 1)
+symbol_color = Color(0.670588, 0.788235, 1, 1)
+function_color = Color(0.341176, 0.701961, 1, 1)
+member_variable_color = Color(0.737255, 0.878431, 1, 1)
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2vk1t")
+
+[node name="Editor" type="CodeEdit" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+scroll_smooth = true
+minimap_draw = true
+caret_blink = true
+syntax_highlighter = SubResource("CodeHighlighter_s64mw")
+line_folding = true
+gutters_draw_breakpoints_gutter = true
+gutters_draw_bookmarks = true
+gutters_draw_executing_lines = true
+gutters_draw_line_numbers = true
+gutters_draw_fold_gutter = true
+code_completion_enabled = true
+indent_automatic = true
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="TabPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Tabs" type="HBoxContainer" parent="TabPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_right = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="File" type="MenuButton" parent="TabPanel/Tabs"]
+layout_mode = 2
+text = "FILE"
+
+[node name="Edit" type="MenuButton" parent="TabPanel/Tabs"]
+layout_mode = 2
+text = "EDIT"
+
+[node name="Format" type="MenuButton" parent="TabPanel/Tabs"]
+layout_mode = 2
+text = "FORMAT"
+
+[node name="View" type="MenuButton" parent="TabPanel/Tabs"]
+layout_mode = 2
+text = "VIEW"
+
+[node name="Help" type="MenuButton" parent="TabPanel/Tabs"]
+layout_mode = 2
+text = "HELP"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 37.0
+offset_bottom = 41.0
+grow_horizontal = 2
+
+[node name="OpenFile" type="FileDialog" parent="."]
+title = "Open a File"
+initial_position = 1
+size = Vector2i(600, 400)
+ok_button_text = "Open"
+dialog_hide_on_ok = true
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.txt")
+
+[node name="SaveFile" type="FileDialog" parent="."]
+initial_position = 1
+size = Vector2i(600, 400)
+ok_button_text = "Save"
+dialog_hide_on_ok = true
+access = 2
+filters = PackedStringArray("*.txt")
+
+[node name="SaveScreenshot" type="FileDialog" parent="."]
+title = "Save Screenshot"
+initial_position = 1
+size = Vector2i(600, 400)
+ok_button_text = "Save"
+dialog_hide_on_ok = true
+access = 2
+filters = PackedStringArray("*.png")
+
+[node name="OpenFont" type="FileDialog" parent="."]
+title = "Open a File"
+initial_position = 1
+size = Vector2i(600, 400)
+ok_button_text = "Open"
+dialog_hide_on_ok = true
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.ttf")
+
+[node name="About" type="AcceptDialog" parent="."]
+title = "About"
+initial_position = 1
+size = Vector2i(188, 100)
+dialog_text = "This is the Code Editor of PyGram."
+
+[node name="StatusBar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="StatusBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Line - 1, Column - 1"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="StatusBar"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -43.0
+offset_bottom = -39.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="FontSettings" type="ConfirmationDialog" parent="."]
+title = "Font Settings"
+initial_position = 1
+size = Vector2i(324, 200)
+
+[node name="Options" type="VBoxContainer" parent="FontSettings"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 316.0
+offset_bottom = 151.0
+theme_override_constants/separation = 15
+
+[node name="Font" type="HBoxContainer" parent="FontSettings/Options"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="FontLabel" type="Label" parent="FontSettings/Options/Font"]
+layout_mode = 2
+text = "Font:"
+
+[node name="Space" type="Label" parent="FontSettings/Options/Font"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="FontPath" type="LineEdit" parent="FontSettings/Options/Font"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+editable = false
+
+[node name="OpenFontButton" type="Button" parent="FontSettings/Options/Font/FontPath"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="FontSize" type="HBoxContainer" parent="FontSettings/Options"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="FontSizeLabel" type="Label" parent="FontSettings/Options/FontSize"]
+layout_mode = 2
+text = "Font Size:"
+
+[node name="FontSizeInput" type="SpinBox" parent="FontSettings/Options/FontSize"]
+custom_minimum_size = Vector2(186, 0)
+layout_mode = 2
+max_value = 72.0
+
+[node name="FontColor" type="HBoxContainer" parent="FontSettings/Options"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="FontColorLabel" type="Label" parent="FontSettings/Options/FontColor"]
+layout_mode = 2
+text = "Font Color:"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="FontSettings/Options/FontColor"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+color = Color(1, 1, 1, 1)
+
+[node name="SaveChangesWarning" type="Window" parent="."]
+transparent_bg = true
+title = "Save Changes"
+initial_position = 2
+size = Vector2i(400, 165)
+visible = false
+
+[node name="Body" type="Label" parent="SaveChangesWarning"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 20.0
+offset_right = -10.0
+offset_bottom = 72.0
+grow_horizontal = 2
+text = "You have unsaved changes. Do you want to save them before exiting?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Buttons" type="HBoxContainer" parent="SaveChangesWarning"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -170.0
+offset_top = -60.0
+offset_right = 170.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="SaveButton" type="Button" parent="SaveChangesWarning/Buttons"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "Save"
+
+[node name="UnsaveButton" type="Button" parent="SaveChangesWarning/Buttons"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "Don't Save"
+
+[node name="CancelButton" type="Button" parent="SaveChangesWarning/Buttons"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "Cancel"
+
+[connection signal="text_changed" from="Editor" to="." method="_on_editor_text_changed"]
+[connection signal="file_selected" from="OpenFile" to="." method="_on_open_file_selected"]
+[connection signal="file_selected" from="SaveFile" to="." method="_on_save_file_selected"]
+[connection signal="file_selected" from="SaveScreenshot" to="." method="_on_save_screenshot_file_selected"]
+[connection signal="file_selected" from="OpenFont" to="." method="_on_open_font_file_selected"]
+[connection signal="canceled" from="FontSettings" to="." method="_on_font_settings_canceled"]
+[connection signal="confirmed" from="FontSettings" to="." method="_on_font_settings_confirmed"]
+[connection signal="pressed" from="FontSettings/Options/Font/FontPath/OpenFontButton" to="." method="_on_open_font_button_pressed"]
+[connection signal="value_changed" from="FontSettings/Options/FontSize/FontSizeInput" to="." method="_on_font_size_input_value_changed"]
+[connection signal="color_changed" from="FontSettings/Options/FontColor/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
+[connection signal="pressed" from="SaveChangesWarning/Buttons/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="SaveChangesWarning/Buttons/UnsaveButton" to="." method="_on_unsave_button_pressed"]
+[connection signal="pressed" from="SaveChangesWarning/Buttons/CancelButton" to="." method="_on_cancel_button_pressed"]

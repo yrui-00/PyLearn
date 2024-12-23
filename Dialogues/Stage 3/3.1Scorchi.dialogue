@@ -1,0 +1,130 @@
+~ start
+Scorchi: Welcome to the world of Python inheritance! Ready to learn about parent and child classes?
+- Yes, let's begin!
+	=> inheritance_intro
+- What is inheritance?
+	=> inheritance_explanation
+
+~ inheritance_explanation
+Scorchi: Think of inheritance like family traits!
+Scorchi: Just like you might inherit traits from your parents...
+Scorchi: A child class inherits properties and methods from its parent class.
+Scorchi: Remember to open your code editor to try these examples!
+=> inheritance_intro
+
+~ inheritance_intro
+Scorchi: Let's start with a parent class. Open your code editor and follow along:
+		[[class Person:]]
+		[[>>>.def __init__(self, fname, lname):]]
+		[[>>>>>>self.firstname = fname]]
+		[[>>>>>>self.lastname = lname]]
+		[[>>>def printname(self):]]
+		[[>>>>>>print(self.firstname, self.lastname)]]
+- How do we use this class?
+	=> use_parent
+- Can we create a child class?
+	=> create_child
+
+~ use_parent
+Scorchi: Let's create a Person object in your code editor:
+		[[x = Person("John", "Doe")]]
+		[[x.printname()  # Prints "John Doe"]]
+- Now show me inheritance!
+	=> create_child
+- What else can we do?
+	=> add_functionality
+
+~ add_functionality
+Scorchi: Let's add more features to our Person class! Open your code editor:
+		[[class Person:]]
+		[[>>>def __init__(self, fname, lname, age):]]
+		[[>>>>>>self.firstname = fname]]
+		[[>>>>>>self.lastname = lname]]
+		[[>>>>>>self.age = age]]
+		To be continued...
+Scorchi: [[>>>def printname(self):]]
+		[[>>>>>>print(self.firstname, self.lastname)]]
+		[[>>>def birthday(self):]]
+		[[>>>>>>self.age += 1]]
+		[[>>>>>>print(f"Happy {self.age}th birthday, {self.firstname}!")]]
+- How do we make a child class?
+	=> create_child
+- Can we add even more?
+	=> add_init
+
+~ create_child
+Scorchi: Here's how we create a Student class that inherits from Person:
+		[[class Student(Person):]]
+		[[>>>pass  # Inherits everything from Person]]
+Scorchi: Try this in your code editor:
+		[[student = Student("Mike", "Olsen")]]
+		[[student.printname()  # Works just like Person!]]
+- What about adding features?
+	=> add_init
+- How do we use super()?
+	=> use_super
+
+~ add_init
+Scorchi: We can add __init__ to our Student class:
+		[[class Student(Person):]]
+		[[>>>def __init__(self, fname, lname, year):]]
+		[[>>>>>>Person.__init__(self, fname, lname)]]
+		[[>>>>>>self.graduationyear = year]]
+Scorchi: Open your code editor and try:
+		[[student = Student("Mike", "Olsen", 2024)]]
+- What's super()?
+	=> use_super
+- Can we add methods?
+	=> add_methods
+
+~ use_super
+Scorchi: super() makes inheritance easier! Look at this in your editor:
+		[[class Student(Person):]]
+		[[>>>def __init__(self, fname, lname, year):]]
+		[[>>>>>>super().__init__(fname, lname)]]
+		[[>>>>>>self.graduationyear = year]]
+Scorchi: super() automatically handles the parent class stuff!
+- Can we add methods?
+	=> add_methods
+- Show me a complete example!
+	=> final_example
+
+~ add_methods
+Scorchi: Let's add a welcome method to Student:
+		[[class Student(Person):]]
+		[[<<<def __init__(self, fname, lname, year):]]
+		[[>>>>>>super().__init__(fname, lname)]]
+		[[>>>>>>self.graduationyear = year]]
+		[[>>>def welcome(self):]]
+		[[>>>>>>print(f"Welcome {self.firstname} to class {self.graduationyear}")]]
+Scorchi: Try it in your code editor!
+- Show me everything together!
+	=> final_example
+
+~ final_example
+Scorchi: Here's a complete example - test this in your editor:
+		[[class Person:]]
+		[[>>>def __init__(self, fname, lname):]]
+		[[>>>>>>self.firstname = fname]]
+		[[>>>>>>self.lastname = lname]]
+		[[>>>def printname(self):]]
+		[[>>>>>>print(self.firstname, self.lastname)]]
+		To be continued...
+Scorchi: [[class Student(Person):]]
+		[[>>>def __init__(self, fname, lname, year):]]
+		[[>>>>>>super().__init__(fname, lname)]]
+		[[>>>>>>self.graduationyear = year]]
+		[[>>>def welcome(self):]]
+		[[>>>>>>print(f"Welcome {self.firstname} to class {self.graduationyear}")]]
+Scorchi: [[# Create and use your student]]
+		[[student = Student("Mike", "Olsen", 2024)]]
+		[[student.printname()]]
+		[[student.welcome()]]
+Scorchi: That's inheritance in action! Ready to test your knowledge?
+Scorchi: Find Dunehopper further south. he will give you a quiz about this topic.
+- Yes, I'm ready!
+	set scorchi = "true"
+	=> END
+- I need more practice
+	Scorchi: No problem! Review the examples in your code editor and come back when you're ready.
+	=> final_example

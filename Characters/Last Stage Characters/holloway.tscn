@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlwcim5ukvi76"]
+
+[ext_resource type="Texture2D" uid="uid://k72lxpljqj1o" path="res://Art/Last Stage Characters/Holloway/SpriteSheet.png" id="1_4yihi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eav6g"]
+
+[node name="Holloway" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eav6g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4yihi")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -14.0
+offset_top = -20.0
+offset_right = 58.0
+offset_bottom = 3.0
+scale = Vector2(0.4, 0.4)
+text = "Holloway"

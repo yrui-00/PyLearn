@@ -1,0 +1,177 @@
+~ start
+if fern == "false":
+	Sapling Sam: Talk to Fern first before learning about advanced if statements.
+	=> END
+Sapling Sam: Welcome! Let's learn about elif, else, and advanced if statement concepts.
+=> intro
+
+~ intro
+Sapling Sam: Would you like to learn about advanced if statements?
+- Yes, let's begin
+	Sapling Sam: Great! Let's start with elif statements.
+	=> elif_lesson
+- No, maybe later
+	Sapling Sam: Come back when you're ready to learn!
+	=> END
+
+~ elif_lesson
+Sapling Sam: The elif keyword means "else if" in Python.
+Sapling Sam: It lets us check multiple conditions one after another.
+Sapling Sam: Here's an example:
+		a = 33
+		b = 33
+		[[if b > a:]]
+		>>>print("b is greater")
+		[[elif a == b:]]
+		>>>print("they're equal")
+- I understand, show me more
+	=> else_lesson
+- Can you explain again
+	=> elif_example
+
+~ elif_example
+Sapling Sam: Let's break it down:
+		1. First, it checks if b > a
+		2. If that's not true, it checks if a == b
+		3. Each condition is checked in order
+- Got it, what's next
+	=> else_lesson
+
+~ else_lesson
+Sapling Sam: Now let's learn about else statements.
+Sapling Sam: else catches anything not caught by if or elif.
+Sapling Sam: Example:
+		[[ if score > 90:]]
+		>>>print("A grade")
+		[[elif score > 80:]]
+		>>>print("B grade")
+		[[else:]]
+		>>>print("Study more")
+- Tell me about shortcuts
+	=> shorthand_lesson
+- More about else
+	=> else_example
+
+~ else_example
+Sapling Sam: Let's see how else works in different ways.
+Sapling Sam: Example 1 - with elif:
+		temperature = 25
+		[[if temperature > 30:]]
+		>>>print("Hot")
+		[[elif temperature > 20:]]
+		>>>print("Warm")
+		[[else:]]
+		>>>print("Cool")
+
+Sapling Sam: Example 2 - without elif:
+		age = 20
+		[[if age >= 18:]]
+		>>>print("Adult")
+		[[else:]]
+		>>>print("Minor")
+
+Sapling Sam: Want to try understanding an example?
+- Yes, let's practice
+	=> else_practice
+- No, show me shortcuts
+	=> shorthand_lesson
+
+~ else_practice
+Sapling Sam: What will this code print?
+		number = 0
+		[[if number > 0:]]
+		>>>print("Positive")
+		[[elif number < 0:]]
+		>>>print("Negative")
+		[[else:]]
+		>>>print("Zero")
+- Positive
+	Sapling Sam: Not quite! Since number is 0, it will print "Zero"
+	=> shorthand_lesson
+- Negative
+	Sapling Sam: Not quite! Since number is 0, it will print "Zero"
+	=> shorthand_lesson
+- Zero
+	Sapling Sam: Correct! Neither > 0 nor < 0 is true, so else executes
+	=> shorthand_lesson
+
+
+~ shorthand_lesson
+Sapling Sam: Python has some cool shortcuts for if statements!
+Sapling Sam: You can write simple if statements in one line:
+		print("Pass") if score >= 60 else print("Fail")
+Sapling Sam: Want to try understanding one?
+- Yes, show me
+	=> practice_shorthand
+- Tell me about logical operators
+	=> logical_operators
+
+~ practice_shorthand
+Sapling Sam: What will this print?
+Sapling Sam: x = 5
+		print("Yes") if x > 3 else print("No")
+- Yes
+	Sapling Sam: Correct! Since 5 > 3, it prints "Yes"
+	=> logical_operators
+- No
+	Sapling Sam: Not quite! Since 5 > 3, it prints "Yes"
+	=> logical_operators
+
+~ logical_operators
+Sapling Sam: Python has three logical operators:
+		[[- and: both conditions must be True]]
+		[[- or: at least one condition must be True]]
+		[[- not: reverses the condition]]
+Sapling Sam: Example:
+		[[if age > 18 and score > 60:]]
+		>>>print("Qualified")
+- Practice and/or
+	=> practice_logical
+- Learn about nested if
+	=> nested_if
+
+~ practice_logical
+Sapling Sam: What will this print?
+		x = 5
+		y = 10
+		[[if x < 10 and y > 5:]]
+		>>>print("Both true!")
+- Nothing
+	Sapling Sam: Incorrect! Both conditions are true!
+	=> nested_if
+- Both true!
+	Sapling Sam: Correct! Both x < 10 and y > 5 are true
+	=> nested_if
+
+~ nested_if
+Sapling Sam: You can put if statements inside other if statements!
+Sapling Sam: This is called nesting. Example:
+		[[if age > 18:]]
+		>>>if score > 90:
+		>>>>>>print("Top adult score!")
+- Try a final test
+	=> final_test
+
+~ final_test
+Sapling Sam: Let's test your understanding!
+Sapling Sam: What's wrong with this code?
+		[[if score = 90:]]
+		>>>print("Good score")
+- Missing parentheses
+	Sapling Sam: Not quite! It should use == for comparison, not =
+	Sapling Sam: Keep practicing and try again!
+	Sapling Sam: Now head north to find Cedar and take a quiz about if statements.
+	set sam = "true"
+	=> END
+- Using = instead of ==
+	Sapling Sam: Excellent! = is for assignment, == is for comparison
+	Sapling Sam: You're ready for Cedar's quiz!
+	Sapling Sam: Now head north to find Cder and take a quiz about if statements.
+	set sam = "true"
+	=> END
+- Wrong indentation
+	Sapling Sam: Not quite! It should use == for comparison, not =
+	Sapling Sam: Keep practicing and try again!
+	Sapling Sam: Now head north to find Cedar and take a quiz about if statements.
+	set sam = "true"
+	=> END

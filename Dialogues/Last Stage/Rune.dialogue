@@ -1,0 +1,272 @@
+~ start
+Rune: Hey there! Want to discover how automation is revolutionizing the world?
+- Yes, tell me more!
+	Rune: Automation Engineers are like digital wizards, making manual tasks happen automatically!
+	=> automation_overview
+- What's automation?
+	Rune: Let me show you how automation makes everything faster and more efficient!
+	=> automation_overview
+
+~ automation_overview
+Rune: Automation Engineers work in many exciting areas:
+Rune: • Software Testing - Making sure programs work perfectly
+Rune: • Business Processes - Streamlining everyday tasks
+Rune: • Manufacturing - Optimizing production lines
+Rune: • Quality Control - Ensuring consistent results
+- How do they work?
+	=> analysis_process
+- What tools do they use?
+	=> automation_tools
+- What problems do they solve?
+	=> problem_solving
+
+~ problem_solving
+Rune: Automation Engineers tackle various challenges:
+Rune: Business Challenges:
+Rune: • Slow manual processes
+Rune: • High error rates
+Rune: • Resource bottlenecks
+Rune: • Repetitive tasks
+Rune: Technical Challenges:
+Rune: • System integration
+Rune: • Performance issues
+Rune: • Legacy systems
+- Show me solutions
+	=> solutions
+- What tools help?
+	=> automation_tools
+- Tell me about careers
+	=> career_paths
+
+~ solutions
+Rune: Here's how Automation Engineers solve problems:
+Rune: Process Solutions:
+Rune: • Automated workflows
+Rune: • Scheduled tasks
+Rune: • Self-healing systems
+Rune: Testing Solutions:
+Rune: • Automated test suites
+Rune: • Continuous integration
+Rune: • Performance testing
+Rune: Business Solutions:
+Rune: • RPA implementations
+Rune: • Document processing
+Rune: • Data validation
+- How do they implement?
+	=> implementation
+- What tools help?
+	=> automation_tools
+- Show me monitoring
+	=> monitoring
+
+~ analysis_process
+Rune: First, Automation Engineers analyze processes:
+Rune: They look for:
+Rune: • Repetitive tasks that waste time
+Rune: • Error-prone manual processes
+Rune: • Bottlenecks slowing things down
+Rune: • Opportunities for improvement
+- Then what happens?
+	=> design_phase
+- What tools help?
+	=> automation_tools
+- Tell me about solutions
+	=> solutions
+
+~ design_phase
+Rune: After analysis, they design automated solutions:
+Rune: Design Steps:
+Rune: • Map out the process flow
+Rune: • Choose the right tools
+Rune: • Plan the implementation
+Rune: • Consider error handling
+Rune: Just like building a smart machine!
+- How do they implement?
+	=> implementation
+- What tools do they use?
+	=> automation_tools
+- Show me testing
+	=> testing_phase
+
+~ implementation
+Rune: Implementation brings automation to life:
+Rune: They create:
+Rune: • Scripts for repetitive tasks
+Rune: • Automated workflows
+Rune: • Testing frameworks
+Rune: • Monitoring systems
+Rune: All working together seamlessly!
+- How do they test it?
+	=> testing_phase
+- What tools help?
+	=> automation_tools
+- Tell me about monitoring
+	=> monitoring
+
+~ testing_phase
+Rune: Testing ensures everything works perfectly:
+Rune: They check:
+Rune: • System reliability
+Rune: • Error handling
+Rune: • Performance speed
+Rune: • Integration points
+Rune: Like a thorough quality check!
+- What about monitoring?
+	=> monitoring
+- Show me the tools
+	=> automation_tools
+- How do they fix issues?
+	=> troubleshooting
+
+~ job_roles
+Rune: Automation Engineers work in various roles:
+Rune: Test Automation:
+Rune: • QA Automation Engineer
+Rune: • Test Framework Developer
+Rune: • Performance Test Engineer
+Rune: Process Automation:
+Rune: • RPA Developer
+Rune: • Business Process Engineer
+Rune: • Workflow Automation Specialist
+Rune: Infrastructure Automation:
+Rune: • DevOps Engineer
+Rune: • Cloud Automation Engineer
+Rune: • Infrastructure Automation Specialist
+- What skills are needed?
+	=> required_skills
+- Show me tools
+	=> automation_tools
+- How do I start?
+	=> career_paths
+
+~ troubleshooting
+Rune: Automation Engineers are expert problem-solvers:
+Rune: Common Issues:
+Rune: • Failed automations
+Rune: • Performance bottlenecks
+Rune: • Integration problems
+Rune: Solutions:
+Rune: • Log analysis
+Rune: • Debugging scripts
+Rune: • Performance tuning
+Rune: • Error handling
+- Show me monitoring
+	=> monitoring
+- What tools help?
+	=> automation_tools
+- Tell me about careers
+	=> career_paths
+
+~ monitoring
+Rune: Monitoring keeps automation running smoothly:
+Rune: They track:
+Rune: • System performance
+Rune: • Error rates
+Rune: • Process efficiency
+Rune: • Resource usage
+Rune: Always watching for improvements!
+- What tools help?
+	=> monitoring_tools
+- How do they fix issues?
+	=> troubleshooting
+- Show me career paths
+	=> career_paths
+
+~ automation_tools
+Rune: Automation Engineers use powerful tools:
+Rune: Programming:
+Rune: • Python - Scripting and automation
+Rune: • Java - Enterprise automation
+Rune: • PowerShell - Windows automation
+Rune: Testing Tools:
+Rune: • Selenium - Web testing
+Rune: • Robot Framework - Test automation
+Rune: • Jenkins - CI/CD automation
+- Tell me about RPA
+	=> rpa_tools
+- Show me monitoring tools
+	=> monitoring_tools
+- What skills are needed?
+	=> required_skills
+
+~ rpa_tools
+Rune: Robotic Process Automation (RPA) tools include:
+Rune: Enterprise Tools:
+Rune: • UiPath - Business automation
+Rune: • Blue Prism - Process automation
+Rune: • Automation Anywhere - Digital workforce
+Rune: Business Tools:
+Rune: • Power Automate - Microsoft automation
+Rune: • Zapier - Web automation
+- Show me monitoring
+	=> monitoring_tools
+- What skills help?
+	=> required_skills
+- Tell me about careers
+	=> career_paths
+
+~ monitoring_tools
+Rune: Monitoring tools keep everything running:
+Rune: System Monitoring:
+Rune: • Nagios - Infrastructure monitoring
+Rune: • Zabbix - Enterprise monitoring
+Rune: • Grafana - Performance dashboards
+Rune: Process Monitoring:
+Rune: • New Relic - Application monitoring
+Rune: • Datadog - Cloud monitoring
+- Show me other tools
+	=> automation_tools
+- What skills help?
+	=> required_skills
+- Tell me about careers
+	=> career_paths
+
+~ required_skills
+Rune: Automation Engineers need various skills:
+Rune: Technical Skills:
+Rune: • Programming expertise
+Rune: • System design knowledge
+Rune: • Testing methodologies
+Rune: • Tool proficiency
+Rune: Problem-Solving Skills:
+Rune: • Process analysis
+Rune: • Critical thinking
+Rune: • Troubleshooting
+- How do I start?
+	=> career_paths
+- Show me tools
+	=> automation_tools
+- Tell me about jobs
+	=> job_roles
+
+~ career_paths
+Rune: The path to Automation Engineering:
+Rune: Starting Points:
+Rune: • Software Developer
+Rune: • QA Engineer
+Rune: • System Administrator
+Rune: Growth Areas:
+Rune: • DevOps Engineer
+Rune: • RPA Developer
+Rune: • Automation Architect
+- What skills do I need?
+	=> required_skills
+- What tools to learn?
+	=> automation_tools
+- I'm ready!
+	=> ending
+
+~ ending
+Rune: You're about to enter an exciting field!
+Rune: Remember:
+Rune: • Start with basic automation
+Rune: • Learn key tools
+Rune: • Practice regularly
+Rune: • Keep exploring new technologies
+Rune: Ready to automate the future?
+- Yes, I'm excited!
+	Rune: Perfect! Your journey to becoming an automation wizard begins now!
+	set rune = "true"
+	=> END
+- Show me the overview again
+	=> automation_overview

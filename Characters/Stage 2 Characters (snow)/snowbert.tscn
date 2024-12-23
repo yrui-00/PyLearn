@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhkd6enjrmvrn"]
+
+[ext_resource type="Texture2D" uid="uid://cfocshjv7mjx0" path="res://Art/Stage 2 Characters (snow)/Snowbert/SpriteSheet.png" id="1_na2ln"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4yv3b"]
+radius = 9.05539
+
+[node name="Snowbert" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_4yv3b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_na2ln")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -15.0
+offset_top = -16.0
+offset_right = 60.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Snowbert"

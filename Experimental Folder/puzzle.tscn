@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bessetuajucae"]
+
+[ext_resource type="Texture2D" uid="uid://0k81yex35n8f" path="res://Experimental Folder/lastpart.jpg" id="1_7kknk"]
+[ext_resource type="PackedScene" uid="uid://dlttm87bbcwux" path="res://Experimental Folder/object.tscn" id="1_yu7kf"]
+[ext_resource type="PackedScene" uid="uid://mllr3orjkne5" path="res://Experimental Folder/platform.tscn" id="2_guyyv"]
+
+[node name="puzzle1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(636, 363)
+scale = Vector2(2.11667, 1.92533)
+texture = ExtResource("1_7kknk")
+
+[node name="Node2D" parent="." instance=ExtResource("1_yu7kf")]
+position = Vector2(600, 530)
+
+[node name="Node2D2" parent="." instance=ExtResource("1_yu7kf")]
+position = Vector2(888, 533)
+
+[node name="Node2D3" parent="." instance=ExtResource("1_yu7kf")]
+position = Vector2(269, 531)
+
+[node name="platform" parent="." instance=ExtResource("2_guyyv")]
+position = Vector2(276, 274)
+
+[node name="platform2" parent="." instance=ExtResource("2_guyyv")]
+position = Vector2(907, 288)
+
+[node name="platform3" parent="." instance=ExtResource("2_guyyv")]
+position = Vector2(603, 280)

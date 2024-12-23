@@ -1,0 +1,56 @@
+~ start
+Willow: Congratulations! You've completed an incredible journey through the world of Python programming!
+- Thank you!
+	Willow: You've learned so much along the way. Let's look back at your adventure!
+	=> journey_recap
+- It's been quite a journey
+	Willow: Indeed it has! Want to review everything you've accomplished?
+	=> journey_recap
+
+~ journey_recap
+Willow: Think about how far you've come:
+Willow: • You understood Python fundamentals
+Willow: • You understood arrays and functions
+Willow: • You explored inheritance and classes
+Willow: • You discovered iterators and polymorphism
+- Tell me more
+	=> career_recap
+- What's next?
+	=> future_path
+
+~ career_recap
+Willow: You've also learned about exciting career paths:
+Willow: • Web Development with Python
+Willow: • Data Analysis and Science
+Willow: • Machine Learning
+Willow: • Software Architecture
+Willow: • Automation Engineering
+- What comes next?
+	=> future_path
+- It's been amazing
+	=> ending
+
+~ future_path
+Willow: Your journey doesn't end here:
+Willow: • Keep practicing your skills
+Willow: • Build your own projects
+Willow: • Join the Python community
+Willow: • Never stop learning
+- I'm ready!
+	=> ending
+- Thank you for everything
+	=> ending
+
+~ ending
+Willow: You're now ready to return home and begin your coding adventure!
+Willow: Remember:
+Willow: • Every expert was once a beginner
+Willow: • Learning is a lifelong journey
+Willow: • The Python community welcomes you
+Willow: Safe travels, future programmer!
+- Goodbye!
+	set willow = "true"
+	=> END
+- Thanks for everything!
+	set willow = "true"
+	=> END

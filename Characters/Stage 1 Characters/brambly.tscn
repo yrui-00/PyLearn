@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bugl5yhkvahop"]
+
+[ext_resource type="Texture2D" uid="uid://djxetu1mm3pr0" path="res://Art/Stage 1 Characters/Dante/SpriteSheet.png" id="1_tc01y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6ynbu"]
+radius = 8.0
+
+[node name="Brambly" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_6ynbu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tc01y")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -14.0
+offset_top = -16.0
+offset_right = 52.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+text = "Brambly
+"

@@ -1,0 +1,191 @@
+~ start
+Mystra: Hey there! Ever wondered who designs the blueprints for complex software systems?
+- Yes, tell me more!
+	Mystra: That's what Software Architects do! They're like the master planners of the software world.
+	=> role_overview
+- What's a Software Architect?
+	Mystra: Let me show you how these technical visionaries shape the future of software!
+	=> role_overview
+
+~ role_overview
+Mystra: A Software Architect is like a city planner, but for software systems:
+Mystra: • Designs the big picture
+Mystra: • Makes critical technical decisions
+Mystra: • Ensures everything works together
+Mystra: • Plans for future growth
+- What do they design?
+	=> design_phase
+- How do they lead?
+	=> leadership_role
+- What tools do they use?
+	=> architect_tools
+
+~ design_phase
+Mystra: Think of software architecture like building a city:
+Mystra: They plan:
+Mystra: • How different parts connect
+Mystra: • Which technologies to use
+Mystra: • How data flows through the system
+Mystra: For example, they might decide whether an app needs microservices or a simpler structure.
+- Tell me about leadership
+	=> leadership_role
+- What about requirements?
+	=> requirements
+- Show me the tools
+	=> architect_tools
+
+~ leadership_role
+Mystra: Software Architects are technical leaders who:
+Mystra: • Guide development teams
+Mystra: • Review critical code
+Mystra: • Solve complex problems
+Mystra: • Mentor other developers
+Mystra: • Set coding standards
+- How do they work with teams?
+	=> team_collaboration
+- What about planning?
+	=> design_phase
+- Tell me about tools
+	=> architect_tools
+
+~ team_collaboration
+Mystra: Architects work with many different teams:
+Mystra: Development Teams:
+Mystra: • Provide technical guidance
+Mystra: • Review architecture decisions
+Mystra: • Resolve technical conflicts
+Mystra: Business Teams:
+Mystra: • Understand requirements
+Mystra: • Align solutions with goals
+Mystra: • Present technical options
+- Tell me about requirements
+	=> requirements
+- What tools do they use?
+	=> architect_tools
+- How do they plan?
+	=> design_phase
+
+~ requirements
+Mystra: Architects translate business needs into technical solutions:
+Mystra: They analyze:
+Mystra: • Performance requirements
+Mystra: • Scalability needs
+Mystra: • Security concerns
+Mystra: • Budget constraints
+Mystra: Then create designs that meet these needs.
+- How do they implement?
+	=> implementation
+- What tools help?
+	=> architect_tools
+- Tell me about risks
+	=> risk_management
+
+~ implementation
+Mystra: During implementation, architects:
+Mystra: • Guide the development process
+Mystra: • Ensure design principles are followed
+Mystra: • Optimize system performance
+Mystra: • Solve technical challenges
+Mystra: • Adapt plans as needed
+- What about risks?
+	=> risk_management
+- Show me the tools
+	=> architect_tools
+- How do they lead?
+	=> leadership_role
+
+~ risk_management
+Mystra: Architects are master risk managers:
+Mystra: They prevent:
+Mystra: • Performance bottlenecks
+Mystra: • Security vulnerabilities
+Mystra: • Scalability issues
+Mystra: • Integration problems
+Mystra: • Technical debt
+- What tools help?
+	=> architect_tools
+- How do they implement?
+	=> implementation
+- Tell me about planning
+	=> design_phase
+
+~ architect_tools
+Mystra: Software Architects use powerful tools:
+Mystra: Design Tools:
+Mystra: • Lucidchart - System diagrams
+Mystra: • Draw.io - Architecture planning
+Mystra: • Enterprise Architect - Detailed modeling
+Mystra: Cloud Platforms:
+Mystra: • AWS - Amazon's cloud
+Mystra: • Azure - Microsoft's platform
+Mystra: • Google Cloud - Google's services
+Mystra: Development Tools:
+Mystra: • Git - Version control
+Mystra: • Jenkins - CI/CD pipelines
+Mystra: • Docker - Containerization
+- How do they use these?
+	=> tool_usage
+- Tell me about skills
+	=> required_skills
+- How do I become one?
+	=> career_path
+
+~ tool_usage
+Mystra: Architects use these tools to:
+Mystra: • Create system blueprints
+Mystra: • Monitor performance
+Mystra: • Ensure security
+Mystra: • Deploy applications
+Mystra: • Scale systems
+- What skills are needed?
+	=> required_skills
+- Show me the career path
+	=> career_path
+- Tell me about risks
+	=> risk_management
+
+~ required_skills
+Mystra: Software Architects need various skills:
+Mystra: Technical Skills:
+Mystra: • Programming expertise
+Mystra: • System design knowledge
+Mystra: • Security understanding
+Mystra: • Cloud architecture
+Mystra: Soft Skills:
+Mystra: • Leadership
+Mystra: • Communication
+Mystra: • Problem-solving
+- How do I become one?
+	=> career_path
+- What tools to learn?
+	=> architect_tools
+- Show me responsibilities
+	=> role_overview
+
+~ career_path
+Mystra: The path to becoming a Software Architect:
+Mystra: 1. Start as a developer
+Mystra: 2. Master multiple technologies
+Mystra: 3. Lead development teams
+Mystra: 4. Design system architectures
+Mystra: 5. Grow into architecture role
+- What skills do I need?
+	=> required_skills
+- What tools to learn?
+	=> architect_tools
+- I'm ready!
+	=> ending
+
+~ ending
+Mystra: You now know what makes Software Architects special!
+Mystra: Remember:
+Mystra: • They're the visionaries of software
+Mystra: • They bridge business and technology
+Mystra: • They shape the future of systems
+Mystra: Ready to become a Software Architect?
+- Yes, I'm excited!
+	Mystra: Perfect! Your journey to becoming a master architect begins now!
+	set mystra = "true"
+	=> END
+- Show me the overview again
+	=> role_overview

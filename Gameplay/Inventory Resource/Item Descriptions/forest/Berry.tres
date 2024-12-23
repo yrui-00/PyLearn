@@ -1,0 +1,143 @@
+[gd_resource type="Resource" script_class="Description" load_steps=3 format=3 uid="uid://bgxbotfa6y6yb"]
+
+[ext_resource type="Texture2D" uid="uid://ds37qp0erbr1h" path="res://Gameplay/Inventory Resource/Item Descriptions/ScrollEmpty.png" id="1_3fkc2"]
+[ext_resource type="Script" path="res://Gameplay/Inventory Resource/Item Descriptions/description.gd" id="2_exktb"]
+
+[resource]
+script = ExtResource("2_exktb")
+title = "Berry's Lesson"
+icon = ExtResource("1_3fkc2")
+description = "# Python Control Flow: If Statements and Conditions
+
+## Introduction to Conditional Statements
+
+Conditional statements are fundamental building blocks in Python programming, allowing programs to make decisions and execute different code based on specific conditions. This chapter explores Python's if statements and the various comparison operators used to create conditions.
+
+## Comparison Operators
+
+Python provides several operators for comparing values:
+
+
+| == | Equal to | x == y |
+
+| != | Not equal to | x != y |
+
+| < | Less than | x < y |
+
+| <= | Less than or equal to | x <= y |
+
+| > | Greater than | x > y |
+
+| >= | Greater than or equal to | x >= y |
+
+### Understanding Comparison Operations
+Each comparison operation returns a Boolean value (True or False):
+```python
+x = 5
+y = 10
+print(x < y)    # Output: True
+print(x == y)   # Output: False
+print(x >= y)   # Output: False
+```
+
+## If Statement Structure
+
+### Basic Syntax
+An if statement in Python consists of four essential components:
+1. The `if` keyword
+2. A condition that evaluates to True or False
+3. A colon (:) to mark the beginning of the conditional block
+4. Indented code to execute when the condition is True
+
+Basic structure:
+```python
+if condition:
+    # Indented code block
+    # Executes when condition is True
+```
+
+### Example Implementation
+```python
+x = 5
+y = 10
+if x < y:
+    print(\"x is less than y\")
+```
+
+## Working with If Statements
+
+### Multiple Lines in Conditional Blocks
+If statements can contain multiple lines of code in their conditional blocks:
+```python
+age = 18
+if age >= 18:
+    print(\"You are an adult\")
+    print(\"You can vote\")
+    print(\"You can drive\")
+```
+
+### Common Mistakes to Avoid
+1. Missing Colon
+```python
+# Incorrect
+if x > 5
+    print(\"x is greater than 5\")
+
+# Correct
+if x > 5:
+    print(\"x is greater than 5\")
+```
+
+2. Improper Indentation
+```python
+# Incorrect
+if age >= 18:
+print(\"You are an adult\")  # IndentationError
+
+# Correct
+if age >= 18:
+    print(\"You are an adult\")
+```
+
+## Practical Examples
+
+### Temperature Check
+```python
+temperature = 25
+if temperature > 20:
+    print(\"It's warm\")
+```
+
+### Age Verification
+```python
+age = 16
+if age >= 18:
+    print(\"Access granted\")
+    print(\"Welcome to the site\")
+```
+
+## Best Practices
+
+When working with if statements:
+1. Always use clear, meaningful conditions
+2. Maintain consistent indentation (typically 4 spaces)
+3. Ensure proper syntax with colons
+4. Use descriptive variable names
+5. Consider readability when writing complex conditions
+
+### Code Style
+```python
+# Good practice
+user_age = 25
+if user_age >= 21:
+    print(\"Access granted\")
+
+# Avoid
+a = 25
+if a>=21:
+    print(\"Access granted\")
+```
+
+## Conclusion
+
+Understanding if statements and conditions is crucial for writing effective Python programs. These constructs form the basis for more complex control flow structures and are essential for creating dynamic, responsive programs. Mastering these concepts provides a strong foundation for advanced programming techniques."

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn1vynhromd5y"]
+
+[ext_resource type="Texture2D" uid="uid://cdkrhbxhnplho" path="res://Art/Tutorial Characters/Kristy/SpriteSheet.png" id="1_od8rw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h8j8u"]
+radius = 9.05539
+
+[node name="Mentora" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_h8j8u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_od8rw")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -12.0
+offset_top = -18.0
+offset_right = 55.0
+offset_bottom = 5.0
+scale = Vector2(0.4, 0.4)
+text = "Mentora"

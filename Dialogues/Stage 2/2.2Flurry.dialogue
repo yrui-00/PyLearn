@@ -1,0 +1,104 @@
+~ start
+Flurry: Hey! Welcome to Stage 1 of PyGram! Ready to learn about arrays?
+- Yes, let's begin!
+	=> array_intro
+- What are arrays?
+	=> array_explanation
+
+~ array_explanation
+Flurry: Arrays are special containers that can hold multiple values!
+Flurry: Instead of creating separate variables for everything...
+Flurry: You can store them all in one place!
+=> array_intro
+
+~ array_intro
+Flurry: Remember to use your code editor to try these examples!
+Flurry: Let me show you how arrays work with cars:
+Flurry: Instead of writing:
+		car1 = "Ford"
+		car2 = "Volvo"
+		car3 = "BMW"
+Flurry: You can do this:
+		cars = ["Ford", "Volvo", "BMW"]
+- How do we access the cars?
+	=> array_access
+- What else can we do?
+	=> array_operations
+
+~ array_access
+Flurry: You can access any car using its position number!
+		Remember, we start counting at 0:
+		first_car = cars[0]  # Gets "Ford"
+		second_car = cars[1]  # Gets "Volvo"
+Flurry: Try it in your code editor!
+- How can we change a car?
+	=> array_modify
+- What about adding cars?
+	=> array_add
+
+~ array_modify
+Flurry: Changing values is super easy!
+Flurry: cars[0] = "Toyota"  # Changes "Ford" to "Toyota"
+Flurry: Open your code editor and give it a try!
+- Can we add more cars?
+	=> array_add
+- What about removing cars?
+	=> array_remove
+
+~ array_add
+Flurry: Adding new cars is fun! Use append():
+		cars.append("Honda")
+		[[Now you have: ["Ford", "Volvo", "BMW", "Honda"]]]
+- How do we remove cars?
+	=> array_remove
+- What else can we do?
+	=> array_operations
+
+~ array_remove
+Flurry: Two ways to remove cars:
+		[[1. By position: cars.pop(1)  # Removes "Volvo"]]
+		[[2. By name: cars.remove("BMW")]]
+Flurry: Try both in your code editor!
+- What other tricks can arrays do?
+	=> array_operations
+
+~ array_operations
+Flurry: Arrays have lots of cool features!
+		len(cars)  # Counts your cars
+		cars.sort()  # Arranges alphabetically
+		cars.reverse()  # Reverses the order
+Flurry: Remember to test these in your code editor!
+- Can we loop through cars?
+	=> array_loop
+- Show me more examples
+	=> array_examples
+
+~ array_loop
+Flurry: Looping is super easy with arrays:
+		for car in cars:
+		>>>print(car)
+Flurry: This will show each car one by one!
+- Any more examples?
+	=> array_examples
+- What's next?
+	=> ending
+
+~ array_examples
+Flurry: Here's a fun example combining what we learned:
+		cars = ["Toyota", "Honda", "Ford"]
+		cars.append("BMW")
+		cars.sort()
+		for car in cars:
+		>>>print("I love my " + car)
+- Let's wrap up!
+	=> ending
+
+~ ending
+Flurry: Great job learning about arrays!
+Flurry: Remember:
+Flurry: - Arrays store multiple values
+Flurry: - You can add, remove, and change items
+Flurry: - Always practice in your code editor!
+Flurry: Head to Snow Ivy in the northeast to test your array knowledge!
+set flurry = "true"
+=> END

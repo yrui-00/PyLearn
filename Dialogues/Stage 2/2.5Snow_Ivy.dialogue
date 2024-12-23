@@ -1,0 +1,98 @@
+~ start
+if flurry == "false":
+	Snow Ivy: Talk with Flurry first before taking this quiz.
+	=> END
+Snow Ivy: Welcome! Let's test your knowledge about Python arrays.
+Snow Ivy: You'll need to answer at least 5 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Snow Ivy: What do we use to create an array of cars in Python?
+- cars = ["Ford", "Volvo", "BMW"]
+	Snow Ivy: Correct! Square brackets are used to create arrays!
+	set score = score + 1
+	=> question_two
+- cars = ("Ford", "Volvo", "BMW")
+	Snow Ivy: Not quite! Arrays use square brackets [], not parentheses.
+	=> question_two
+- cars = {Ford, Volvo, BMW}
+	Snow Ivy: Incorrect! Arrays are created using square brackets [].
+	=> question_two
+
+~ question_two
+Snow Ivy: If cars = ["Toyota", "Honda", "BMW"], what index gets "Honda"?
+- cars[1]
+	Snow Ivy: Correct! Since indexing starts at 0, Honda is at index 1.
+	set score = score + 1
+	=> question_three
+- cars[2]
+	Snow Ivy: Incorrect! Remember, indexing starts at 0, so Honda is at 1.
+	=> question_three
+- cars[0]
+	Snow Ivy: Not quite! The first position is 0, so Honda is at index 1.
+	=> question_three
+
+~ question_three
+Snow Ivy: Which method adds a new car to the end of an array?
+- append()
+	Snow Ivy: Correct! append() adds items to the end of an array!
+	set score = score + 1
+	=> question_four
+- add()
+	Snow Ivy: Incorrect! We use append() to add items to arrays.
+	=> question_four
+- insert()
+	Snow Ivy: Not quite! append() is the method for adding to the end.
+	=> question_four
+
+~ question_four
+Snow Ivy: What Python function tells us how many items are in an array?
+- len()
+	Snow Ivy: Correct! len() returns the number of items in an array!
+	set score = score + 1
+	=> question_five
+- count()
+	Snow Ivy: Incorrect! len() is used to count array items.
+	=> question_five
+- size()
+	Snow Ivy: Not quite! We use len() to get the array size.
+	=> question_five
+
+~ question_five
+Snow Ivy: How do you remove "Volvo" from an array by its value?
+- cars.remove("Volvo")
+	Snow Ivy: Correct! remove() deletes items by their value!
+	set score = score + 1
+	=> question_six
+- cars.delete("Volvo")
+	Snow Ivy: Incorrect! The method is remove(), not delete().
+	=> question_six
+- cars.pop("Volvo")
+	Snow Ivy: Not quite! remove() is used to delete by value.
+	=> question_six
+
+~ question_six
+Snow Ivy: What's the correct way to loop through all cars in an array?
+- for car in cars:
+	Snow Ivy: Correct! That's how we loop through array items!
+	set score = score + 1
+	=> check_score
+- loop cars:
+	Snow Ivy: Incorrect! The correct syntax is 'for car in cars:'
+	=> check_score
+- while cars:
+	Snow Ivy: Not quite! Use 'for car in cars:' to loop through arrays.
+	=> check_score
+
+~ check_score
+if score >= 5:
+	Snow Ivy: Congratulations! You got a passing score!
+	Snow Ivy: You've shown great understanding of Python arrays!
+	Snow Ivy: Now continue your journey, find Chillington in the north for his lessons about class and object.
+	set snowivy = "true"
+	=> END
+Snow Ivy: You need more practice with arrays.
+Snow Ivy: Review the material with Flurry and try again!
+set flurry = "false"
+=> END

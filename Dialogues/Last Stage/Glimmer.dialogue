@@ -1,0 +1,140 @@
+~ start
+Glimmer: Ah, you've made it to the final stage! Ready to explore the exciting career paths in Python programming?
+- Yes, tell me more!
+	=> career_intro
+- What kinds of jobs are there?
+	=> career_intro
+	
+~ career_intro
+Glimmer: Python opens up so many doors in the tech world!
+Glimmer: There are several major career paths you can pursue:
+- Tell me about Web Development
+	=> web_dev
+- What about Data Science?
+	=> data_science
+- How about Software Engineering?
+	=> software_eng
+- AI and Machine Learning?
+	=> ai_ml
+
+~ web_dev
+Glimmer: Web Development with Python is huge!
+Glimmer: You can become a:
+Glimmer: • Backend Developer using Django or Flask
+Glimmer: • Full-Stack Developer combining Python with frontend skills
+Glimmer: • API Developer creating web services
+- What skills do I need?
+	=> web_skills
+- Tell me about other paths
+	=> career_intro
+
+~ web_skills
+Glimmer: For Web Development, you'll want to learn:
+Glimmer: • Frameworks like Django and Flask
+Glimmer: • Database management (SQL)
+Glimmer: • RESTful APIs
+Glimmer: • Basic frontend technologies (HTML, CSS, JavaScript)
+- What about Data Science?
+	=> data_science
+- Show me other paths
+	=> career_intro
+
+~ data_science
+Glimmer: Data Science is one of Python's strongest areas!
+Glimmer: You could become a:
+Glimmer: • Data Scientist analyzing complex datasets
+Glimmer: • Data Analyst creating insights from data
+Glimmer: • Business Intelligence Developer
+- What skills do I need?
+	=> data_skills
+- Tell me about other paths
+	=> career_intro
+
+~ data_skills
+Glimmer: For Data Science, focus on:
+Glimmer: • Libraries like Pandas, NumPy, and Matplotlib
+Glimmer: • Statistical analysis
+Glimmer: • Data visualization
+Glimmer: • Machine learning basics
+- Tell me about AI/ML
+	=> ai_ml
+- Show me other paths
+	=> career_intro
+
+~ software_eng
+Glimmer: Software Engineering with Python is versatile!
+Glimmer: You could work as a:
+Glimmer: • Software Developer creating applications
+Glimmer: • Quality Assurance Engineer
+Glimmer: • DevOps Engineer
+Glimmer: • Technical Architect
+- What skills do I need?
+	=> software_skills
+- Tell me about other paths
+	=> career_intro
+
+~ software_skills
+Glimmer: For Software Engineering, you'll need:
+Glimmer: • Strong Python programming fundamentals
+Glimmer: • Software design patterns
+Glimmer: • Testing and debugging skills
+Glimmer: • Version control (Git)
+- What about AI/ML?
+	=> ai_ml
+- Show me other paths
+	=> career_intro
+
+~ ai_ml
+Glimmer: AI and Machine Learning is cutting-edge!
+Glimmer: You could become a:
+Glimmer: • Machine Learning Engineer
+Glimmer: • AI Research Scientist
+Glimmer: • Natural Language Processing Engineer
+Glimmer: • Computer Vision Engineer
+- What skills do I need?
+	=> ai_skills
+- Show me other paths
+	=> career_intro
+
+~ ai_skills
+Glimmer: For AI/ML, focus on:
+Glimmer: • Deep learning frameworks (TensorFlow, PyTorch)
+Glimmer: • Advanced mathematics
+Glimmer: • Neural networks
+Glimmer: • Machine learning algorithms
+- Tell me about preparation
+	=> preparation
+- Show me other paths
+	=> career_intro
+
+~ preparation
+Glimmer: To prepare for any Python career:
+Glimmer: 1. Build a strong foundation in Python
+Glimmer: 2. Create personal projects
+Glimmer: 3. Contribute to open source
+Glimmer: 4. Join Python communities
+Glimmer: 5. Never stop learning!
+- How do I start?
+	=> next_steps
+- Show me paths again
+	=> career_intro
+
+~ next_steps
+Glimmer: Here's how to get started:
+Glimmer: 1. Keep practicing your Python skills
+Glimmer: 2. Choose a specialization that interests you
+Glimmer: 3. Take online courses in your chosen field
+Glimmer: 4. Build a portfolio of projects
+Glimmer: 5. Network with other developers
+Glimmer: Ready to begin your journey?
+- Yes, I'm excited!
+	set glimmer = "true"
+	=> ending
+- Show me the paths again
+	=> career_intro
+
+~ ending
+Glimmer: Amazing! The Python world is waiting for you!
+Glimmer: Remember, every expert was once a beginner.
+Glimmer: Keep learning, keep coding, and you'll go far!
+=> END

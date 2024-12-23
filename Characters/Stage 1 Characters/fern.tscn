@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cle2npbkw71wd"]
+
+[ext_resource type="Texture2D" uid="uid://bn6pp0xa6vvvo" path="res://Art/Stage 1 Characters/Jack/SpriteSheet.png" id="1_ikbfa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aq6ej"]
+radius = 8.0
+
+[node name="Fern" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_aq6ej")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ikbfa")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -7.0
+offset_top = -17.0
+offset_right = 28.0
+offset_bottom = 6.0
+scale = Vector2(0.4, 0.4)
+text = "Fern"

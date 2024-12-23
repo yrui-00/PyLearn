@@ -1,0 +1,98 @@
+~ start
+if pebble == "false":
+	Zahara: Talk with Pebble first before taking this quiz.
+	=> END
+Zahara: Welcome! Let's test your knowledge about Python iterators.
+Zahara: You'll need to answer at least 5 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Zahara: What is an iterator in Python?
+- An object that lets you traverse through values one at a time
+	Zahara: Correct! Like a bookmark through your data!
+	set score = score + 1
+	=> question_two
+- A type of list
+	Zahara: Not quite! An iterator is for traversing through values.
+	=> question_two
+- A way to create loops
+	Zahara: Incorrect! Iterators help us move through sequences.
+	=> question_two
+
+~ question_two
+Zahara: Which method creates an iterator from a tuple or list?
+- iter()
+	Zahara: Correct! iter() creates an iterator from iterable objects!
+	set score = score + 1
+	=> question_three
+- next()
+	Zahara: Incorrect! next() gets the next value, iter() creates the iterator.
+	=> question_three
+- iterate()
+	Zahara: Not quite! We use iter() to create iterators.
+	=> question_three
+
+~ question_three
+Zahara: What are the two methods needed to create a custom iterator?
+- __iter__() and __next__()
+	Zahara: Correct! These methods make a class work as an iterator!
+	set score = score + 1
+	=> question_four
+- __init__() and __iter__()
+	Zahara: Incorrect! We need __iter__() and __next__()
+	=> question_four
+- start() and next()
+	Zahara: Not quite! The methods are __iter__() and __next__()
+	=> question_four
+
+~ question_four
+Zahara: What does the StopIteration statement do?
+- Prevents infinite iteration
+	Zahara: Correct! It tells the iterator when to stop!
+	set score = score + 1
+	=> question_five
+- Starts the iteration
+	Zahara: Incorrect! It actually stops the iteration.
+	=> question_five
+- Resets the iterator
+	Zahara: Not quite! It's used to end iteration.
+	=> question_five
+
+~ question_five
+Zahara: Which of these is an iterable object?
+- A string
+	Zahara: Correct! Strings are iterable character by character!
+	set score = score + 1
+	=> question_six
+- A number
+	Zahara: Incorrect! Numbers aren't iterable, but strings are!
+	=> question_six
+- A boolean
+	Zahara: Not quite! Strings are iterable, but booleans aren't.
+	=> question_six
+
+~ question_six
+Zahara: What does the next() method do?
+- Returns the next item in the sequence
+	Zahara: Correct! It moves to and returns the next value!
+	set score = score + 1
+	=> check_score
+- Creates a new iterator
+	Zahara: Incorrect! next() gets the next value in sequence.
+	=> check_score
+- Starts the iteration over
+	Zahara: Not quite! next() moves forward to the next item.
+	=> check_score
+
+~ check_score
+if score >= 5:
+	Zahara: Congratulations! You got a passing score!
+	Zahara: You've shown great understanding of Python iterators!
+	Zahara: Go to Cactus Jack in the east to know about polymorphism.
+	set zahara = "true"
+	=> END
+Zahara: You need more practice with iterators.
+Zahara: Review the material with Pebble and try again!
+set pebble = "false"
+=> END

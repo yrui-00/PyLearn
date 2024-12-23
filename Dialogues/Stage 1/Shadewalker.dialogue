@@ -1,0 +1,22 @@
+~ start
+if cedar == "true" and crystal == "false" and sultan == "false"
+	Shadewalker: I see you've proven yourself worthy of the first trial.
+	Shadewalker: To gain access to the second stage, you must complete the Stage 1 Assessment in the northern snow border.
+	Shadewalker: Successfully complete the assessment, and the path to the second stage will open before you.
+	Shadewalker: Remember, preparation is key. You can review all your materials before tackling the assessment.
+	Shadewalker: Good luck!
+	set assessment1 = "true"
+elif cedar == "true" and crystal == "true" and sultan == "false"
+	Shadewalker: Impressive! You've finished stage 2.
+	Shadewalker: You can take the 2nd assessment right before entering the desert.
+	Shadewalker: If you pass, the desert area will open its paths for you.
+	Shadewalker: Good luck on your travels!
+	set assessment2 = "true"
+elif cedar == "true" and crystal == "true" and sultan == "true"
+	Shadewalker: You've proven yourself worthy of the final trial.
+	Shadewalker: The last area contains the career paths you can pursue if you comit into studying Python!
+	Shadewalker: You can only enter if you pass the final assessment. Few have made it this far.
+	Shadewalker: The path ahead leads to your ultimate destiny. Good luck!
+	set assessment3 = "true"
+
+=> END

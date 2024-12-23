@@ -1,0 +1,151 @@
+~ start
+if rustle == "false":
+	Twiggy: You should learn about data types from Rustle first before taking this quiz!
+	=> END
+Twiggy: Welcome! Let's test your knowledge about Python data types.
+Twiggy: You'll need to answer at least 7 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Twiggy: What type of data would x contain in this code: x = -17?
+- Integer
+	Twiggy: Correct! Negative whole numbers are integers in Python.
+	set score = score + 1
+	=> question_two
+- Float
+	Twiggy: Not quite. Since there's no decimal point, it's an integer.
+	=> question_two
+- String
+	Twiggy: Incorrect. Numbers without quotes are numeric types, not strings.
+	=> question_two
+
+~ question_two
+Twiggy: In Python, what's the difference between 5 and 5.0?
+- They are the same thing
+	Twiggy: Not quite! They have different types.
+	=> question_three
+- One is an integer, one is a float
+	Twiggy: Correct! 5 is an integer, while 5.0 is a float.
+	set score = score + 1
+	=> question_three
+- No difference in Python
+	Twiggy: Incorrect. The decimal point makes 5.0 a float type.
+	=> question_three
+
+~ question_three
+Twiggy: Which statement about strings is true?
+- They must use double quotes
+	Twiggy: Incorrect. Strings can use either type of quotes.
+	=> question_four
+- They can use single or double quotes
+	Twiggy: Correct! Python allows both 'hello' and "hello".
+	set score = score + 1
+	=> question_four
+- They can only use single quotes
+	Twiggy: Incorrect. Strings can use either type of quotes.
+	=> question_four
+
+~ question_four
+Twiggy: What is the type of: x = True?
+- String
+	Twiggy: Incorrect. True is a boolean value.
+	=> question_five
+- Integer
+	Twiggy: Not quite. True is a boolean value.
+	=> question_five
+- Boolean
+	Twiggy: Correct! True and False are boolean values.
+	set score = score + 1
+	=> question_five
+
+~ question_five
+Twiggy: What would type(3.14) return?
+- <class 'int'>
+	Twiggy: Incorrect. Numbers with decimals are floats.
+	=> question_six
+- <class 'float'>
+	Twiggy: Correct! Numbers with decimal points are float type.
+	set score = score + 1
+	=> question_six
+- <class 'str'>
+	Twiggy: Not quite. 3.14 is a float, not a string.
+	=> question_six
+
+~ question_six
+Twiggy: What is the type of an empty string: x = ""?
+- Integer
+	Twiggy: Incorrect. Empty quotes create a string.
+	=> question_seven
+- Float
+	Twiggy: Not quite. Empty quotes create a string.
+	=> question_seven
+- String
+	Twiggy: Correct! Even an empty set of quotes creates a string.
+	set score = score + 1
+	=> question_seven
+
+~ question_seven
+Twiggy: Which would be stored as a float?
+- 42
+	Twiggy: Incorrect. That's an integer.
+	=> question_eight
+- "3.14"
+	Twiggy: Not quite. Quotes make it a string.
+	=> question_eight
+- 0.0
+	Twiggy: Correct! Any number with a decimal point is a float.
+	set score = score + 1
+	=> question_eight
+
+~ question_eight
+Twiggy: What data type is: message = 'Hello' + ' World'?
+- Two strings
+	Twiggy: Not quite. The result is a single string.
+	=> question_nine
+- String
+	Twiggy: Correct! Combining strings creates a new string.
+	set score = score + 1
+	=> question_nine
+- Boolean
+	Twiggy: Incorrect. String concatenation results in a string.
+	=> question_nine
+
+~ question_nine
+Twiggy: What happens when you check the type of: type(False)?
+- Returns <class 'str'>
+	Twiggy: Incorrect. False is a boolean value.
+	=> question_ten
+- Returns <class 'bool'>
+	Twiggy: Correct! False is a boolean value.
+	set score = score + 1
+	=> question_ten
+- Returns <class 'int'>
+	Twiggy: Not quite. False is a boolean value.
+	=> question_ten
+
+~ question_ten
+Twiggy: Which of these is NOT a valid way to create a string?
+- word = "Hello"
+	Twiggy: Incorrect. Double quotes are valid for strings.
+	=> check_score
+- text = hello
+	Twiggy: Correct! Strings need quotes around them.
+	set score = score + 1
+	=> check_score
+- message = 'Hi'
+	Twiggy: Incorrect. Single quotes are valid for strings.
+	=> check_score
+
+~ check_score
+if score >= 7:
+	Twiggy: Congratulations! You've shown a good understanding of Python data types.
+	Twiggy: Keep practicing and exploring these concepts!
+	Twiggy: Find Berry to continue learning, she's in the south.
+	set twiggy = "true"
+	=> END
+
+Twiggy: You need at least 7 correct answers to pass.
+Twiggy: Review the material with Rustle and try again!
+set rustle = "false"
+=> END

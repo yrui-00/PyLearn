@@ -1,0 +1,130 @@
+~ start
+if oakly == "false":
+	Blossom: You should talk with Oakly first to learn about variables.
+	=> END
+Blossom: Welcome! I'll test your knowledge about Python variables.
+set score = 0
+=> question_one
+
+~ question_one
+Blossom: First question: How are variables created in Python?
+- By using a special keyword like "var" or "let":
+	Blossom: Not quite!
+	Blossom: In Python, it's much simpler - variables are created just by assigning a value.
+	Blossom: For example: x = 5 or name = "John"
+	=> question_two
+- By assigning a value to a name:
+	Blossom: Excellent! 
+	Blossom: That's right - Python makes it simple. Just assign a value and the variable is created!
+	Blossom: Example: x = 5 creates a variable named 'x'
+	set score = score + 1
+	=> question_two
+- By declaring the type first:
+	Blossom: That's incorrect.
+	Blossom: Python doesn't require type declarations. Simply assign a value!
+	Blossom: For example: x = 5 or name = "John"
+	=> question_two
+
+~ question_two
+Blossom: Can the same variable hold different types of data in Python?
+- No, once you set the type it's fixed:
+	Blossom: Actually, Python is more flexible than that!
+	Blossom: A variable can change types. For example:
+	Blossom: x = 5        # x is a number
+	Blossom: x = "Hello"  # now x is a string
+	=> question_three
+- Yes, variables can change types:
+	Blossom: Perfect! 
+	Blossom: Here's an example:
+	Blossom: x = 5        # x is a number
+	Blossom: x = "Hello"  # now x is a string
+	set score = score + 1
+	=> question_three
+
+~ question_three
+Blossom: Look at this code:
+		greeting = "Hello"
+		GREETING = "Hi"
+		Are these the same variable?
+- Yes, Python isn't case-sensitive:
+	Blossom: Not correct!
+	Blossom: Python is case-sensitive. 'greeting' and 'GREETING' are different variables.
+	=> question_four
+- No, they're different variables:
+	Blossom: Exactly right!
+	Blossom: Python is case-sensitive, so 'greeting' and 'GREETING' are different variables.
+	set score = score + 1
+	=> question_four
+
+~ question_four
+Blossom: Which of these is correct for creating a string variable?
+- x = Hello:
+	Blossom: Not quite!
+	Blossom: Strings need quotes. It should be x = "Hello" or x = 'Hello'
+	=> question_five
+- x = "Hello":
+	Blossom: Perfect!
+	Blossom: You can use either single or double quotes for strings.
+	set score = score + 1
+	=> question_five
+- x = (Hello):
+	Blossom: That's not right.
+	Blossom: Strings need quotes. It should be x = "Hello" or x = 'Hello'
+	=> question_five
+
+~ question_five
+Blossom: What would this code do?
+		x = 5
+		x = str(5)
+- Change x from a number to text:
+	Blossom: Excellent!
+	Blossom: str() converts (casts) the number to a string.
+	set score = score + 1
+	=> question_six
+- Create an error:
+	Blossom: Actually, this is valid code!
+	Blossom: str() converts (casts) the number to a string.
+	=> question_six
+- Nothing changes:
+	Blossom: Not quite!
+	Blossom: str() converts (casts) the number to a string.
+	=> question_six
+
+~ question_six
+Blossom: How can you check what type a variable is?
+- Use the type() function:
+	Blossom: Perfect!
+	Blossom: type() tells you what kind of data a variable holds.
+	Blossom: Example: type(x) might show <class 'int'> or <class 'str'>
+	set score = score + 1
+	=> check_score
+- Print the variable:
+	Blossom: Not quite!
+	Blossom: We use the type() function to check variable types.
+	Blossom: Example: type(x) might show <class 'int'> or <class 'str'>
+	=> check_score
+- Look at the value:
+	Blossom: That's not correct.
+	Blossom: We use the type() function to check variable types.
+	Blossom: Example: type(x) might show <class 'int'> or <class 'str'>
+	=> check_score
+
+~ check_score
+if score >= 5:
+	Blossom: Congratulations! You passed the quiz!
+	Blossom: You've shown a good understanding of Python variables.
+	Blossom: Remember:
+	Blossom: - Variables are created by assignment
+	Blossom: - They can hold different types of data
+	Blossom: - Python is case-sensitive
+	Blossom: - Strings need quotes
+	Blossom: - You can convert between types
+	Blossom: Keep practicing these concepts!
+	Blossom: Find Ruslte east of here to continue your journey. Goodluck!
+	set blossom = "true"
+	=> END
+Blossom: You got some questions correct, but you need at least 5 to pass.
+Blossom: Don't worry! Review the material with Oakly and try again.
+Blossom: Practice makes perfect!
+set oakly = "false"
+=> END

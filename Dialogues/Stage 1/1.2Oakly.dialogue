@@ -1,0 +1,95 @@
+~ start
+if thistle == "false"
+	Oakly: You need to talk to Thistle first before we can proceed.
+	=> END
+else
+	Oakly: Welcome back! Let's dive deep into Python variables.
+	Oakly: One of the amazing things about Python is how simple it is to work with variables.
+	Oakly: Unlike some other programming languages, Python has no command for declaring a variable.
+	Oakly: A variable is created the moment you assign a value to it - it's that simple!
+	Oakly: Let me show you some examples:
+		x = 5           # This creates a number variable
+		y = "Hello"     # This creates a text variable
+		z = 3.14        # This creates a decimal variable
+	Oakly: Each of these variables is like a labeled container that holds a value.
+	Oakly: Here's something interesting - Python variables don't need to be declared with any specific type.
+	Oakly: Watch this:
+		x = 4           # x is a number
+		x = "Sally"     # Now x is text!
+	Oakly: The same variable can even change type after it's been set. Pretty flexible, right?
+	Oakly: Let's test your understanding. What would happen in this case:
+		a = 5
+		A = 10
+	- These are the same variable
+		Oakly: Not quite! Remember, Python is case-sensitive.
+		Oakly: 'a' and 'A' are actually two different variables.
+		=> variable_types
+	- These are different variables
+		Oakly: Excellent! You've got it!
+		Oakly: Python is case-sensitive, so 'a' and 'A' are completely separate variables.
+		=> variable_types
+	- I'm not sure
+		Oakly: Let me explain - Python is case-sensitive.
+		Oakly: This means 'a' and 'A' are treated as two different variables.
+		=> variable_types
+
+~ variable_types
+Oakly: Now, let's talk about something really useful - variable types and casting.
+Oakly: Sometimes you need to convert variables from one type to another.
+Oakly: Here's how we do it:
+	x = str(3)    # Converts number 3 to text '3'
+	y = int(3)    # Makes sure 3 is a whole number
+	z = float(3)  # Converts to decimal number 3.0
+Oakly: Want to check what type a variable is? We use the type() function!
+Oakly: Let me show you:
+	x = 5
+	print(type(x))    # Shows: <class 'int'>
+	y = "Hello"
+	print(type(y))    # Shows: <class 'str'>
+Oakly: Let's test your knowledge. What would this code output:
+	x = "5"
+	y = int(x)
+	print(y + 3)
+- "53"
+	Oakly: Not quite. Remember, we converted "5" to a number using int().
+	Oakly: When we add numbers, it performs mathematical addition.
+	=> final_test
+- 8
+	Oakly: Perfect! You understand type conversion!
+	Oakly: Converting "5" to an integer lets us do math with it.
+	=> final_test
+- Error
+	Oakly: Actually, this would work! We converted the string "5" to a number.
+	Oakly: Then we can add 3 to it, getting 8.
+	=> final_test
+
+~ final_test
+Oakly: One last thing about strings - in Python, you can use either single or double quotes:
+Oakly: These are exactly the same:
+	greeting = "Hello"
+	greeting = 'Hello'
+Oakly: Just be consistent with whichever style you choose!
+Oakly: You've learned a lot about variables today:
+Oakly: - How to create them
+Oakly: - How they can change types
+Oakly: - How to convert between types
+Oakly: - And how to work with text using quotes
+Oakly: Ready for a quick final question?
+Oakly: What would this code do:
+	name = "Python"
+	print(name.lower())
+- Show "python"
+	Oakly: Outstanding! You even understand string methods!
+	Oakly: You're really getting the hang of this.
+- Show "PYTHON"
+	Oakly: Not quite - .lower() makes all letters lowercase.
+	Oakly: It would show "python" in all lowercase letters.
+- Nothing
+	Oakly: Actually, it would show "python" in all lowercase letters.
+	Oakly: .lower() is a string method that converts text to lowercase.
+
+Oakly: You've done wonderfully! You now understand the basics of Python variables.
+Oakly: Remember to practice these concepts - they're the building blocks of programming!
+Oakly: You should go see Blossom next for a variable quiz. You can find her northwest here.
+set oakly = "true"
+=> END

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds6b4h8exivhg"]
+
+[ext_resource type="Texture2D" uid="uid://cr74cvx5rfrhs" path="res://Art/Stage 3 Charaters (desert)/Pebble/SpriteSheet.png" id="1_hmyu4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v5lfb"]
+radius = 9.0
+
+[node name="Pebble" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_v5lfb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hmyu4")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -11.0
+offset_top = -16.0
+offset_right = 42.0
+offset_bottom = 7.0
+scale = Vector2(0.4, 0.4)
+text = "Pebble"

@@ -1,0 +1,101 @@
+~ start
+
+if game_master == "true":
+	Game Master: Keep exploring! Remember to find Brambly east of here.
+	Game Master: And don't forget - press F1 anytime to practice in the Code Editor!
+	=> END
+else:
+	Game Master: Welcome to Stage 1 of your journey!
+	- What will I learn here?
+		Game Master: This stage focuses on Python's core concepts:
+		Game Master: Variables - the building blocks of programming
+		Game Master: Data Types - understanding numbers, text, and more
+		Game Master: If-else statements - making decisions in code
+		Game Master: Elif - handling multiple conditions
+		Game Master: And most importantly - proper indentation!
+		- Tell me about practice opportunities.
+			=> explain_practice
+		- Tell me about the quests.
+			=> explain_quests
+	- How does this stage work?
+		=> explain_quests
+
+~ explain_practice
+Game Master: The Code Editor is your practice ground!
+Game Master: Press F1 at any time to open it.
+Game Master: This is your space to experiment with everything you learn.
+Game Master: Try out variables, test conditions, practice indentation...
+Game Master: It's like having a personal Python playground!
+- How do I use it effectively?
+	=> editor_tips
+- Tell me about the quests now.
+	=> explain_quests
+
+~ editor_tips
+Game Master: Here's how to make the most of your Code Editor:
+Game Master: - Test new concepts as soon as you learn them
+Game Master: - Practice different variations of code examples you find
+Game Master: - Use it to try out codes you learn
+Game Master: - Experiment with different ways to write the same code
+- That's helpful! What's next?
+	=> explain_quests
+- Any specific practice suggestions?
+	Game Master: Start simple! Try creating variables, test if-else statements...
+	Game Master: The more you practice, the more natural it becomes.
+	=> explain_quests
+
+~ explain_quests
+Game Master: The stage is filled with characters who need your help.
+Game Master: Complete their challenges to gain information about:
+Game Master: Variables, data types, conditional statements, and proper code structure.
+Game Master: Remember - you can always practice in the Code Editor.
+- How do I start?
+	=> first_quest
+- Can you explain the syntax?
+	=> explain_syntax
+
+~ explain_syntax
+Game Master: Let me show you something important.
+Game Master: In our quest dialogues, you'll see ">>>" symbols.
+Game Master: These indicate indented code in Python.
+Game Master: Here's an example of how indentation works:
+
+Game Master: Your code would look like this:
+Game Master: weather = "sunny"
+			[[if weather == "sunny":]]
+			>>>print("Go outside!")
+
+Game Master: The ">>>" shows that in real Python code, you would indent that line.
+- Show me another example
+	Game Master: Here's one with multiple indented lines:
+	Game Master: score = 90
+				[[if score >= 90:]]
+				>>>print("Great job!")
+	
+	Game Master: Both lines would be indented in real Python.
+	Game Master: Try writing these in the Code Editor (F1) to practice!
+	=> first_quest
+- I understand, what's next?
+	=> first_quest
+
+~ first_quest
+Game Master: Your first real quest awaits with Brambly, east of here.
+Game Master: You'll find him in his house, ready to test your Python knowledge.
+=> concepts
+
+~ concepts
+Game Master: Remember these key tools for success:
+Game Master: - Press F1 anytime to open the Code Editor
+Game Master: - Test your code before answering quest questions
+Game Master: - Practice with the concepts you learn:
+Game Master:   • Variables and data types
+Game Master:   • If-else statements
+Game Master:   • Elif conditions
+Game Master:   • Proper indentation
+- I'm ready!
+	Game Master: Good luck on your Python journey!
+	Game Master: Remember - practice makes perfect. Use that Code Editor freely!
+	set game_master = "true"
+	=> END
+- Could you repeat the concepts?
+	=> concepts

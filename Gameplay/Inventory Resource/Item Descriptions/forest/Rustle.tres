@@ -1,0 +1,151 @@
+[gd_resource type="Resource" script_class="Description" load_steps=3 format=3 uid="uid://wv3ynj5dmknt"]
+
+[ext_resource type="Texture2D" uid="uid://ds37qp0erbr1h" path="res://Gameplay/Inventory Resource/Item Descriptions/ScrollEmpty.png" id="1_oassb"]
+[ext_resource type="Script" path="res://Gameplay/Inventory Resource/Item Descriptions/description.gd" id="2_0cxv5"]
+
+[resource]
+script = ExtResource("2_0cxv5")
+title = "Rustle's Lesson"
+icon = ExtResource("1_oassb")
+description = "# Python Data Types: A Comprehensive Guide
+
+## Introduction
+
+Understanding data types is fundamental to programming in Python. Data types determine how values can be used and manipulated in your code. This chapter explores Python's basic data types, their characteristics, and common operations.
+
+## Fundamental Data Types
+
+Python has four basic data types that form the foundation of its type system:
+1. Integers (int)
+2. Floating-point numbers (float)
+3. Strings (str)
+4. Booleans (bool)
+
+## Integers (int)
+
+### Definition and Characteristics
+Integers in Python represent whole numbers, both positive and negative, without decimal points. They can be of any length, limited only by available memory.
+
+```python
+x = 5
+y = -17
+z = 1000000
+```
+
+### Properties
+- No decimal point
+- Can be positive or negative
+- No size limitation (except by available memory)
+- Type can be checked using `type()`
+
+```python
+print(type(5))  # Output: <class 'int'>
+```
+
+## Floating-Point Numbers (float)
+
+### Definition and Characteristics
+Floating-point numbers represent decimal values in Python. Any number containing a decimal point is automatically treated as a float.
+
+```python
+x = 3.14
+y = -0.001
+z = 2.0    # This is a float, not an integer
+```
+
+### Key Concepts
+- All numbers with decimal points are floats
+- Division operations always return floats in Python 3
+- Scientific notation is supported (e.g., 1e-10)
+
+```python
+result = 10 / 3  # Always returns a float
+print(type(result))  # Output: <class 'float'>
+```
+
+## Strings (str)
+
+### Definition and Characteristics
+Strings are sequences of characters, used to represent text in Python. They can be created using single quotes, double quotes, or triple quotes for multi-line strings.
+
+```python
+name = \"Alice\"
+message = 'Hello, World!'
+multi_line = \"\"\"This is a
+multi-line string\"\"\"
+```
+
+### String Properties
+- Immutable (cannot be changed after creation)
+- Can use single or double quotes
+- Triple quotes for multi-line strings
+- Support various methods for manipulation
+
+```python
+# String type checking
+text = \"Hello\"
+print(type(text) == str)  # Output: True
+```
+
+## Booleans (bool)
+
+### Definition and Characteristics
+Boolean values represent truth values: `True` or `False`. They are fundamental for conditional logic and control flow.
+
+```python
+is_active = True
+is_complete = False
+has_error = bool(0)  # Converts to False
+```
+
+### Truthiness in Python
+Various values are considered False in Python:
+- Empty strings (\"\")
+- Zero (0)
+- None
+- Empty collections ([], {}, ())
+Everything else is considered True.
+
+```python
+print(bool(\"\"))      # Output: False
+print(bool(\"text\"))  # Output: True
+print(bool(0))       # Output: False
+print(bool(1))       # Output: True
+```
+
+## Type Checking and Conversion
+
+### Checking Types
+The `type()` function is used to determine a value's data type:
+
+```python
+x = \"123\"
+print(type(x))  # Output: <class 'str'>
+```
+
+### Type Conversion
+Python provides functions for converting between types:
+```python
+# String to integer
+str_num = \"123\"
+num = int(str_num)
+
+# Integer to float
+x = float(42)
+
+# Number to string
+text = str(3.14)
+```
+
+## Best Practices
+
+When working with Python data types:
+1. Always verify types when working with user input
+2. Use appropriate type conversion functions
+3. Be aware of automatic type conversion in operations
+4. Use type hints for better code clarity
+5. Handle type-related errors gracefully
+
+## Conclusion
+
+Understanding Python's basic data types is crucial for effective programming. Each type has its specific use cases and characteristics. Mastery of these concepts provides the foundation for working with more complex data structures and programming concepts in Python."

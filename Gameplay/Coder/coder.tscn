@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbknwytud8tfx"]
+
+[ext_resource type="Script" path="res://Gameplay/Coder/Coder.gd" id="1_km0gr"]
+
+[node name="Coder" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -319.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_km0gr")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_top = 23.0
+offset_right = 960.0
+offset_bottom = 63.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 808.0
+offset_top = 28.0
+offset_right = 936.0
+offset_bottom = 59.0
+text = "RUN"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 0
+offset_top = 44.0
+offset_right = 959.0
+offset_bottom = 83.0
+
+[node name="CodeEdit" type="CodeEdit" parent="."]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 960.0
+offset_bottom = 529.0
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 527.0
+offset_right = 959.0
+offset_bottom = 532.0
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_top = 530.0
+offset_right = 960.0
+offset_bottom = 698.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2

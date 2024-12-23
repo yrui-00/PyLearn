@@ -1,0 +1,98 @@
+~ start
+if chillington == "false":
+	Crystal: Talk with Flurry first before taking this quiz.
+	=> END
+Crystal: Welcome! Let's test your knowledge about Python classes.
+Crystal: You'll need to answer at least 5 questions correctly to pass.
+set score = 0
+=> question_one
+
+~ question_one
+Crystal: What is a class in Python?
+- A blueprint for creating objects
+	Crystal: Correct! Classes are like blueprints that define how objects should be made!
+	set score = score + 1
+	=> question_two
+- A type of variable
+	Crystal: Not quite! A class is a blueprint for creating objects.
+	=> question_two
+- A function
+	Crystal: Incorrect! Classes are blueprints that define object structure.
+	=> question_two
+
+~ question_two
+Crystal: What is the purpose of the __init__ method?
+- To initialize object properties when created
+	Crystal: Correct! __init__ sets up the initial state of objects!
+	set score = score + 1
+	=> question_three
+- To end the class definition
+	Crystal: Incorrect! __init__ initializes objects when they're created.
+	=> question_three
+- To import other classes
+	Crystal: Not quite! __init__ is for setting up new objects.
+	=> question_three
+
+~ question_three
+Crystal: How do you create an object from a class named Car?
+- my_car = Car()
+	Crystal: Correct! That's exactly how we create a new Car object!
+	set score = score + 1
+	=> question_four
+- make Car()
+	Crystal: Incorrect! We use syntax like my_car = Car()
+	=> question_four
+- new Car()
+	Crystal: Not quite! Python uses my_car = Car() syntax.
+	=> question_four
+
+~ question_four
+Crystal: How do you access an object's property named 'color'?
+- car.color
+	Crystal: Correct! We use dot notation to access object properties!
+	set score = score + 1
+	=> question_five
+- car[color]
+	Crystal: Incorrect! Use dot notation: car.color
+	=> question_five
+- car->color
+	Crystal: Not quite! Python uses dot notation: car.color
+	=> question_five
+
+~ question_five
+Crystal: Which method makes objects print nicely as strings?
+- __str__
+	Crystal: Correct! __str__ defines how objects are displayed as strings!
+	set score = score + 1
+	=> question_six
+- print()
+	Crystal: Incorrect! __str__ is used for string representation.
+	=> question_six
+- toString
+	Crystal: Not quite! In Python, we use __str__ for this.
+	=> question_six
+
+~ question_six
+Crystal: How do you call a method named 'honk' on a car object?
+- car.honk()
+	Crystal: Correct! That's how we call object methods!
+	set score = score + 1
+	=> check_score
+- honk(car)
+	Crystal: Incorrect! We use car.honk() to call object methods.
+	=> check_score
+- car->honk()
+	Crystal: Not quite! Python uses dot notation: car.honk()
+	=> check_score
+
+~ check_score
+if score >= 5:
+	Crystal: Congratulations! You got a passing score, you can now advance.
+	Crystal: You've shown great understanding of Python classes!
+	Crystal: Now go talk to Shadewalker, he'll guide you through the final assessment for this stage. Good luck!
+	set crystal = "true"
+	=> END
+Crystal: You need more practice with classes.
+Crystal: Review the material with Flurry and try again!
+set chillington = "false"
+=> END

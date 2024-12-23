@@ -1,0 +1,113 @@
+~ start
+Cairn: Hey there, aspiring developer! Ready to explore the exciting world of Python careers?
+- Yes, tell me more!
+	Cairn: That's the spirit! Python opens up so many amazing opportunities.
+	=> career_overview
+- What kind of jobs are there?
+	Cairn: Oh, there are tons of exciting paths! Let me break it down for you.
+	=> career_overview
+
+~ career_overview
+Cairn: Python developers are like digital architects and problem-solvers rolled into one!
+Cairn: They work in lots of different fields:
+Cairn: • Web Development - Building websites and web applications
+Cairn: • Data Science - Analyzing complex data and creating insights
+Cairn: • Machine Learning - Creating AI systems that learn and adapt
+Cairn: • Software Engineering - Developing applications and systems
+- Tell me about daily work
+	=> daily_work
+- What skills do I need?
+	=> skills_needed
+- Which industries hire Python devs?
+	=> industries
+
+~ daily_work
+Cairn: A Python developer's day is never boring! You might be:
+Cairn: • Writing clean, efficient code for applications
+Cairn: • Collaborating with data scientists on analysis tools
+Cairn: • Creating AI models that predict user behavior
+Cairn: • Debugging and optimizing existing systems
+Cairn: The best part? Every day brings new challenges!
+- What skills would I need?
+	=> skills_needed
+- Where can I work?
+	=> industries
+- Tell me about growth
+	=> career_growth
+
+~ skills_needed
+Cairn: To succeed as a Python developer, you'll want:
+Cairn: Technical Skills:
+Cairn: • Strong Python programming fundamentals
+Cairn: • Knowledge of popular frameworks (Django, Flask)
+Cairn: • Database management
+Cairn: • Version control (Git)
+Cairn: Soft Skills:
+Cairn: • Problem-solving ability
+Cairn: • Team collaboration
+Cairn: • Communication skills
+- Where can I use these skills?
+	=> industries
+- How can I grow?
+	=> career_growth
+- What's the work like?
+	=> daily_work
+
+~ industries
+Cairn: Python developers are in demand everywhere!
+Cairn: Popular Industries:
+Cairn: • Tech Companies (Google, Amazon, Microsoft)
+Cairn: • Financial Institutions (Banks, Investment Firms)
+Cairn: • Healthcare (Medical Software, Research)
+Cairn: • Entertainment (Gaming, Streaming Platforms)
+Cairn: • E-commerce (Online Retail, Digital Marketing)
+- What's the growth potential?
+	=> career_growth
+- What skills do I need?
+	=> skills_needed
+- Tell me about the work
+	=> daily_work
+
+~ career_growth
+Cairn: The growth potential in Python is incredible!
+Cairn: Career Progression:
+Cairn: 1. Junior Developer - Learning the ropes
+Cairn: 2. Senior Developer - Leading projects
+Cairn: 3. Lead Developer - Guiding teams
+Cairn: 4. Technical Architect - Designing systems
+Cairn: Each step brings new opportunities and challenges!
+- How do I get started?
+	=> getting_started
+- What skills do I need?
+	=> skills_needed
+- Show me industries again
+	=> industries
+
+~ getting_started
+Cairn: Ready to begin your Python journey? Here's how:
+Cairn: 1. Master Python basics (like what you're learning now!)
+Cairn: 2. Build personal projects to practice
+Cairn: 3. Learn frameworks used in your chosen field
+Cairn: 4. Create a portfolio to showcase your work
+Cairn: 5. Network with other developers
+- Tell me about careers again
+	=> career_overview
+- What skills should I focus on?
+	=> skills_needed
+- I'm ready!
+	=> ending
+
+~ ending
+Cairn: You've got what it takes to be a Python developer!
+Cairn: Remember:
+Cairn: • Start with the basics and build up
+Cairn: • Practice regularly
+Cairn: • Never stop learning
+Cairn: • Connect with the Python community
+Cairn: Your coding journey is just beginning! Ready to take the first step?
+- Yes, I'm excited!
+	Cairn: That's what I love to hear! The Python world welcomes you!
+	set cairn = "true"
+	=> END
+- Show me the overview again
+	=> career_overview

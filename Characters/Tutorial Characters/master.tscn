@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6wmnx74qonia"]
+
+[ext_resource type="Texture2D" uid="uid://7oemkoanpap1" path="res://Art/Tutorial Characters/Master Dev/SpriteSheet.png" id="1_xxs3d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uuty4"]
+radius = 8.0
+
+[node name="Master" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uuty4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xxs3d")
+hframes = 4
+vframes = 7
+
+[node name="Label" type="Label" parent="."]
+offset_left = -16.0
+offset_top = -17.0
+offset_right = 74.0
+offset_bottom = 6.0
+scale = Vector2(0.4, 0.4)
+text = "Master Dev"
