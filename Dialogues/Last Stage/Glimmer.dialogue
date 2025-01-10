@@ -19,10 +19,10 @@ Glimmer: There are several major career paths you can pursue:
 
 ~ web_dev
 Glimmer: Web Development with Python is huge!
-Glimmer: You can become a:
-Glimmer: • Backend Developer using Django or Flask
-Glimmer: • Full-Stack Developer combining Python with frontend skills
-Glimmer: • API Developer creating web services
+		You can become a:
+		• Backend Developer using Django or Flask
+		• Full-Stack Developer combining Python with frontend skills
+		• API Developer creating web services
 - What skills do I need?
 	=> web_skills
 - Tell me about other paths
@@ -30,10 +30,10 @@ Glimmer: • API Developer creating web services
 
 ~ web_skills
 Glimmer: For Web Development, you'll want to learn:
-Glimmer: • Frameworks like Django and Flask
-Glimmer: • Database management (SQL)
-Glimmer: • RESTful APIs
-Glimmer: • Basic frontend technologies (HTML, CSS, JavaScript)
+		• Frameworks like Django and Flask
+		• Database management (SQL)
+		• RESTful APIs
+		• Basic frontend technologies (HTML, CSS, JavaScript)
 - What about Data Science?
 	=> data_science
 - Show me other paths
@@ -41,10 +41,10 @@ Glimmer: • Basic frontend technologies (HTML, CSS, JavaScript)
 
 ~ data_science
 Glimmer: Data Science is one of Python's strongest areas!
-Glimmer: You could become a:
-Glimmer: • Data Scientist analyzing complex datasets
-Glimmer: • Data Analyst creating insights from data
-Glimmer: • Business Intelligence Developer
+		You could become a:
+		• Data Scientist analyzing complex datasets
+		• Data Analyst creating insights from data
+		• Business Intelligence Developer
 - What skills do I need?
 	=> data_skills
 - Tell me about other paths
@@ -52,10 +52,10 @@ Glimmer: • Business Intelligence Developer
 
 ~ data_skills
 Glimmer: For Data Science, focus on:
-Glimmer: • Libraries like Pandas, NumPy, and Matplotlib
-Glimmer: • Statistical analysis
-Glimmer: • Data visualization
-Glimmer: • Machine learning basics
+		• Libraries like Pandas, NumPy, and Matplotlib
+		• Statistical analysis
+		• Data visualization
+		• Machine learning basics
 - Tell me about AI/ML
 	=> ai_ml
 - Show me other paths
@@ -63,11 +63,11 @@ Glimmer: • Machine learning basics
 
 ~ software_eng
 Glimmer: Software Engineering with Python is versatile!
-Glimmer: You could work as a:
-Glimmer: • Software Developer creating applications
-Glimmer: • Quality Assurance Engineer
-Glimmer: • DevOps Engineer
-Glimmer: • Technical Architect
+		You could work as a:
+		• Software Developer creating applications
+		• Quality Assurance Engineer
+		• DevOps Engineer
+		• Technical Architect
 - What skills do I need?
 	=> software_skills
 - Tell me about other paths
@@ -75,10 +75,10 @@ Glimmer: • Technical Architect
 
 ~ software_skills
 Glimmer: For Software Engineering, you'll need:
-Glimmer: • Strong Python programming fundamentals
-Glimmer: • Software design patterns
-Glimmer: • Testing and debugging skills
-Glimmer: • Version control (Git)
+		• Strong Python programming fundamentals
+		• Software design patterns
+		• Testing and debugging skills
+		• Version control (Git)
 - What about AI/ML?
 	=> ai_ml
 - Show me other paths
@@ -86,11 +86,11 @@ Glimmer: • Version control (Git)
 
 ~ ai_ml
 Glimmer: AI and Machine Learning is cutting-edge!
-Glimmer: You could become a:
-Glimmer: • Machine Learning Engineer
-Glimmer: • AI Research Scientist
-Glimmer: • Natural Language Processing Engineer
-Glimmer: • Computer Vision Engineer
+		You could become a:
+		• Machine Learning Engineer
+		• AI Research Scientist
+		• Natural Language Processing Engineer
+		• Computer Vision Engineer
 - What skills do I need?
 	=> ai_skills
 - Show me other paths
@@ -98,10 +98,10 @@ Glimmer: • Computer Vision Engineer
 
 ~ ai_skills
 Glimmer: For AI/ML, focus on:
-Glimmer: • Deep learning frameworks (TensorFlow, PyTorch)
-Glimmer: • Advanced mathematics
-Glimmer: • Neural networks
-Glimmer: • Machine learning algorithms
+		• Deep learning frameworks (TensorFlow, PyTorch)
+		• Advanced mathematics
+		• Neural networks
+		• Machine learning algorithms
 - Tell me about preparation
 	=> preparation
 - Show me other paths
@@ -109,11 +109,11 @@ Glimmer: • Machine learning algorithms
 
 ~ preparation
 Glimmer: To prepare for any Python career:
-Glimmer: 1. Build a strong foundation in Python
-Glimmer: 2. Create personal projects
-Glimmer: 3. Contribute to open source
-Glimmer: 4. Join Python communities
-Glimmer: 5. Never stop learning!
+		1. Build a strong foundation in Python
+		2. Create personal projects
+		3. Contribute to open source
+		4. Join Python communities
+		5. Never stop learning!
 - How do I start?
 	=> next_steps
 - Show me paths again
@@ -121,12 +121,12 @@ Glimmer: 5. Never stop learning!
 
 ~ next_steps
 Glimmer: Here's how to get started:
-Glimmer: 1. Keep practicing your Python skills
-Glimmer: 2. Choose a specialization that interests you
-Glimmer: 3. Take online courses in your chosen field
-Glimmer: 4. Build a portfolio of projects
-Glimmer: 5. Network with other developers
-Glimmer: Ready to begin your journey?
+		1. Keep practicing your Python skills
+		2. Choose a specialization that interests you
+		3. Take online courses in your chosen field
+		4. Build a portfolio of projects
+		5. Network with other developers
+		Ready to begin your journey?
 - Yes, I'm excited!
 	set glimmer = "true"
 	=> ending
