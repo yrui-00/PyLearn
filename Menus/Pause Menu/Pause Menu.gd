@@ -28,7 +28,7 @@ func _on_resume_pressed():
 func _on_restart_pressed():
 	hide()
 	resume()
-	get_tree().reload_current_scene()
+	SceneManager.swap_scenes(SceneRegistry.levels["game_start"],get_tree().root,self,"fade_to_black")
 
 
 func _on_quit_pressed():
