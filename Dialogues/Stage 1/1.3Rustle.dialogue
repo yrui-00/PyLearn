@@ -17,10 +17,10 @@ Rustle: Would you like to learn about Python's data types?
 
 ~ basic_types
 Rustle: Let's start with the four fundamental data types in Python:
-Rustle: 1. Integers (int) - Whole numbers
-Rustle: 2. Floating-point numbers (float) - Decimal numbers
-Rustle: 3. Strings (str) - Text
-Rustle: 4. Booleans (bool) - True/False values
+		1. Integers (int) - Whole numbers
+		2. Floating-point numbers (float) - Decimal numbers
+		3. Strings (str) - Text
+		4. Booleans (bool) - True/False values
 Rustle: Which would you like to learn about first?
 - Integers
 	=> integers
@@ -153,12 +153,12 @@ Rustle: type(x)
 
 ~ ending
 Rustle: You've learned about Python's basic data types:
-Rustle: - Integers for whole numbers
-Rustle: - Floats for decimal numbers
-Rustle: - Strings for text
-Rustle: - Booleans for True/False values
+		• Integers for whole numbers
+		• Floats for decimal numbers
+		• Strings for text
+		• Booleans for True/False values
 Rustle: Remember: You can always use type() to check a value's data type!
-Rustle: Now you should go see Twiggy for a quiz about data types. He's in his house north.
-Rustle: Good luck!
+		Now you should go see Twiggy for a quiz about data types. He's in his house north.
+		Good luck!
 set rustle = "true"
 => END

@@ -95,10 +95,10 @@ Flurry: Here's a fun example combining what we learned:
 
 ~ ending
 Flurry: Great job learning about arrays!
-Flurry: Remember:
-Flurry: - Arrays store multiple values
-Flurry: - You can add, remove, and change items
-Flurry: - Always practice in your code editor!
-Flurry: Head to Snow Ivy in the northeast to test your array knowledge!
+		Remember:
+		• Arrays store multiple values
+		• You can add, remove, and change items
+		• Always practice in your code editor!
+		Head to Snow Ivy in the northeast to test your array knowledge!
 set flurry = "true"
 => END

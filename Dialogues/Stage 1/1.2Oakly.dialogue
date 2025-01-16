@@ -4,16 +4,16 @@ if thistle == "false"
 	=> END
 else
 	Oakly: Welcome back! Let's dive deep into Python variables.
-	Oakly: One of the amazing things about Python is how simple it is to work with variables.
-	Oakly: Unlike some other programming languages, Python has no command for declaring a variable.
+		One of the amazing things about Python is how simple it is to work with variables.
+		Unlike some other programming languages, Python has no command for declaring a variable.
 	Oakly: A variable is created the moment you assign a value to it - it's that simple!
-	Oakly: Let me show you some examples:
+		Let me show you some examples:
 		x = 5           # This creates a number variable
 		y = "Hello"     # This creates a text variable
 		z = 3.14        # This creates a decimal variable
 	Oakly: Each of these variables is like a labeled container that holds a value.
-	Oakly: Here's something interesting - Python variables don't need to be declared with any specific type.
-	Oakly: Watch this:
+		Here's something interesting - Python variables don't need to be declared with any specific type.
+		Watch this:
 		x = 4           # x is a number
 		x = "Sally"     # Now x is text!
 	Oakly: The same variable can even change type after it's been set. Pretty flexible, right?
@@ -69,11 +69,11 @@ Oakly: These are exactly the same:
 	greeting = "Hello"
 	greeting = 'Hello'
 Oakly: Just be consistent with whichever style you choose!
-Oakly: You've learned a lot about variables today:
-Oakly: - How to create them
-Oakly: - How they can change types
-Oakly: - How to convert between types
-Oakly: - And how to work with text using quotes
+		You've learned a lot about variables today:
+		• How to create them
+		• How they can change types
+		• How to convert between types
+		• And how to work with text using quotes
 Oakly: Ready for a quick final question?
 Oakly: What would this code do:
 	name = "Python"

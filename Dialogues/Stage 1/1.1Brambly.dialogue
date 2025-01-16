@@ -65,12 +65,12 @@ Brambly: Try both examples in the Code Editor (F1) to see the errors yourself!
 
 ~ proper_indentation
 Brambly: Here's how to do it right - test this in your Code Editor:
-Brambly: 1. Use the same number of spaces for each level
-Brambly: 2. Most Python programmers use 4 spaces
-Brambly: 3. Be consistent throughout your code
+		1. Use the same number of spaces for each level
+		2. Most Python programmers use 4 spaces
+		3. Be consistent throughout your code
 
 Brambly: Type this example in your Code Editor:
-Brambly: weather = "rainy"
+weather = "rainy"
 		[[if weather == "rainy":]]
 		>>>print("Bring an umbrella!")
 		>>>print("Stay dry!")
@@ -84,11 +84,11 @@ Brambly: Try changing the indentation to see what happens!
 
 ~ indentation_rules
 Brambly: Here are the key rules for Python indentation:
-Brambly: 1. Indentation is REQUIRED after statements that end with a colon
-Brambly: 2. All related code must have the SAME indentation level
-Brambly: 3. Usually use 4 spaces (that's the Python standard)
-Brambly: 4. Be consistent - don't mix different indentation styles
-Brambly: Press F1 to open the Code Editor and practice these rules!
+		1. Indentation is REQUIRED after statements that end with a colon
+		2. All related code must have the SAME indentation level
+		3. Usually use 4 spaces (that's the Python standard)
+		4. Be consistent - don't mix different indentation styles
+		Press F1 to open the Code Editor and practice these rules!
 - Show me examples to practice
 	=> more_examples
 - I'm ready to continue
@@ -114,11 +114,11 @@ Brambly: Experiment with different scores to see different outputs!
 
 ~ wrap_up
 Brambly: That's all I have to teach about indentation!
-Brambly: Remember - in Python, proper indentation isn't just for style, it's required!
-Brambly: Keep practicing with the Code Editor - press F1 anytime to experiment.
+		Remember - in Python, proper indentation isn't just for style, it's required!
+		Keep practicing with the Code Editor - press F1 anytime to experiment.
 Brambly: Now you have two options:
-Brambly: If you want to learn more about python,visit Oakly next door after taking your quiz from Thistle in the south.
-Brambly: You can find Thistle in his house south of here.
-Brambly: And remember - the Code Editor is always available if you want to practice!
+		If you want to learn more about python,visit Oakly next door after taking your quiz from Thistle in the south.
+		You can find Thistle in his house south of here.
+		And remember - the Code Editor is always available if you want to practice!
 set brambly = "true"
 => END

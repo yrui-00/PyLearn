@@ -17,13 +17,13 @@ Berry: Would you like to learn about if statements and conditions in Python?
 ~ conditions
 Berry: First, let's understand the comparison operators in Python:
 Berry: These are the basic comparison operators:
-Berry: equals: ==
-Berry: not equals: !=
-Berry: less than: <
-Berry: less than or equal to: <=
-Berry: greater than: >
-Berry: greater than or equal to: >=
-Berry: Want to try a simple comparison?
+		• equals: ==
+		• not equals: !=
+		• less than: <
+		• less than or equal to: <=
+		• greater than: >
+		• greater than or equal to: >=
+Want to try a simple comparison?
 - Yes, show me
 	=> first_example
 - Tell me more about operators first
@@ -60,10 +60,10 @@ Berry: What will this code print?
 ~ if_structure
 Berry: Now, let's talk about the structure of if statements.
 Berry: Every if statement has these parts:
-Berry: 1. The 'if' keyword
-Berry: 2. A condition that's either True or False
-Berry: 3. A colon (:)
-Berry: 4. Indented code to run if condition is True
+		1. The 'if' keyword
+		2. A condition that's either True or False
+		3. A colon (:)
+		4. Indented code to run if condition is True
 Berry: Want to try writing one?
 - Yes
 	=> practice_if
@@ -84,8 +84,8 @@ Berry: Notice how both print statements are indented!
 
 ~ indentation
 Berry: Indentation is very important in Python!
-Berry: It shows which code belongs inside the if statement.
-Berry: Without proper indentation, you'll get an error.
+		It shows which code belongs inside the if statement.
+		Without proper indentation, you'll get an error.
 Berry: For example, this will cause an error:
 		[[if age >= 18:]]
 		print("No indentation = Error!")
@@ -114,25 +114,25 @@ Berry: x = 10
 		>>>print("x is greater than 5")
 - Missing colon
 	Berry: Correct! Every if statement needs a colon (:)
-	Berry: And the print statement should be indented!
-	Berry: You've learned the basics of if statements!
-	Berry: Now head north to find Fern and take a quiz about if statements.
-	Berry: Good luck!
+			And the print statement should be indented!
+			You've learned the basics of if statements!
+			Now head north to find Fern and take a quiz about if statements.
+			Good luck!
 	set berry = "true"
 	=> END
 - Missing quotes
 	Berry: Not quite. The issue is a missing colon (:)
-	Berry: And the print statement should be indented!
-	Berry: Let's review this again later.
-	Berry: Now head north to find Fern and take a quiz about if statements.
-	Berry: Good luck!
+			And the print statement should be indented!
+			Let's review this again later.
+			Now head north to find Fern and take a quiz about if statements.
+			Good luck!
 	set berry = "true"
 	=> END
 - Nothing wrong
 	Berry: Actually, it's missing a colon (:)
-	Berry: And the print statement should be indented!
-	Berry: Let's review this again later.
-	Berry: Now head north to find Fern and take a quiz about if statements.
-	Berry: Good luck!
+			And the print statement should be indented!
+			Let's review this again later.
+			Now head north to find Fern and take a quiz about if statements.
+			Good luck!
 	set berry = "true"
 	=> END
