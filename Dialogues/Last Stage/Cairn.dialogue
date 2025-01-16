@@ -23,10 +23,10 @@ Cairn: Python developers are like digital architects and problem-solvers rolled 
 
 ~ daily_work
 Cairn: A Python developer's day is never boring! You might be:
-Cairn: • Writing clean, efficient code for applications
-Cairn: • Collaborating with data scientists on analysis tools
-Cairn: • Creating AI models that predict user behavior
-Cairn: • Debugging and optimizing existing systems
+		• Writing clean, efficient code for applications
+		• Collaborating with data scientists on analysis tools
+		• Creating AI models that predict user behavior
+		• Debugging and optimizing existing systems
 Cairn: The best part? Every day brings new challenges!
 - What skills would I need?
 	=> skills_needed
@@ -37,15 +37,15 @@ Cairn: The best part? Every day brings new challenges!
 
 ~ skills_needed
 Cairn: To succeed as a Python developer, you'll want:
-Cairn: Technical Skills:
-Cairn: • Strong Python programming fundamentals
-Cairn: • Knowledge of popular frameworks (Django, Flask)
-Cairn: • Database management
-Cairn: • Version control (Git)
+		Technical Skills:
+		• Strong Python programming fundamentals
+		• Knowledge of popular frameworks (Django, Flask)
+		• Database management
+		• Version control (Git)
 Cairn: Soft Skills:
-Cairn: • Problem-solving ability
-Cairn: • Team collaboration
-Cairn: • Communication skills
+		• Problem-solving ability
+		• Team collaboration
+		• Communication skills
 - Where can I use these skills?
 	=> industries
 - How can I grow?
@@ -55,12 +55,12 @@ Cairn: • Communication skills
 
 ~ industries
 Cairn: Python developers are in demand everywhere!
-Cairn: Popular Industries:
-Cairn: • Tech Companies (Google, Amazon, Microsoft)
-Cairn: • Financial Institutions (Banks, Investment Firms)
-Cairn: • Healthcare (Medical Software, Research)
-Cairn: • Entertainment (Gaming, Streaming Platforms)
-Cairn: • E-commerce (Online Retail, Digital Marketing)
+		Popular Industries:
+		• Tech Companies (Google, Amazon, Microsoft)
+		• Financial Institutions (Banks, Investment Firms)
+		• Healthcare (Medical Software, Research)
+		• Entertainment (Gaming, Streaming Platforms)
+		• E-commerce (Online Retail, Digital Marketing)
 - What's the growth potential?
 	=> career_growth
 - What skills do I need?
@@ -70,12 +70,12 @@ Cairn: • E-commerce (Online Retail, Digital Marketing)
 
 ~ career_growth
 Cairn: The growth potential in Python is incredible!
-Cairn: Career Progression:
-Cairn: 1. Junior Developer - Learning the ropes
-Cairn: 2. Senior Developer - Leading projects
-Cairn: 3. Lead Developer - Guiding teams
-Cairn: 4. Technical Architect - Designing systems
-Cairn: Each step brings new opportunities and challenges!
+		Career Progression:
+		1. Junior Developer - Learning the ropes
+		2. Senior Developer - Leading projects
+		3. Lead Developer - Guiding teams
+		4. Technical Architect - Designing systems
+		Each step brings new opportunities and challenges!
 - How do I get started?
 	=> getting_started
 - What skills do I need?
@@ -85,11 +85,11 @@ Cairn: Each step brings new opportunities and challenges!
 
 ~ getting_started
 Cairn: Ready to begin your Python journey? Here's how:
-Cairn: 1. Master Python basics (like what you're learning now!)
-Cairn: 2. Build personal projects to practice
-Cairn: 3. Learn frameworks used in your chosen field
-Cairn: 4. Create a portfolio to showcase your work
-Cairn: 5. Network with other developers
+		1. Master Python basics (like what you're learning now!)
+		2. Build personal projects to practice
+		3. Learn frameworks used in your chosen field
+		4. Create a portfolio to showcase your work
+		5. Network with other developers
 - Tell me about careers again
 	=> career_overview
 - What skills should I focus on?
@@ -99,12 +99,12 @@ Cairn: 5. Network with other developers
 
 ~ ending
 Cairn: You've got what it takes to be a Python developer!
-Cairn: Remember:
-Cairn: • Start with the basics and build up
-Cairn: • Practice regularly
-Cairn: • Never stop learning
-Cairn: • Connect with the Python community
-Cairn: Your coding journey is just beginning! Ready to take the first step?
+		Remember:
+		• Start with the basics and build up
+		• Practice regularly
+		• Never stop learning
+		• Connect with the Python community
+		Your coding journey is just beginning! Ready to take the first step?
 - Yes, I'm excited!
 	Cairn: That's what I love to hear! The Python world welcomes you!
 	set cairn = "true"

@@ -9,11 +9,11 @@ Eclipse: Welcome to the world of data analysis! Ready to discover how data can t
 
 ~ role_overview
 Eclipse: Data analysts work across many exciting fields:
-Eclipse: • Business - Improving sales and marketing strategies
-Eclipse: • Healthcare - Tracking patient outcomes and trends
-Eclipse: • Government - Making policy decisions
-Eclipse: • Sports - Analyzing player performance
-Eclipse: • Technology - Enhancing user experience
+		• Business - Improving sales and marketing strategies
+		• Healthcare - Tracking patient outcomes and trends
+		• Government - Making policy decisions
+		• Sports - Analyzing player performance
+		• Technology - Enhancing user experience
 - How do they work?
 	=> analysis_process
 - What tools do they use?
@@ -23,14 +23,14 @@ Eclipse: • Technology - Enhancing user experience
 
 ~ analysis_process
 Eclipse: The data analysis process has five key phases:
-Eclipse: 1. Identify the Question
-Eclipse: • Define the problem
-Eclipse: • Plan the approach
-Eclipse: • Set clear objectives
+		1. Identify the Question
+		• Define the problem
+		• Plan the approach
+		• Set clear objectives
 Eclipse: 2. Collect the Data
-Eclipse: • Gather relevant information
-Eclipse: • Source reliable data
-Eclipse: • Document data origins
+		• Gather relevant information
+		• Source reliable data
+		• Document data origins
 - Tell me more phases
 	=> analysis_process_2
 - What tools are used?
@@ -40,18 +40,18 @@ Eclipse: • Document data origins
 
 ~ analysis_process_2
 Eclipse: Here are the next phases:
-Eclipse: 3. Clean the Data
-Eclipse: • Remove errors
-Eclipse: • Handle missing values
-Eclipse: • Standardize formats
+		3. Clean the Data
+		• Remove errors
+		• Handle missing values
+		• Standardize formats
 Eclipse: 4. Analyze the Data
-Eclipse: • Look for patterns
-Eclipse: • Identify trends
-Eclipse: • Test hypotheses
+		• Look for patterns
+		• Identify trends
+		• Test hypotheses
 Eclipse: 5. Present Findings
-Eclipse: • Create visualizations
-Eclipse: • Write reports
-Eclipse: • Make recommendations
+		• Create visualizations
+		• Write reports
+		• Make recommendations
 - Tell me about tools
 	=> analyst_tools
 - What skills are needed?
@@ -61,14 +61,14 @@ Eclipse: • Make recommendations
 
 ~ analyst_tools
 Eclipse: Data analysts use powerful tools in their work:
-Eclipse: Data Processing:
-Eclipse: • Excel/Google Sheets - Basic analysis
-Eclipse: • SQL - Database management
-Eclipse: • Python/R - Advanced analysis
+		Data Processing:
+		• Excel/Google Sheets - Basic analysis
+		• SQL - Database management
+		• Python/R - Advanced analysis
 Eclipse: Visualization:
-Eclipse: • Tableau - Interactive dashboards
-Eclipse: • Power BI - Business reporting
-Eclipse: • Matplotlib - Custom charts
+		• Tableau - Interactive dashboards
+		• Power BI - Business reporting
+		• Matplotlib - Custom charts
 - Tell me about coding tools
 	=> coding_tools
 - What about databases?
@@ -78,14 +78,14 @@ Eclipse: • Matplotlib - Custom charts
 
 ~ coding_tools
 Eclipse: Programming tools are essential for analysis:
-Eclipse: Python Libraries:
-Eclipse: • Pandas - Data manipulation
-Eclipse: • NumPy - Numerical analysis
-Eclipse: • Scikit-learn - Statistical analysis
+		Python Libraries:
+		• Pandas - Data manipulation
+		• NumPy - Numerical analysis
+		• Scikit-learn - Statistical analysis
 Eclipse: R Packages:
-Eclipse: • tidyverse - Data wrangling
-Eclipse: • ggplot2 - Visualization
-Eclipse: • dplyr - Data manipulation
+		• tidyverse - Data wrangling
+		• ggplot2 - Visualization
+		• dplyr - Data manipulation
 - What about databases?
 	=> database_tools
 - Show me visualization
@@ -95,14 +95,14 @@ Eclipse: • dplyr - Data manipulation
 
 ~ database_tools
 Eclipse: Database tools analysts use include:
-Eclipse: SQL Platforms:
-Eclipse: • MySQL - Open source
-Eclipse: • PostgreSQL - Advanced features
-Eclipse: • SQL Server - Enterprise level
+		SQL Platforms:
+		• MySQL - Open source
+		• PostgreSQL - Advanced features
+		• SQL Server - Enterprise level
 Eclipse: Database Tools:
-Eclipse: • DBeaver - SQL client
-Eclipse: • MongoDB - NoSQL databases
-Eclipse: • Redis - In-memory data
+		• DBeaver - SQL client
+		• MongoDB - NoSQL databases
+		• Redis - In-memory data
 - What about coding?
 	=> coding_tools
 - Show me visualization
@@ -112,14 +112,14 @@ Eclipse: • Redis - In-memory data
 
 ~ visualization_tools
 Eclipse: Data visualization tools bring insights to life:
-Eclipse: Desktop Tools:
-Eclipse: • Tableau Desktop - Interactive viz
-Eclipse: • Power BI - Microsoft integration
-Eclipse: • Looker - Cloud-based analysis
+		Desktop Tools:
+		• Tableau Desktop - Interactive viz
+		• Power BI - Microsoft integration
+		• Looker - Cloud-based analysis
 Eclipse: Web Platforms:
-Eclipse: • Plotly - Interactive web charts
-Eclipse: • D3.js - Custom visualizations
-Eclipse: • Google Data Studio - Online reporting
+		• Plotly - Interactive web charts
+		• D3.js - Custom visualizations
+		• Google Data Studio - Online reporting
 - What about coding?
 	=> coding_tools
 - Tell me about databases
@@ -129,16 +129,16 @@ Eclipse: • Google Data Studio - Online reporting
 
 ~ required_skills
 Eclipse: Data analysts need various skills:
-Eclipse: Technical Skills:
-Eclipse: • Data cleaning and validation
-Eclipse: • Statistical analysis
-Eclipse: • Database querying
-Eclipse: • Programming basics
+		Technical Skills:
+		• Data cleaning and validation
+		• Statistical analysis
+		• Database querying
+		• Programming basics
 Eclipse: Soft Skills:
-Eclipse: • Problem-solving
-Eclipse: • Communication
-Eclipse: • Attention to detail
-Eclipse: • Critical thinking
+		• Problem-solving
+		• Communication
+		• Attention to detail
+		• Critical thinking
 - How do I start?
 	=> getting_started
 - Show me tools used
@@ -148,11 +148,11 @@ Eclipse: • Critical thinking
 
 ~ analyst_roles
 Eclipse: Different types of data analyst roles:
-Eclipse: • Business Analyst - Focus on business metrics
-Eclipse: • Financial Analyst - Analyze financial data
-Eclipse: • Marketing Analyst - Study customer behavior
-Eclipse: • Healthcare Analyst - Analyze medical data
-Eclipse: • Sports Analyst - Evaluate performance stats
+		• Business Analyst - Focus on business metrics
+		• Financial Analyst - Analyze financial data
+		• Marketing Analyst - Study customer behavior
+		• Healthcare Analyst - Analyze medical data
+		• Sports Analyst - Evaluate performance stats
 - What skills are needed?
 	=> required_skills
 - Tell me about tools
@@ -162,18 +162,18 @@ Eclipse: • Sports Analyst - Evaluate performance stats
 
 ~ getting_started
 Eclipse: Ready to start your data analysis journey?
-Eclipse: 1. Learn the basics:
-Eclipse: • Start with Excel
-Eclipse: • Learn basic statistics
-Eclipse: • Practice data cleaning
+		1. Learn the basics:
+		• Start with Excel
+		• Learn basic statistics
+		• Practice data cleaning
 Eclipse: 2. Build skills:
-Eclipse: • Learn SQL
-Eclipse: • Study visualization
-Eclipse: • Try Python or R
+		• Learn SQL
+		• Study visualization
+		• Try Python or R
 Eclipse: 3. Create projects:
-Eclipse: • Build a portfolio
-Eclipse: • Practice with real data
-Eclipse: • Share your insights
+		• Build a portfolio
+		• Practice with real data
+		• Share your insights
 - Tell me about roles
 	=> analyst_roles
 - What skills do I need?
@@ -183,12 +183,12 @@ Eclipse: • Share your insights
 
 ~ ending
 Eclipse: You're about to embark on an exciting journey!
-Eclipse: Remember:
-Eclipse: • Start with the fundamentals
-Eclipse: • Practice regularly
-Eclipse: • Build a project portfolio
-Eclipse: • Join data communities
-Eclipse: Ready to unlock the stories in data?
+		Remember:
+		• Start with the fundamentals
+		• Practice regularly
+		• Build a project portfolio
+		• Join data communities
+		Ready to unlock the stories in data?
 - Yes, I'm excited!
 	Eclipse: That's the spirit! The world of data analysis awaits!
 	set eclipse = "true"

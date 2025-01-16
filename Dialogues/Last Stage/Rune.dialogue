@@ -9,10 +9,10 @@ Rune: Hey there! Want to discover how automation is revolutionizing the world?
 
 ~ automation_overview
 Rune: Automation Engineers work in many exciting areas:
-Rune: • Software Testing - Making sure programs work perfectly
-Rune: • Business Processes - Streamlining everyday tasks
-Rune: • Manufacturing - Optimizing production lines
-Rune: • Quality Control - Ensuring consistent results
+		• Software Testing - Making sure programs work perfectly
+		• Business Processes - Streamlining everyday tasks
+		• Manufacturing - Optimizing production lines
+		• Quality Control - Ensuring consistent results
 - How do they work?
 	=> analysis_process
 - What tools do they use?
@@ -22,15 +22,15 @@ Rune: • Quality Control - Ensuring consistent results
 
 ~ problem_solving
 Rune: Automation Engineers tackle various challenges:
-Rune: Business Challenges:
-Rune: • Slow manual processes
-Rune: • High error rates
-Rune: • Resource bottlenecks
-Rune: • Repetitive tasks
+		Business Challenges:
+		• Slow manual processes
+		• High error rates
+		• Resource bottlenecks
+		• Repetitive tasks
 Rune: Technical Challenges:
-Rune: • System integration
-Rune: • Performance issues
-Rune: • Legacy systems
+		• System integration
+		• Performance issues
+		• Legacy systems
 - Show me solutions
 	=> solutions
 - What tools help?
@@ -40,18 +40,18 @@ Rune: • Legacy systems
 
 ~ solutions
 Rune: Here's how Automation Engineers solve problems:
-Rune: Process Solutions:
-Rune: • Automated workflows
-Rune: • Scheduled tasks
-Rune: • Self-healing systems
+		Process Solutions:
+		• Automated workflows
+		• Scheduled tasks
+		• Self-healing systems
 Rune: Testing Solutions:
-Rune: • Automated test suites
-Rune: • Continuous integration
-Rune: • Performance testing
+		• Automated test suites
+		• Continuous integration
+		• Performance testing
 Rune: Business Solutions:
-Rune: • RPA implementations
-Rune: • Document processing
-Rune: • Data validation
+		• RPA implementations
+		• Document processing
+		• Data validation
 - How do they implement?
 	=> implementation
 - What tools help?
@@ -61,11 +61,11 @@ Rune: • Data validation
 
 ~ analysis_process
 Rune: First, Automation Engineers analyze processes:
-Rune: They look for:
-Rune: • Repetitive tasks that waste time
-Rune: • Error-prone manual processes
-Rune: • Bottlenecks slowing things down
-Rune: • Opportunities for improvement
+		They look for:
+		• Repetitive tasks that waste time
+		• Error-prone manual processes
+		• Bottlenecks slowing things down
+		• Opportunities for improvement
 - Then what happens?
 	=> design_phase
 - What tools help?
@@ -75,12 +75,12 @@ Rune: • Opportunities for improvement
 
 ~ design_phase
 Rune: After analysis, they design automated solutions:
-Rune: Design Steps:
-Rune: • Map out the process flow
-Rune: • Choose the right tools
-Rune: • Plan the implementation
-Rune: • Consider error handling
-Rune: Just like building a smart machine!
+		Design Steps:
+		• Map out the process flow
+		• Choose the right tools
+		• Plan the implementation
+		• Consider error handling
+J		ust like building a smart machine!
 - How do they implement?
 	=> implementation
 - What tools do they use?
@@ -90,12 +90,12 @@ Rune: Just like building a smart machine!
 
 ~ implementation
 Rune: Implementation brings automation to life:
-Rune: They create:
-Rune: • Scripts for repetitive tasks
-Rune: • Automated workflows
-Rune: • Testing frameworks
-Rune: • Monitoring systems
-Rune: All working together seamlessly!
+		They create:
+		• Scripts for repetitive tasks
+		• Automated workflows
+		• Testing frameworks
+		• Monitoring systems
+		All working together seamlessly!
 - How do they test it?
 	=> testing_phase
 - What tools help?
@@ -105,12 +105,12 @@ Rune: All working together seamlessly!
 
 ~ testing_phase
 Rune: Testing ensures everything works perfectly:
-Rune: They check:
-Rune: • System reliability
-Rune: • Error handling
-Rune: • Performance speed
-Rune: • Integration points
-Rune: Like a thorough quality check!
+		They check:
+		• System reliability
+		• Error handling
+		• Performance speed
+		• Integration points
+		Like a thorough quality check!
 - What about monitoring?
 	=> monitoring
 - Show me the tools
@@ -120,18 +120,18 @@ Rune: Like a thorough quality check!
 
 ~ job_roles
 Rune: Automation Engineers work in various roles:
-Rune: Test Automation:
-Rune: • QA Automation Engineer
-Rune: • Test Framework Developer
-Rune: • Performance Test Engineer
+		Test Automation:
+		• QA Automation Engineer
+		• Test Framework Developer
+		• Performance Test Engineer
 Rune: Process Automation:
-Rune: • RPA Developer
-Rune: • Business Process Engineer
-Rune: • Workflow Automation Specialist
+		• RPA Developer
+		• Business Process Engineer
+		• Workflow Automation Specialist
 Rune: Infrastructure Automation:
-Rune: • DevOps Engineer
-Rune: • Cloud Automation Engineer
-Rune: • Infrastructure Automation Specialist
+		• DevOps Engineer
+		• Cloud Automation Engineer
+		• Infrastructure Automation Specialist
 - What skills are needed?
 	=> required_skills
 - Show me tools
@@ -141,15 +141,15 @@ Rune: • Infrastructure Automation Specialist
 
 ~ troubleshooting
 Rune: Automation Engineers are expert problem-solvers:
-Rune: Common Issues:
-Rune: • Failed automations
-Rune: • Performance bottlenecks
-Rune: • Integration problems
+		Common Issues:
+		• Failed automations
+		• Performance bottlenecks
+		• Integration problems
 Rune: Solutions:
-Rune: • Log analysis
-Rune: • Debugging scripts
-Rune: • Performance tuning
-Rune: • Error handling
+		• Log analysis
+		• Debugging scripts
+		• Performance tuning
+		• Error handling
 - Show me monitoring
 	=> monitoring
 - What tools help?
@@ -159,12 +159,12 @@ Rune: • Error handling
 
 ~ monitoring
 Rune: Monitoring keeps automation running smoothly:
-Rune: They track:
-Rune: • System performance
-Rune: • Error rates
-Rune: • Process efficiency
-Rune: • Resource usage
-Rune: Always watching for improvements!
+		They track:
+		• System performance
+		• Error rates
+		• Process efficiency
+		• Resource usage
+		Always watching for improvements!
 - What tools help?
 	=> monitoring_tools
 - How do they fix issues?
@@ -174,14 +174,14 @@ Rune: Always watching for improvements!
 
 ~ automation_tools
 Rune: Automation Engineers use powerful tools:
-Rune: Programming:
-Rune: • Python - Scripting and automation
-Rune: • Java - Enterprise automation
-Rune: • PowerShell - Windows automation
+		Programming:
+		• Python - Scripting and automation
+		• Java - Enterprise automation
+		• PowerShell - Windows automation
 Rune: Testing Tools:
-Rune: • Selenium - Web testing
-Rune: • Robot Framework - Test automation
-Rune: • Jenkins - CI/CD automation
+		• Selenium - Web testing
+		• Robot Framework - Test automation
+		• Jenkins - CI/CD automation
 - Tell me about RPA
 	=> rpa_tools
 - Show me monitoring tools
@@ -191,13 +191,13 @@ Rune: • Jenkins - CI/CD automation
 
 ~ rpa_tools
 Rune: Robotic Process Automation (RPA) tools include:
-Rune: Enterprise Tools:
-Rune: • UiPath - Business automation
-Rune: • Blue Prism - Process automation
-Rune: • Automation Anywhere - Digital workforce
+		Enterprise Tools:
+		• UiPath - Business automation
+		• Blue Prism - Process automation
+		• Automation Anywhere - Digital workforce
 Rune: Business Tools:
-Rune: • Power Automate - Microsoft automation
-Rune: • Zapier - Web automation
+		• Power Automate - Microsoft automation
+		• Zapier - Web automation
 - Show me monitoring
 	=> monitoring_tools
 - What skills help?
@@ -207,13 +207,13 @@ Rune: • Zapier - Web automation
 
 ~ monitoring_tools
 Rune: Monitoring tools keep everything running:
-Rune: System Monitoring:
-Rune: • Nagios - Infrastructure monitoring
-Rune: • Zabbix - Enterprise monitoring
-Rune: • Grafana - Performance dashboards
+		System Monitoring:
+		• Nagios - Infrastructure monitoring
+		• Zabbix - Enterprise monitoring
+		• Grafana - Performance dashboards
 Rune: Process Monitoring:
-Rune: • New Relic - Application monitoring
-Rune: • Datadog - Cloud monitoring
+		• New Relic - Application monitoring
+		• Datadog - Cloud monitoring
 - Show me other tools
 	=> automation_tools
 - What skills help?
@@ -223,15 +223,15 @@ Rune: • Datadog - Cloud monitoring
 
 ~ required_skills
 Rune: Automation Engineers need various skills:
-Rune: Technical Skills:
-Rune: • Programming expertise
-Rune: • System design knowledge
-Rune: • Testing methodologies
-Rune: • Tool proficiency
+		Technical Skills:
+		• Programming expertise
+		• System design knowledge
+		• Testing methodologies
+		• Tool proficiency
 Rune: Problem-Solving Skills:
-Rune: • Process analysis
-Rune: • Critical thinking
-Rune: • Troubleshooting
+		• Process analysis
+		• Critical thinking
+		• Troubleshooting
 - How do I start?
 	=> career_paths
 - Show me tools
@@ -241,14 +241,14 @@ Rune: • Troubleshooting
 
 ~ career_paths
 Rune: The path to Automation Engineering:
-Rune: Starting Points:
-Rune: • Software Developer
-Rune: • QA Engineer
-Rune: • System Administrator
+		Starting Points:
+		• Software Developer
+		• QA Engineer
+		• System Administrator
 Rune: Growth Areas:
-Rune: • DevOps Engineer
-Rune: • RPA Developer
-Rune: • Automation Architect
+		• DevOps Engineer
+		• RPA Developer
+		• Automation Architect
 - What skills do I need?
 	=> required_skills
 - What tools to learn?
@@ -258,12 +258,12 @@ Rune: • Automation Architect
 
 ~ ending
 Rune: You're about to enter an exciting field!
-Rune: Remember:
-Rune: • Start with basic automation
-Rune: • Learn key tools
-Rune: • Practice regularly
-Rune: • Keep exploring new technologies
-Rune: Ready to automate the future?
+		Remember:
+		• Start with basic automation
+		• Learn key tools
+		• Practice regularly
+		• Keep exploring new technologies
+		Ready to automate the future?
 - Yes, I'm excited!
 	Rune: Perfect! Your journey to becoming an automation wizard begins now!
 	set rune = "true"

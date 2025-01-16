@@ -9,9 +9,9 @@ Duskveil: Welcome to the exciting world of web development! Ready to explore how
 
 ~ career_paths
 Duskveil: Web developers are like digital architects, and they come in three main types:
-Duskveil: • Front-End Developers: The artists who craft what you see
-Duskveil: • Back-End Developers: The engineers behind the scenes
-Duskveil: • Full-Stack Developers: The all-rounders who do both
+		• Front-End Developers: The artists who craft what you see
+		• Back-End Developers: The engineers behind the scenes
+		• Full-Stack Developers: The all-rounders who do both
 - Tell me about Front-End
 	=> frontend_dev
 - Tell me about Back-End
@@ -23,12 +23,12 @@ Duskveil: • Full-Stack Developers: The all-rounders who do both
 
 ~ frontend_dev
 Duskveil: Front-End developers are the creative minds who build what users see and interact with!
-Duskveil: They work with:
-Duskveil: • HTML - The structure
-Duskveil: • CSS - The style and design
-Duskveil: • JavaScript - The interactivity
-Duskveil: • Frameworks like React and Angular
-Duskveil: Their goal? Making websites beautiful and user-friendly!
+		They work with:
+		• HTML - The structure
+		• CSS - The style and design
+		• JavaScript - The interactivity
+		• Frameworks like React and Angular
+		Their goal? Making websites beautiful and user-friendly!
 - What tools do they use?
 	=> frontend_tools
 - What about Back-End?
@@ -38,12 +38,12 @@ Duskveil: Their goal? Making websites beautiful and user-friendly!
 
 ~ backend_dev
 Duskveil: Back-End developers are the problem-solvers working behind the scenes!
-Duskveil: They handle:
-Duskveil: • Server management
-Duskveil: • Database operations
-Duskveil: • Application logic
-Duskveil: • API development
-Duskveil: They ensure everything runs smoothly under the hood.
+They handle:
+		• Server management
+		• Database operations
+		• Application logic
+		• API development
+		They ensure everything runs smoothly under the hood.
 - What technologies do they use?
 	=> backend_tools
 - Tell me about Front-End
@@ -53,12 +53,12 @@ Duskveil: They ensure everything runs smoothly under the hood.
 
 ~ fullstack_dev
 Duskveil: Full-Stack developers are the Swiss Army knives of web development!
-Duskveil: They can:
-Duskveil: • Design user interfaces
-Duskveil: • Build server architecture
-Duskveil: • Manage databases
-Duskveil: • Handle entire projects solo
-Duskveil: They're comfortable working on all parts of a website!
+They can:
+		• Design user interfaces
+		• Build server architecture
+		• Manage databases
+		• Handle entire projects solo
+		They're comfortable working on all parts of a website!
 - What skills do they need?
 	=> fullstack_skills
 - Tell me about tools
@@ -68,12 +68,12 @@ Duskveil: They're comfortable working on all parts of a website!
 
 ~ webmaster_role
 Duskveil: Webmasters are the guardians of websites!
-Duskveil: Their responsibilities include:
-Duskveil: • Updating content
-Duskveil: • Fixing broken links
-Duskveil: • Monitoring performance
-Duskveil: • Managing security
-Duskveil: • Ensuring everything works properly
+		Their responsibilities include:
+		• Updating content
+		• Fixing broken links
+		• Monitoring performance
+		• Managing security
+		• Ensuring everything works properly
 - What tools do they use?
 	=> webmaster_tools
 - Tell me about careers
@@ -83,11 +83,11 @@ Duskveil: • Ensuring everything works properly
 
 ~ frontend_tools
 Duskveil: Front-End developers use powerful tools like:
-Duskveil: • Visual Studio Code for coding
-Duskveil: • Chrome DevTools for testing
-Duskveil: • Sass for advanced styling
-Duskveil: • Git for version control
-Duskveil: • Figma for design collaboration
+		• Visual Studio Code for coding
+		• Chrome DevTools for testing
+		• Sass for advanced styling
+		• Git for version control
+		• Figma for design collaboration
 - What about Back-End tools?
 	=> backend_tools
 - Tell me about skills needed
@@ -97,11 +97,11 @@ Duskveil: • Figma for design collaboration
 
 ~ backend_tools
 Duskveil: Back-End developers work with:
-Duskveil: • Python, PHP, or Ruby
-Duskveil: • Databases like MySQL
-Duskveil: • Frameworks like Django
-Duskveil: • API tools like Postman
-Duskveil: • Docker for deployment
+		• Python, PHP, or Ruby
+		• Databases like MySQL
+		• Frameworks like Django
+		• API tools like Postman
+		• Docker for deployment
 - What about Front-End tools?
 	=> frontend_tools
 - Tell me about Full-Stack
@@ -111,14 +111,14 @@ Duskveil: • Docker for deployment
 
 ~ development_skills
 Duskveil: To succeed in web development, you'll need:
-Duskveil: Technical Skills:
-Duskveil: • Programming languages
-Duskveil: • Version control
-Duskveil: • Testing and debugging
+		Technical Skills:
+		• Programming languages
+		• Version control
+		• Testing and debugging
 Duskveil: Soft Skills:
-Duskveil: • Problem-solving
-Duskveil: • Communication
-Duskveil: • Time management
+		• Problem-solving
+		• Communication
+		• Time management
 - How do I start learning?
 	=> getting_started
 - Tell me about tools
@@ -128,18 +128,18 @@ Duskveil: • Time management
 
 ~ fullstack_skills
 Duskveil: Full-Stack developers need a broad skill set:
-Duskveil: Front-End Skills:
-Duskveil: • HTML, CSS, JavaScript mastery
-Duskveil: • UI/UX design principles
-Duskveil: • Front-end frameworks
+		Front-End Skills:
+		• HTML, CSS, JavaScript mastery
+		• UI/UX design principles
+		• Front-end frameworks
 Duskveil: Back-End Skills:
-Duskveil: • Server-side programming
-Duskveil: • Database management
-Duskveil: • API development
+		• Server-side programming
+		• Database management
+		• API development
 Duskveil: Additional Skills:
-Duskveil: • Version control
-Duskveil: • Testing and debugging
-Duskveil: • DevOps basics
+		• Version control
+		• Testing and debugging
+		• DevOps basics
 - Show me tools they use
 	=> development_tools
 - Tell me about career growth
@@ -149,17 +149,17 @@ Duskveil: • DevOps basics
 
 ~ development_tools
 Duskveil: Web developers use a variety of powerful tools:
-Duskveil: Code Editors:
-Duskveil: • Visual Studio Code
-Duskveil: • Sublime Text
-Duskveil: • WebStorm
+		Code Editors:
+		• Visual Studio Code
+		• Sublime Text
+		• WebStorm
 Duskveil: Version Control:
-Duskveil: • Git and GitHub
-Duskveil: • GitLab
+		• Git and GitHub
+		• GitLab
 Duskveil: Development Tools:
-Duskveil: • Chrome DevTools
-Duskveil: • Postman for API testing
-Duskveil: • Docker for containers
+		• Chrome DevTools
+		• Postman for API testing
+		• Docker for containers
 - Tell me about Front-End tools
 	=> frontend_tools
 - What about Back-End?
@@ -169,18 +169,18 @@ Duskveil: • Docker for containers
 
 ~ webmaster_tools
 Duskveil: Webmasters rely on these essential tools:
-Duskveil: Content Management:
-Duskveil: • WordPress
-Duskveil: • Drupal
-Duskveil: • Joomla
+		Content Management:
+		• WordPress
+		• Drupal
+		• Joomla
 Duskveil: Monitoring Tools:
-Duskveil: • Google Analytics
-Duskveil: • SEO tools
-Duskveil: • Performance monitors
+		• Google Analytics
+		• SEO tools
+		• Performance monitors
 Duskveil: Security Tools:
-Duskveil: • SSL certificates
-Duskveil: • Security scanners
-Duskveil: • Backup solutions
+		• SSL certificates
+		• Security scanners
+		• Backup solutions
 - What about developer tools?
 	=> development_tools
 - Tell me about skills
@@ -190,11 +190,11 @@ Duskveil: • Backup solutions
 
 ~ getting_started
 Duskveil: Ready to start your web development journey? Here's how:
-Duskveil: 1. Learn HTML, CSS, and JavaScript basics
-Duskveil: 2. Build practice projects
-Duskveil: 3. Choose a specialization
-Duskveil: 4. Learn relevant frameworks
-Duskveil: 5. Create a portfolio
+		1. Learn HTML, CSS, and JavaScript basics
+		2. Build practice projects
+		3. Choose a specialization
+		4. Learn relevant frameworks
+		5. Create a portfolio
 - Tell me about career growth
 	=> career_growth
 - What skills do I need?
@@ -204,11 +204,11 @@ Duskveil: 5. Create a portfolio
 
 ~ career_growth
 Duskveil: Web development offers exciting growth opportunities:
-Duskveil: Career Path:
-Duskveil: 1. Junior Developer - Learning fundamentals
-Duskveil: 2. Mid-Level Developer - Taking on bigger projects
-Duskveil: 3. Senior Developer - Leading development teams
-Duskveil: 4. Technical Lead - Guiding project direction
+		Career Path:
+		1. Junior Developer - Learning fundamentals
+		2. Mid-Level Developer - Taking on bigger projects
+		3. Senior Developer - Leading development teams
+		4. Technical Lead - Guiding project direction
 - How do I get started?
 	=> getting_started
 - What skills do I need?
@@ -218,12 +218,12 @@ Duskveil: 4. Technical Lead - Guiding project direction
 
 ~ ending
 Duskveil: You're about to embark on an amazing journey!
-Duskveil: Remember:
-Duskveil: • Start with the basics
-Duskveil: • Build real projects
-Duskveil: • Keep learning new technologies
-Duskveil: • Join developer communities
-Duskveil: Ready to create amazing websites?
+		Remember:
+		• Start with the basics
+		• Build real projects
+		• Keep learning new technologies
+		• Join developer communities
+		Ready to create amazing websites?
 - Yes, I'm excited!
 	Duskveil: Perfect! The web is waiting for your creativity!
 	set duskveil = "true"
