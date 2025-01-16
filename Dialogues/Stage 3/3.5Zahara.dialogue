@@ -9,12 +9,12 @@ set score = 0
 
 ~ question_one
 Zahara: What is an iterator in Python?
+- A type of list
+	Zahara: Not quite! An iterator is for traversing through values.
+	=> question_two
 - An object that lets you traverse through values one at a time
 	Zahara: Correct! Like a bookmark through your data!
 	set score = score + 1
-	=> question_two
-- A type of list
-	Zahara: Not quite! An iterator is for traversing through values.
 	=> question_two
 - A way to create loops
 	Zahara: Incorrect! Iterators help us move through sequences.
@@ -48,25 +48,25 @@ Zahara: What are the two methods needed to create a custom iterator?
 
 ~ question_four
 Zahara: What does the StopIteration statement do?
-- Prevents infinite iteration
-	Zahara: Correct! It tells the iterator when to stop!
-	set score = score + 1
-	=> question_five
 - Starts the iteration
 	Zahara: Incorrect! It actually stops the iteration.
 	=> question_five
 - Resets the iterator
 	Zahara: Not quite! It's used to end iteration.
 	=> question_five
+- Prevents infinite iteration
+	Zahara: Correct! It tells the iterator when to stop!
+	set score = score + 1
+	=> question_five
 
 ~ question_five
 Zahara: Which of these is an iterable object?
+- A number
+	Zahara: Incorrect! Numbers aren't iterable, but strings are!
+	=> question_six
 - A string
 	Zahara: Correct! Strings are iterable character by character!
 	set score = score + 1
-	=> question_six
-- A number
-	Zahara: Incorrect! Numbers aren't iterable, but strings are!
 	=> question_six
 - A boolean
 	Zahara: Not quite! Strings are iterable, but booleans aren't.

@@ -9,15 +9,15 @@ set score = 0
 
 ~ question_one
 Dunehopper: What is inheritance in Python?
-- A way for a class to inherit features from another class
-	Dunehopper: Correct! Just like inheriting traits from parents!
-	set score = score + 1
-	=> question_two
 - A way to copy code between files
 	Dunehopper: Not quite! Inheritance is about classes sharing features.
 	=> question_two
 - A way to import modules
 	Dunehopper: Incorrect! Inheritance lets classes inherit from other classes.
+	=> question_two
+- A way for a class to inherit features from another class
+	Dunehopper: Correct! Just like inheriting traits from parents!
+	set score = score + 1
 	=> question_two
 
 ~ question_two
@@ -35,25 +35,25 @@ Dunehopper: How do you create a Student class that inherits from Person?
 
 ~ question_three
 Dunehopper: What's the purpose of super().__init__()?
-- To call the parent class's __init__ method
-	Dunehopper: Correct! super() helps us use the parent's initialization!
-	set score = score + 1
-	=> question_four
 - To create a new instance
 	Dunehopper: Incorrect! super() calls the parent class's __init__
 	=> question_four
 - To delete the parent class
 	Dunehopper: Not quite! super() lets us use parent class features.
 	=> question_four
+- To call the parent class's __init__ method
+	Dunehopper: Correct! super() helps us use the parent's initialization!
+	set score = score + 1
+	=> question_four
 
 ~ question_four
 Dunehopper: What happens when you add __init__ to a child class?
+- It adds to the parent's __init__
+	Dunehopper: Incorrect! It actually overrides the parent's __init__
+	=> question_five
 - It overrides the parent's __init__
 	Dunehopper: Correct! The child's __init__ replaces the parent's!
 	set score = score + 1
-	=> question_five
-- It adds to the parent's __init__
-	Dunehopper: Incorrect! It actually overrides the parent's __init__
 	=> question_five
 - Nothing happens
 	Dunehopper: Not quite! The child's __init__ overrides the parent's.
@@ -61,12 +61,12 @@ Dunehopper: What happens when you add __init__ to a child class?
 
 ~ question_five
 Dunehopper: Can a child class add new methods its parent doesn't have?
+- No
+	Dunehopper: Incorrect! Child classes can definitely add new methods.
+	=> question_six
 - Yes
 	Dunehopper: Correct! Child classes can add new features!
 	set score = score + 1
-	=> question_six
-- No
-	Dunehopper: Incorrect! Child classes can definitely add new methods.
 	=> question_six
 - Only if the parent allows it
 	Dunehopper: Not quite! Child classes are free to add new methods.

@@ -9,12 +9,12 @@ set score = 0
 
 ~ question_one
 Sultan: What does "polymorphism" mean in programming?
+- Making objects the same
+	Sultan: Not quite! Polymorphism allows for different behaviors.
+	=> question_two
 - The same method working with different objects
 	Sultan: Correct! Polymorphism means "many forms" - one method, many behaviors!
 	set score = score + 1
-	=> question_two
-- Making objects the same
-	Sultan: Not quite! Polymorphism allows for different behaviors.
 	=> question_two
 - Creating multiple objects
 	Sultan: Incorrect! Polymorphism is about methods taking different forms.
@@ -22,12 +22,12 @@ Sultan: What does "polymorphism" mean in programming?
 
 ~ question_two
 Sultan: How does len() show polymorphism with different objects?
+- It always returns the same thing
+	Sultan: Incorrect! len() changes behavior based on the object.
+	=> question_three
 - It returns different values based on the object type
 	Sultan: Correct! len() adapts its behavior to each type of object!
 	set score = score + 1
-	=> question_three
-- It always returns the same thing
-	Sultan: Incorrect! len() changes behavior based on the object.
 	=> question_three
 - It creates new objects
 	Sultan: Not quite! len() measures different things for different objects.
@@ -48,12 +48,12 @@ Sultan: What does len() return for a dictionary?
 
 ~ question_four
 Sultan: Can child classes override parent class methods?
+- No, they must use parent methods
+	Sultan: Incorrect! Children can override parent methods.
+	=> question_five
 - Yes, that's part of polymorphism
 	Sultan: Correct! Child classes can give new behavior to parent methods!
 	set score = score + 1
-	=> question_five
-- No, they must use parent methods
-	Sultan: Incorrect! Children can override parent methods.
 	=> question_five
 - Only if the parent allows it
 	Sultan: Not quite! Children can always override parent methods.
@@ -74,15 +74,15 @@ Sultan: What happens when a child class doesn't override a parent method?
 
 ~ question_six
 Sultan: What's the benefit of polymorphism in class design?
-- It allows flexible and reusable code
-	Sultan: Correct! One interface, many implementations!
-	set score = score + 1
-	=> check_score
 - It makes code run faster
 	Sultan: Incorrect! It's about flexibility, not speed.
 	=> check_score
 - It reduces memory usage
 	Sultan: Not quite! Polymorphism is about code flexibility.
+	=> check_score
+- It allows flexible and reusable code
+	Sultan: Correct! One interface, many implementations!
+	set score = score + 1
 	=> check_score
 
 ~ check_score

@@ -22,12 +22,12 @@ Crystal: What is a class in Python?
 
 ~ question_two
 Crystal: What is the purpose of the __init__ method?
+- To end the class definition
+	Crystal: Incorrect! __init__ initializes objects when they're created.
+	=> question_three
 - To initialize object properties when created
 	Crystal: Correct! __init__ sets up the initial state of objects!
 	set score = score + 1
-	=> question_three
-- To end the class definition
-	Crystal: Incorrect! __init__ initializes objects when they're created.
 	=> question_three
 - To import other classes
 	Crystal: Not quite! __init__ is for setting up new objects.
@@ -35,15 +35,15 @@ Crystal: What is the purpose of the __init__ method?
 
 ~ question_three
 Crystal: How do you create an object from a class named Car?
-- my_car = Car()
-	Crystal: Correct! That's exactly how we create a new Car object!
-	set score = score + 1
-	=> question_four
 - make Car()
 	Crystal: Incorrect! We use syntax like my_car = Car()
 	=> question_four
 - new Car()
 	Crystal: Not quite! Python uses my_car = Car() syntax.
+	=> question_four
+- my_car = Car()
+	Crystal: Correct! That's exactly how we create a new Car object!
+	set score = score + 1
 	=> question_four
 
 ~ question_four
@@ -74,12 +74,12 @@ Crystal: Which method makes objects print nicely as strings?
 
 ~ question_six
 Crystal: How do you call a method named 'honk' on a car object?
+- honk(car)
+	Crystal: Incorrect! We use car.honk() to call object methods.
+	=> check_score
 - car.honk()
 	Crystal: Correct! That's how we call object methods!
 	set score = score + 1
-	=> check_score
-- honk(car)
-	Crystal: Incorrect! We use car.honk() to call object methods.
 	=> check_score
 - car->honk()
 	Crystal: Not quite! Python uses dot notation: car.honk()

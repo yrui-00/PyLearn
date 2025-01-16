@@ -9,12 +9,12 @@ set score = 0
 
 ~ question_one
 Snowbert: What keyword do we use to create a function in Python?
+- function
+	Snowbert: Not quite! We use 'def' to define functions.
+	=> question_two
 - def
 	Snowbert: Correct! 'def' is how we define functions in Python.
 	set score = score + 1
-	=> question_two
-- function
-	Snowbert: Not quite! We use 'def' to define functions.
 	=> question_two
 - create
 	Snowbert: Incorrect! 'def' is the keyword for creating functions.
@@ -25,15 +25,15 @@ Snowbert: What will this code do?
 Snowbert: def greet():
 Snowbert:     print("Hello!")
 Snowbert: greet()
-- Print "Hello!"
-	Snowbert: Correct! The function prints "Hello!" when called.
-	set score = score + 1
-	=> question_three
 - Nothing
 	Snowbert: Incorrect! The function is called and will print "Hello!"
 	=> question_three
 - Create a variable
 	Snowbert: Not quite! This function prints "Hello!" when called.
+	=> question_three
+- Print "Hello!"
+	Snowbert: Correct! The function prints "Hello!" when called.
+	set score = score + 1
 	=> question_three
 
 ~ question_three
@@ -61,12 +61,12 @@ Snowbert: Can a function receive a list as an argument?
 
 ~ question_five
 Snowbert: How do you call a function named player_score?
+- call player_score
+	Snowbert: Incorrect! Use player_score() to call the function.
+	=> question_six
 - player_score()
 	Snowbert: Correct! We use the name followed by parentheses.
 	set score = score + 1
-	=> question_six
-- call player_score
-	Snowbert: Incorrect! Use player_score() to call the function.
 	=> question_six
 - run player_score
 	Snowbert: Not quite! The correct way is player_score()
@@ -74,15 +74,15 @@ Snowbert: How do you call a function named player_score?
 
 ~ question_six
 Snowbert: What's the main purpose of functions?
-- To make code reusable
-	Snowbert: Correct! Functions help us reuse code efficiently!
-	set score = score + 1
-	=> check_score
 - To make code run faster
 	Snowbert: Not quite! Functions primarily help with code reuse.
 	=> check_score
 - To make variables
 	Snowbert: Incorrect! Functions are mainly for code reuse.
+	=> check_score
+- To make code reusable
+	Snowbert: Correct! Functions help us reuse code efficiently!
+	set score = score + 1
 	=> check_score
 
 ~ check_score

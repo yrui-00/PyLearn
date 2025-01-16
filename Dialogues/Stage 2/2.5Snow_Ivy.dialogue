@@ -9,12 +9,12 @@ set score = 0
 
 ~ question_one
 Snow Ivy: What do we use to create an array of cars in Python?
+- cars = ("Ford", "Volvo", "BMW")
+	Snow Ivy: Not quite! Arrays use square brackets [], not parentheses.
+	=> question_two
 - cars = ["Ford", "Volvo", "BMW"]
 	Snow Ivy: Correct! Square brackets are used to create arrays!
 	set score = score + 1
-	=> question_two
-- cars = ("Ford", "Volvo", "BMW")
-	Snow Ivy: Not quite! Arrays use square brackets [], not parentheses.
 	=> question_two
 - cars = {Ford, Volvo, BMW}
 	Snow Ivy: Incorrect! Arrays are created using square brackets [].
@@ -35,25 +35,25 @@ Snow Ivy: If cars = ["Toyota", "Honda", "BMW"], what index gets "Honda"?
 
 ~ question_three
 Snow Ivy: Which method adds a new car to the end of an array?
-- append()
-	Snow Ivy: Correct! append() adds items to the end of an array!
-	set score = score + 1
-	=> question_four
 - add()
 	Snow Ivy: Incorrect! We use append() to add items to arrays.
 	=> question_four
 - insert()
 	Snow Ivy: Not quite! append() is the method for adding to the end.
 	=> question_four
+- append()
+	Snow Ivy: Correct! append() adds items to the end of an array!
+	set score = score + 1
+	=> question_four
 
 ~ question_four
 Snow Ivy: What Python function tells us how many items are in an array?
+- count()
+	Snow Ivy: Incorrect! len() is used to count array items.
+	=> question_five
 - len()
 	Snow Ivy: Correct! len() returns the number of items in an array!
 	set score = score + 1
-	=> question_five
-- count()
-	Snow Ivy: Incorrect! len() is used to count array items.
 	=> question_five
 - size()
 	Snow Ivy: Not quite! We use len() to get the array size.
@@ -74,15 +74,15 @@ Snow Ivy: How do you remove "Volvo" from an array by its value?
 
 ~ question_six
 Snow Ivy: What's the correct way to loop through all cars in an array?
-- for car in cars:
-	Snow Ivy: Correct! That's how we loop through array items!
-	set score = score + 1
-	=> check_score
 - loop cars:
 	Snow Ivy: Incorrect! The correct syntax is 'for car in cars:'
 	=> check_score
 - while cars:
 	Snow Ivy: Not quite! Use 'for car in cars:' to loop through arrays.
+	=> check_score
+- for car in cars:
+	Snow Ivy: Correct! That's how we loop through array items!
+	set score = score + 1
 	=> check_score
 
 ~ check_score
