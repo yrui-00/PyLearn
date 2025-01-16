@@ -88,6 +88,7 @@ layout_mode = 2
 text = "RESUME"
 
 [node name="Restart" type="Button" parent="PanelContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "RESTART"
 
