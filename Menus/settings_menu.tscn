@@ -113,6 +113,7 @@ step = 0.05
 value = 1.0
 
 [node name="Language" type="Label" parent="Panel/BackgroundPanel/MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
+visible = false
 custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
 text = "Language
@@ -120,6 +121,7 @@ text = "Language
 
 [node name="LanguageDropdown" type="OptionButton" parent="Panel/BackgroundPanel/MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 item_count = 2
 selected = 0
