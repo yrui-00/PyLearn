@@ -10,8 +10,13 @@ func _ready():
 	submit.pressed.connect(_on_submit_pressed)
 
 func _on_submit_pressed():
-	if text_edit.text.strip_edges() != "":
+	var entered_name = text_edit.text.strip_edges()
+	if entered_name != "":
 		# Store the player name in GameData before switching scenes
-		State.player_name = text_edit.text
+		State.player_name = entered_name
 	# Then switch to the next scene
 	SceneManager.swap_scenes(SceneRegistry.levels["intro"], get_tree().root, self, "wipe_to_right")
+
+
+func _on_button_pressed():
+	SceneManager.swap_scenes(SceneRegistry.levels["main"], get_tree().root, self, "wipe_to_right")

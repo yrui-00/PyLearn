@@ -22,21 +22,21 @@ grow_vertical = 2
 
 [node name="Submit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 449.0
-offset_top = 511.0
-offset_right = 834.0
-offset_bottom = 639.0
+offset_left = 510.0
+offset_top = 524.0
+offset_right = 769.0
+offset_bottom = 629.0
 theme_override_fonts/font = ExtResource("1_k0ej6")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 30
 text = "SUBMIT"
 
 [node name="TextEdit" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 399.0
+offset_left = 330.0
 offset_top = 290.0
-offset_right = 883.0
+offset_right = 951.0
 offset_bottom = 420.0
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 66
 placeholder_text = "Player01"
 
 [node name="Label" type="Label" parent="."]
@@ -45,9 +45,19 @@ offset_top = 34.0
 offset_right = 1281.0
 offset_bottom = 232.0
 theme_override_fonts/font = ExtResource("1_k0ej6")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 55
 text = "ENTER    PLAYER     NAME:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Button" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(1.39561, 1.37386)
+theme_override_fonts/font = ExtResource("1_k0ej6")
+text = "BACK"
+
 [connection signal="pressed" from="Submit" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
