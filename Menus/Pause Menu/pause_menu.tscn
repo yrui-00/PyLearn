@@ -87,6 +87,11 @@ alignment = 1
 layout_mode = 2
 text = "RESUME"
 
+[node name="Save" type="Button" parent="PanelContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "SAVE"
+
 [node name="Restart" type="Button" parent="PanelContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
@@ -106,3 +111,5 @@ libraries = {
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="canceled" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_canceled"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]
