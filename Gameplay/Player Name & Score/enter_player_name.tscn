@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq6yt812ttrqy"]
+
+[ext_resource type="Script" path="res://Gameplay/Player Name & Score/enter_player_name.gd" id="1_aq34f"]
+[ext_resource type="FontFile" uid="uid://xhf4ooaey5ld" path="res://Art/Font/NormalFont.ttf" id="1_k0ej6"]
+
+[node name="Enter Player Name" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aq34f")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Submit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 511.0
+offset_right = 834.0
+offset_bottom = 639.0
+theme_override_fonts/font = ExtResource("1_k0ej6")
+theme_override_font_sizes/font_size = 45
+text = "SUBMIT"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 290.0
+offset_right = 883.0
+offset_bottom = 420.0
+theme_override_font_sizes/font_size = 75
+placeholder_text = "Player01"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 1281.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("1_k0ej6")
+theme_override_font_sizes/font_size = 75
+text = "ENTER    PLAYER     NAME:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Submit" to="." method="_on_submit_pressed"]

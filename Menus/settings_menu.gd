@@ -10,11 +10,11 @@ class_name SettingsMenu extends CanvasLayer
 #	1280×720 with a scaling factor of 2.
 
 
-signal language_changed(language: String)
+#signal language_changed(language: String)
 
 @onready var music_slider:HSlider = %MusicSlider as HSlider
 @onready var sfx_slider:HSlider = %SFXSlider as HSlider
-@onready var language_dropdown:OptionButton = %LanguageDropdown as OptionButton
+#@onready var language_dropdown:OptionButton = %LanguageDropdown as OptionButton
 @onready var close_button:Button = %CloseButton as Button
 @onready var save_button:Button = %SaveButton as Button
 @onready var quit_button:Button = %QuitButton as Button
@@ -40,8 +40,8 @@ func _ready():
 		music_slider.value = user_prefs.music_volume
 	if sfx_slider:
 		sfx_slider.value = user_prefs.sfx_volume
-	if language_dropdown:
-		language_dropdown.selected = user_prefs.language
+	#if language_dropdown:
+		#language_dropdown.selected = user_prefs.language
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -75,11 +75,11 @@ func _on_sfx_slider_value_changed(_value):
 	AudioServer.set_bus_mute(SFX_BUS_ID, _value < .05)
 	user_prefs.sfx_volume = _value
 
-func _on_language_dropdown_item_selected(_index):
+#func _on_language_dropdown_item_selected(_index):
 	# todo - set selected language
-	user_prefs.language = _index
+	#user_prefs.language = _index
 	# todo - needs to be wired to a more central place for handling loc (planned for future version)
-	language_changed.emit(_index)
+	#language_changed.emit(_index)
 
 func _notification(what):
 	match what:

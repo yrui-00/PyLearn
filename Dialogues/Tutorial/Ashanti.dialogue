@@ -33,13 +33,11 @@ else:
 					Ashanti: That's the spirit! Remember, while you're finding your way home, you might actually enjoy learning to code.
 					Ashanti: Cluey's up next - he'll show you some programming basics that'll help you progress.
 					set ashanti = "true"
-					set forestkey = "true"
 					=> END
 				- I'm still nervous about all this...
 					Ashanti: *gently* Hey, that's completely normal. You've been thrown into a whole new world!
 					Ashanti: Just take it one step at a time. We're all here to help you get back home.
 					set ashanti = "true"
-					set forestkey = "true"
 					=> END
 		- This has to be a dream...
 			Ashanti: I know it's a lot to take in, but I promise this is real. Let's start with the basics, okay?
@@ -55,13 +53,11 @@ else:
 					Ashanti: That's the spirit! Remember, while you're finding your way home, you might actually enjoy learning to code.
 					Ashanti: Cluey's up next - he'll show you some programming basics that'll help you progress.
 					set ashanti = "true"
-					set forestkey = "true"
 					=> END
 				- I'm still nervous about all this...
 					Ashanti: *gently* Hey, that's completely normal. You've been thrown into a whole new world!
 					Ashanti: Just take it one step at a time. We're all here to help you get back home.
 					set ashanti = "true"
-					set forestkey = "true"
 					=> END
 	- How do I get back home?
 		Ashanti: *sympathetically* That's... complicated. But learning how this world works is your first step.
@@ -76,10 +72,8 @@ else:
 			- Yes, let's go!
 				Ashanti: Perfect! Cluey will be your next guide. He'll teach you some programming basics.
 				set ashanti = "true"
-				set forestkey = "true"
 				=> END
 			- Give me a moment...
 				Ashanti: Take your time. This is all new for you.
 				set ashanti = "true"
-				set forestkey = "true"
 				=> END

@@ -6,12 +6,15 @@ class_name Player extends CharacterBody2D
 @onready var animation: AnimationPlayer = $AnimationPlayer
 @onready var finder: Area2D = $Direction/Finder
 @onready var score_label = %Score
+@onready var name_label = $Label
 var score_counter = 0
 var move_dir: Vector2
 const SPEED = 75.0
 var last_direction: String = "down"
 
 func _ready():
+	if State.player_name !="":
+		name_label.text = State.player_name
 	State.editor_state_changed.connect(_on_editor_state_changed)
 
 func _on_editor_state_changed(editor_open: bool):

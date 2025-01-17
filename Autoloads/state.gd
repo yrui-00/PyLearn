@@ -1,5 +1,7 @@
 extends Node
 
+var player_name = ""
+
 signal editor_state_changed(is_editor_open: bool)
 
 var is_editor_open: bool = false

@@ -101,6 +101,8 @@ libraries = {
 "": SubResource("AnimationLibrary_ye7r4")
 }
 
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -36,16 +36,16 @@ enum GLOBAL_STATE {
 	PAUSED
 }
 
-const LANGUAGES:Dictionary = {
-	0:"en-US",
-	1:"es-LAT"
-}
+#const LANGUAGES:Dictionary = {
+	#0:"en-US",
+	#1:"es-LAT"
+#}
 
-func get_selected_language() -> String:
-	var s:String = LANGUAGES[user_prefs.language]
-	if s:
-		return s
-	return LANGUAGES[0]
+#func get_selected_language() -> String:
+	#var s:String = LANGUAGES[user_prefs.language]
+	#if s:
+		#return s
+	#return LANGUAGES[0]
 
 # temp - maybe the settings menu doesn't need to live in a global spot? (will decide in future version)
 func open_settings_menu():
