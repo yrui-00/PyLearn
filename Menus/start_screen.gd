@@ -5,6 +5,8 @@ const template_version: String = "0.1"
 # These 4 lines are not covered in the initial video. They've been added here just to make it easier for you
 # to differentiate versions. I had not intended to provide updates so this feature was skipped in original code.
 @onready var version_num: Label = %VersionNum
+@onready var recent_list = $"Recent List"
+
 func _ready() -> void:
 	version_num.text = "v%s" % template_version
 

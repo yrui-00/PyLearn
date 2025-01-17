@@ -24,6 +24,7 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 State="*res://Autoloads/state.gd"
 GameQuestManager="*res://Gameplay/Game Quest Manager/game_quest_manager.tscn"
 MinigameState="*res://Experimental Folder/minigame_state.gd"
+GameSaver="*res://Resource/game_saver.gd"
 
 [dialogue_manager]
 
@@ -52,6 +53,7 @@ folder_colors={
 "res://Experimental Folder/": "gray",
 "res://Gameplay/": "purple",
 "res://Menus/": "orange",
+"res://Resource/": "green",
 "res://Resources/": "pink",
 "res://Soundtrack/": "teal",
 "res://addons/": "gray"

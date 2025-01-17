@@ -2791,6 +2791,7 @@ offset_right = 258.714
 offset_bottom = 183.571
 
 [node name="collisions" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
 position = Vector2(0, -2)
