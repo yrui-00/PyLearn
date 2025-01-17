@@ -10,6 +10,7 @@ const main_scenes = {
 }
 
 const levels = {
+	"main": "res://Menus/start_screen.tscn",
 	"game_start" : "res://Gameplay/Levels/Level01.tscn",
 	"intro" : "res://Cutscenes/Cutscene Scenes/intro.tscn",
 	"name" : "res://Gameplay/Player Name & Score/enter_player_name.tscn",

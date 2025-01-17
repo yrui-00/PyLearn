@@ -175,6 +175,12 @@ func _monitor_load_status() -> void:
 			_content_finished_loading.emit(ResourceLoader.load_threaded_get(_content_path).instantiate())
 			return # this last return isn't necessary but I like how the 3 dead ends stand out as similar
 
+# You might also want to modify your SceneManager to ensure clean transitions
+# SceneManager.gd (add this method if you don't have it)
+func cleanup_before_transition():
+	get_tree().paused = false
+	# Add any other cleanup needed
+
 ## internal - fires when content has begun loading but failed to complete
 func _on_content_failed_to_load(path:String) -> void:
 	printerr("error: Failed to load resource: '%s'" % [path])	
