@@ -1,41 +1,34 @@
-# game_saver.gd - Autoload this script
 extends Node
-const SAVE_PATH = "user://player_save.tres"
+class_name SaveSystem
 
-func save_game(player: Player) -> void:
-	var save_data = GameData.new()
+const SAVE_PATH = "user://game_save.tres"
+
+# Static function to save the game
+static func save_game(position: Vector2, score: int, player_name: String, inventory: Inventory) -> void:
+	var game_data = GameData.new()
 	
-	# Save player state
-	save_data.position = player.position
-	save_data.score = player.score_counter
-	save_data.player_name = player.name_label.text
-	save_data.last_direction = player.last_direction
+	# Set the data
+	game_data.position = position
+	game_data.score = score
+	game_data.player_name = player_name
+	# Store item IDs instead of the actual items
+	game_data.inventory_item_ids = inventory.get_item_ids() if inventory else []
 	
-	# Save inventory if it exists
-	if player.inventory:
-		save_data.inventory_items = player.inventory.get_items()  # Assuming inventory has this method
-	
-	# Save to disk
-	var error = ResourceSaver.save(save_data, SAVE_PATH)
+	# Save the resource to file
+	var error = ResourceSaver.save(game_data, SAVE_PATH)
 	if error != OK:
 		print("An error occurred while saving the game. Error code: ", error)
+	else:
+		print("Game saved successfully!")
 
-func load_game(player: Player) -> void:
+static func load_game() -> GameData:
 	if not FileAccess.file_exists(SAVE_PATH):
-		print("No save file found.")
-		return
+		print("No save file found!")
+		return null
 		
-	var save_data = ResourceLoader.load(SAVE_PATH) as GameData
-	if not save_data:
-		print("Failed to load save file.")
-		return
+	var game_data = ResourceLoader.load(SAVE_PATH) as GameData
+	if game_data == null:
+		print("Error loading save file!")
+		return null
 	
-	# Load player state
-	player.position = save_data.position
-	player.set_score(save_data.score)
-	player.name_label.text = save_data.player_name
-	player.last_direction = save_data.last_direction
-	
-	# Load inventory if it exists
-	if player.inventory and save_data.inventory_items.size() > 0:
-		player.inventory.load_items(save_data.inventory_items)  # Assuming inventory has this method
+	return game_data
