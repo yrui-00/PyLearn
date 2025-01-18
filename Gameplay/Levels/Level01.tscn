@@ -2551,7 +2551,7 @@ radius = 29.0172
 radius = 27.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khair"]
-size = Vector2(20, 97)
+size = Vector2(20, 73)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rlqsi"]
 radius = 28.0
@@ -2919,7 +2919,7 @@ script = ExtResource("28_3wwai")
 quest = NodePath("Quest")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial Characters/Master\'s Quest"]
-position = Vector2(959, 290.5)
+position = Vector2(813, 279)
 shape = SubResource("RectangleShape2D_khair")
 
 [node name="Quest" type="Node2D" parent="Tutorial Characters/Master\'s Quest"]
@@ -3819,6 +3819,7 @@ offset_bottom = 703.0
 text = "Exit"
 
 [node name="Pause" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Pause Menu" parent="Pause" instance=ExtResource("152_taufb")]
 

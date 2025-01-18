@@ -8,11 +8,11 @@ else:
 	Game Master: Welcome to Stage 1 of your journey!
 	- What will I learn here?
 		Game Master: This stage focuses on Python's core concepts:
-		Game Master: Variables - the building blocks of programming
-		Game Master: Data Types - understanding numbers, text, and more
-		Game Master: If-else statements - making decisions in code
-		Game Master: Elif - handling multiple conditions
-		Game Master: And most importantly - proper indentation!
+				Variables - the building blocks of programming
+				Data Types - understanding numbers, text, and more
+				If-else statements - making decisions in code
+				Elif - handling multiple conditions
+				And most importantly - proper indentation!
 		- Tell me about practice opportunities.
 			=> explain_practice
 		- Tell me about the quests.
@@ -22,10 +22,9 @@ else:
 
 ~ explain_practice
 Game Master: The Code Editor is your practice ground!
-Game Master: Press F1 at any time to open it.
-Game Master: This is your space to experiment with everything you learn.
+		Press F1 at any time to open it.
+		This is your space to experiment with everything you learn.
 Game Master: Try out variables, test conditions, practice indentation...
-Game Master: It's like having a personal Python playground!
 - How do I use it effectively?
 	=> editor_tips
 - Tell me about the quests now.
@@ -33,10 +32,10 @@ Game Master: It's like having a personal Python playground!
 
 ~ editor_tips
 Game Master: Here's how to make the most of your Code Editor:
-Game Master: - Test new concepts as soon as you learn them
-Game Master: - Practice different variations of code examples you find
-Game Master: - Use it to try out codes you learn
-Game Master: - Experiment with different ways to write the same code
+		• Test new concepts as soon as you learn them
+		• Practice different variations of code examples you find
+		• Use it to try out codes you learn
+		• Experiment with different ways to write the same code
 - That's helpful! What's next?
 	=> explain_quests
 - Any specific practice suggestions?
@@ -85,13 +84,13 @@ Game Master: You'll find him in his house, ready to test your Python knowledge.
 
 ~ concepts
 Game Master: Remember these key tools for success:
-Game Master: - Press F1 anytime to open the Code Editor
-Game Master: - Test your code before answering quest questions
+		• Press F1 anytime to open the Code Editor
+		• Test your code before answering quest questions
 Game Master: - Practice with the concepts you learn:
-Game Master:   • Variables and data types
-Game Master:   • If-else statements
-Game Master:   • Elif conditions
-Game Master:   • Proper indentation
+		• Variables and data types
+		• If-else statements
+		• Elif conditions
+		• Proper indentation
 - I'm ready!
 	Game Master: Good luck on your Python journey!
 	Game Master: Remember - practice makes perfect. Use that Code Editor freely!
