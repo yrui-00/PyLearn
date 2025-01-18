@@ -53,3 +53,7 @@ func _on_confirmation_dialog_canceled():
 
 func _process(delta):
 	esc()
+
+
+func _on_save_pressed():
+	pass # Replace with function body.

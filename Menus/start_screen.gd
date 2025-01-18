@@ -19,3 +19,7 @@ func _on_settings_button_up() -> void:
 func _on_quit_button_up() -> void:
 	# todo add confirmation dialog before quitting
 	get_tree().quit()
+
+
+func _on_load_pressed():
+	pass # Replace with function body.

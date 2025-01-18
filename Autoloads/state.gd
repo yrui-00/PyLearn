@@ -1,5 +1,11 @@
 extends Node
 
+
+#var player_name: String = ""
+#var saved_position: Vector2
+#var saved_score: int = 0
+#var saved_inventory_ids: Array[String] = []
+
 var player_name = ""
 
 signal editor_state_changed(is_editor_open: bool)
@@ -9,7 +15,6 @@ var is_editor_open: bool = false
 func set_editor_state(state: bool):
 	is_editor_open = state
 	editor_state_changed.emit(is_editor_open)
-
 
 #NPC STATES 
 #tutorial stage
