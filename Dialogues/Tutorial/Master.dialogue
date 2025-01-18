@@ -136,14 +136,13 @@ if correct_answers >= 4:
     Master Dev: You've demonstrated a good understanding of Python.
     Master Dev: You may now proceed to learn about variables from our next teacher.
     Master Dev: Remember to keep practicing in the Code Editor!
-    set thistle = "true"
+    set forestkey = "true"
     => END
 else:
 	Master Dev: Sorry, you didn't get enough correct answers to pass.
     Master Dev: You need at least 4 correct answers to pass.
-    Master Dev: Don't worry though! Here's what you can do:
-    Master Dev: - Visit Oakly for more examples and practice
-    Master Dev: - Use the Code Editor (F1) to experiment
-    Master Dev: - Review Brambly's teachings about indentation
-    Master Dev: Come back when you feel more prepared!
+			Don't worry though! Here's what you can do:
+			• Review Mentora's teachings about python.
+	Master Dev: Come back when you feel more prepared!
+set repeat = "true"
     => END

@@ -15,7 +15,7 @@ func _ready() -> void:
 
 func _on_body_entered(body: CharacterBody2D) -> void:
 	# Check for player
-	if body == player and State.guideon == "true":
+	if body == player and State.forestkey == "true":
 		# Ensure quest is valid
 		if quest == null:
 			print("Quest is not assigned!")
