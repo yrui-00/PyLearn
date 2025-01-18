@@ -13,7 +13,7 @@ if ashanti == "true":
 		Ashanti: Cluey's waiting nearby - he's really good at explaining how our world works.
 		=> END
 else:
-	Ashanti: *notices you looking disoriented* Hey there! You must be the one who got transported here.
+	Ashanti: Hey there! You must be the one who got transported here.
 	- Yeah... how did you know?
 		Ashanti: We don't get many visitors from the outside world! I'm Ashanti, and I'll help you get your bearings.
 		Ashanti: First things first - you'll need to learn how to move in our digital world.
@@ -35,7 +35,7 @@ else:
 					set ashanti = "true"
 					=> END
 				- I'm still nervous about all this...
-					Ashanti: *gently* Hey, that's completely normal. You've been thrown into a whole new world!
+					Ashanti: Hey, that's completely normal. You've been thrown into a whole new world!
 					Ashanti: Just take it one step at a time. We're all here to help you get back home.
 					set ashanti = "true"
 					=> END
@@ -47,7 +47,7 @@ else:
 			Ashanti: Most importantly, F1 opens the Code Editor. You'll need programming to overcome challenges here.
 			Ashanti: And F2 shows your inventory. Trust me, you'll want to keep track of what you collect.
 			- So programming is the key to getting home?
-				Ashanti: *nods knowingly* Exactly! The better you understand our world's code, the closer you get to finding your way back.
+				Ashanti: Exactly! The better you understand our world's code, the closer you get to finding your way back.
 				Ashanti: You're doing great! Ready to start your journey home?
 				- Ready as I'll ever be.
 					Ashanti: That's the spirit! Remember, while you're finding your way home, you might actually enjoy learning to code.
@@ -55,12 +55,12 @@ else:
 					set ashanti = "true"
 					=> END
 				- I'm still nervous about all this...
-					Ashanti: *gently* Hey, that's completely normal. You've been thrown into a whole new world!
+					Ashanti: Hey, that's completely normal. You've been thrown into a whole new world!
 					Ashanti: Just take it one step at a time. We're all here to help you get back home.
 					set ashanti = "true"
 					=> END
 	- How do I get back home?
-		Ashanti: *sympathetically* That's... complicated. But learning how this world works is your first step.
+		Ashanti: That's... complicated. But learning how this world works is your first step.
 		Ashanti: The rules here are different from your world. Let me show you how to navigate.
 		Ashanti: To move around, use W, A, S, D on your keyboard - think of them as your digital legs.
 		Ashanti: When you see a person like me, press Spacebar to interact with them.

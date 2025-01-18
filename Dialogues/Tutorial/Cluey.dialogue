@@ -5,53 +5,53 @@ if ashanti == "false":
 	Cluey: I'd love to show you around, but you should meet Ashanti first.
 	Cluey: She's just Northeast of here - you can't miss her friendly smile!
 	- Where exactly northeast?
-		Cluey: *points enthusiastically* She's usually by the starting portal.
+		Cluey: She's usually by the starting portal.
 		Cluey: Trust me, she'll help you get your bearings in this digital world.
 		=> END
 	- Why do I need to meet her first?
-		Cluey: *chuckles* Well, she's our welcome guide! She'll teach you how to move around here.
+		Cluey: Well, she's our welcome guide! She'll teach you how to move around here.
 		Cluey: Besides, she's probably wondering where our newest visitor disappeared to!
 		=> END
 elif cluey == "true":
-	Cluey: *waves cheerfully* Back so soon? How's your Python adventure going?
+	Cluey: Back so soon? How's your Python adventure going?
 	- Still trying to understand everything.
 		Cluey: *nods understandingly* That's perfectly normal! Even the best coders started somewhere.
 		Cluey: Mentora will help you grasp the basics. She's got a real talent for teaching!
 		=> END
 	- Looking for Mentora now.
-		Cluey: *points southwest* You're heading the right way! She's probably setting up some fun coding challenges.
+		Cluey: You're heading the right way! She's probably setting up some fun coding challenges.
 		Cluey: Can't wait to hear what you learn from her!
 		=> END
 else:
-	Cluey: *brightens up* Ah, Ashanti sent you! Welcome to the heart of PyGram!
+	Cluey: Ah, Ashanti sent you! Welcome to the heart of PyGram!
 	Cluey: I hear you're our special guest from the outside world?
 	- Yes, I'm trying to find my way home.
-		Cluey: *adjusts glasses thoughtfully* Ah, yes! And learning Python is your ticket home.
+		Cluey: Ah, yes! And learning Python is your ticket home.
 		Cluey: Let me tell you a bit about where you are...
 		- Please do!
 			=> explain_pygame
 		- Is it dangerous here?
-			Cluey: *laughs warmly* Not at all! Think of it as an interactive classroom.
+			Cluey: Not at all! Think of it as an interactive classroom.
 			=> explain_pygame
 	- What's so special about this place?
 		=> explain_pygame
 
 ~ explain_pygame
-Cluey: *brings up a holographic display* PyGram is like a living, breathing coding playground!
+Cluey: PyGram is like a living, breathing coding playground!
 Cluey: Everything here runs on Python - from the trees you see to the challenges you'll face.
 - Why Python specifically?
-	Cluey: *eyes lighting up* Python is one of the friendliest programming languages out there!
+	Cluey: Python is one of the friendliest programming languages out there!
 	Cluey: It's perfect for beginners, but powerful enough for experts too.
 	Cluey: My friend Mentora can explain it much better than I can.
 	- Tell me more about Mentora.
-		Cluey: *smiles widely* She's our Python expert! Really patient and great at explaining things.
+		Cluey: She's our Python expert! Really patient and great at explaining things.
 		Cluey: She's got this amazing way of making complex concepts feel simple.
 		- Where can I find her?
 			=> direct_to_mentora
 	- I should go meet her then.
 		=> direct_to_mentora
 - This is a lot to take in...
-	Cluey: *gently* Take your time! Everyone learns at their own pace.
+	Cluey: Take your time! Everyone learns at their own pace.
 	Cluey: Why don't you chat with Mentora? She's great at breaking things down.
 	=> direct_to_mentora
 
@@ -59,7 +59,7 @@ Cluey: Everything here runs on Python - from the trees you see to the challenges
 Cluey: Head southwest from here - you'll find Mentora there.
 Cluey: Look for her near the outpost - that's where she likes to practice!
 - I'll go right away!
-	Cluey: *waves excitedly* Perfect! She's expecting you. Have fun learning Python!
+	Cluey: Perfect! She's expecting you. Have fun learning Python!
 	set cluey = "true"
 	=> END
 - What should I expect?

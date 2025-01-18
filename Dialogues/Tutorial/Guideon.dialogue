@@ -1,48 +1,48 @@
 ~ start
 
 if mentora == "false":
-	Guideon: *looking through a mysterious book* Oh! Hello there, traveler.
-	Guideon: *closes book gently* I sense you haven't spoken with Mentora yet.
+	Guideon: Oh! Hello there, traveler.
+	Guideon: I sense you haven't spoken with Mentora yet.
 	Guideon: Her wisdom about Python will be essential for your journey.
 	- Where can I find her?
 		Guideon: Head west from here. She's usually in her teaching garden.
 		Guideon: Trust me, you'll want to hear what she has to say first.
 		=> END
 	- Why is that important?
-		Guideon: *smiles knowingly* Everything here is connected. Each step has its purpose.
+		Guideon: Everything here is connected. Each step has its purpose.
 		Guideon: Please speak with Mentora first - then I can help you understand why you're here.
 		=> END
 
 elif master == "true":
-	Guideon: *beams proudly* You've completed the tutorial! Well done!
+	Guideon: You've completed the tutorial! Well done!
 	Guideon: Welcome to Stage 1 of your journey home.
 	Guideon: The Game Master is waiting to show you the path forward.
 	Guideon: Look for them nearby - they'll explain your next challenge.
 	- Any advice before I go?
-		Guideon: *nods* Remember everything you've learned about Python.
+		Guideon: Remember everything you've learned about Python.
 		Guideon: Each challenge brings you closer to home. You've got this!
 		=> END
 	- Thanks for your help!
-		Guideon: *waves* Good luck, traveler! I know you'll do great!
+		Guideon: Good luck, traveler! I know you'll do great!
 		=> END
 
 elif guideon == "true":
-	Guideon: *looks up from their scrolls* Ah, our paths cross again!
+	Guideon: Ah, our paths cross again!
 	Guideon: Keep moving forward - you're doing better than you think.
 	=> END
 
 else:
-	Guideon: *welcomes you with a friendly gesture* Welcome to PyGram, traveler!
+	Guideon: Welcome to PyGram, traveler!
 	- Why am I here?
 		Guideon: You've been transported to a special world...
 		Guideon: A realm where programming and adventure intertwine.
 		- But why me?
-			Guideon: *eyes twinkling* Because you have the potential to master Python!
+			Guideon: Because you have the potential to master Python!
 			- I don't want to learn programming...
-				Guideon: *nods sympathetically* I understand this isn't what you planned.
+				Guideon: I understand this isn't what you planned.
 				Guideon: But completing these challenges is your path home.
 				- This is crazy!
-					Guideon: *gently* It may seem overwhelming now...
+					Guideon: It may seem overwhelming now...
 					Guideon: But every great adventure starts with a single step.
 					- What do I need to do?
 						Guideon: The path forward is clear:
@@ -51,7 +51,7 @@ else:
 						set guideon = "true"
 						=> END
 					- I'm scared...
-						Guideon: *warmly* Fear is natural when facing the unknown.
+						Guideon: Fear is natural when facing the unknown.
 						Guideon: But you're not alone - we're all here to guide you.
 						Guideon: Master Dev is your next step. He'll know when you're ready.
 						set guideon = "true"
@@ -63,7 +63,7 @@ else:
 				set guideon = "true"
 				=> END
 	- What is this place?
-		Guideon: *gestures to the world around* Welcome to PyGram - a world built for learning.
+		Guideon: Welcome to PyGram - a world built for learning.
 		Guideon: Here, Python isn't just code - it's the key to your journey home.
 		- Tell me more.
 			=> explain_journey
@@ -78,7 +78,7 @@ Guideon: Think of each challenge as a step closer to home.
 	set guideon = "true"
 	=> END
 - This is a lot to take in...
-	Guideon: *smiles encouragingly* Take it one challenge at a time.
+	Guideon: Take it one challenge at a time.
 	Guideon: Master Dev is next - he'll guide you forward when you're ready.
 	set guideon = "true"
 	=> END
