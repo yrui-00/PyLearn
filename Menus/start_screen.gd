@@ -23,3 +23,11 @@ func _on_quit_button_up() -> void:
 
 func _on_load_pressed():
 	pass # Replace with function body.
+
+
+func _on_feedback_pressed():
+	var search_engine_url = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=yuritsantos00@gmail.com, magallanes.cielo@gmail.com&su=Feedback"
+	var search_url = search_engine_url 
+	#+ search_query
+
+	OS.shell_open(search_url)

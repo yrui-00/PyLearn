@@ -3819,7 +3819,6 @@ offset_bottom = 703.0
 text = "Exit"
 
 [node name="Pause" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Pause Menu" parent="Pause" instance=ExtResource("152_taufb")]
 
