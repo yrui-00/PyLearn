@@ -31,10 +31,10 @@ var correct_answers: int = 0
 var score: int = 0
 
 #barrier values + assessment
-var forestkey: String = "false"
-var snowkey: String = "false"
-var desertkey: String = "false"
-var lastkey: String = "false"
+var forestkey: String = "true"
+var snowkey: String = "true"
+var desertkey: String = "true"
+var lastkey: String = "true"
 
 var assessment1: String = "false"
 var assessment2: String = "false"

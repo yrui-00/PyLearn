@@ -1,0 +1,147 @@
+[gd_scene load_steps=20 format=3 uid="uid://bqupmiclffm7l"]
+
+[ext_resource type="Script" path="res://Gameplay/Animals/Snow/snowball.gd" id="1_c0ppk"]
+[ext_resource type="Texture2D" uid="uid://xefucw40vca1" path="res://Art/Animals/Snow/Snowball/SpriteSheet.png" id="1_pey8e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auor8"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s82n"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sp8y"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ujxk"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8coe"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nqlt"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vlcf"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53e8o"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eltro"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pefad"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41lie"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uanv7"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on7l8"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fyit"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdqre"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujnac"]
+atlas = ExtResource("1_pey8e")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eqf6f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auor8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3s82n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sp8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ujxk")
+}],
+"loop": true,
+"name": &"walkdown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8coe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nqlt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vlcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53e8o")
+}],
+"loop": true,
+"name": &"walkleft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eltro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pefad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41lie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uanv7")
+}],
+"loop": true,
+"name": &"walkright",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on7l8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fyit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdqre")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujnac")
+}],
+"loop": true,
+"name": &"walkup",
+"speed": 5.0
+}]
+
+[node name="Snowball" type="CharacterBody2D"]
+script = ExtResource("1_c0ppk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_eqf6f")
+animation = &"walkright"

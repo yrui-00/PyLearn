@@ -1,4 +1,4 @@
-[gd_scene load_steps=264 format=3 uid="uid://dakphwh8q4546"]
+[gd_scene load_steps=279 format=3 uid="uid://dakphwh8q4546"]
 
 [ext_resource type="Texture2D" uid="uid://d4gjfqt5m4xch" path="res://Art/Map/TilesetFloor.png" id="1_3rx4g"]
 [ext_resource type="PackedScene" uid="uid://covx58047lk3m" path="res://Characters/Player/player.tscn" id="1_enu07"]
@@ -188,6 +188,21 @@
 [ext_resource type="Resource" uid="uid://c5ijerufuhhun" path="res://Dialogues/Signs/LastOpener.dialogue" id="186_3lnd3"]
 [ext_resource type="Resource" uid="uid://b62sr405pcalb" path="res://Dialogues/Signs/LastHolloway.dialogue" id="187_1ghsq"]
 [ext_resource type="Resource" uid="uid://cce4k3xt0h2f1" path="res://Dialogues/Signs/LastLast.dialogue" id="188_lrnvw"]
+[ext_resource type="PackedScene" uid="uid://duykty5uk2exv" path="res://Gameplay/Animals/Forest/snake.tscn" id="189_j0o2y"]
+[ext_resource type="PackedScene" uid="uid://cih8ot5n2ot23" path="res://Gameplay/Animals/Tutorial/mouse.tscn" id="190_cegpd"]
+[ext_resource type="PackedScene" uid="uid://2duirmroiha1" path="res://Gameplay/Animals/Tutorial/mole.tscn" id="190_d8rsy"]
+[ext_resource type="PackedScene" uid="uid://cr76cr4uuc3lo" path="res://Gameplay/Animals/Desert/fireball.tscn" id="191_63rpx"]
+[ext_resource type="PackedScene" uid="uid://c4aah6st7jx5d" path="res://Gameplay/Animals/Tutorial/racoon.tscn" id="191_nby24"]
+[ext_resource type="PackedScene" uid="uid://dmq01tag6r8c8" path="res://Gameplay/Animals/Forest/owl.tscn" id="193_qsuu5"]
+[ext_resource type="PackedScene" uid="uid://fa53303dvv0h" path="res://Gameplay/Animals/Forest/dragon.tscn" id="194_qlw5y"]
+[ext_resource type="PackedScene" uid="uid://bqupmiclffm7l" path="res://Gameplay/Animals/Snow/snowball.tscn" id="195_rlh6d"]
+[ext_resource type="PackedScene" uid="uid://j3dc7qlccj2g" path="res://Gameplay/Animals/Snow/butterfly_blue.tscn" id="196_1ov0g"]
+[ext_resource type="PackedScene" uid="uid://kbe2uw2mx1pc" path="res://Gameplay/Animals/Snow/axolotl_x.tscn" id="197_whcd1"]
+[ext_resource type="PackedScene" uid="uid://l5yxral5ox8p" path="res://Gameplay/Animals/Desert/axolotl_y.tscn" id="199_11b8n"]
+[ext_resource type="PackedScene" uid="uid://bjbbvwtpthbcm" path="res://Gameplay/Animals/Desert/butterfly_red.tscn" id="200_383sx"]
+[ext_resource type="PackedScene" uid="uid://bs4eimspvdqla" path="res://Gameplay/Animals/Last/mushroom.tscn" id="201_mhj6a"]
+[ext_resource type="PackedScene" uid="uid://cu1farpw6jams" path="res://Gameplay/Animals/Last/mouse_black.tscn" id="202_q8ea4"]
+[ext_resource type="PackedScene" uid="uid://btdqced4eon2i" path="res://Gameplay/Animals/Last/lizard.tscn" id="203_vuoid"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6np1e"]
 texture = ExtResource("1_3rx4g")
@@ -4216,6 +4231,172 @@ dialogue_resource = ExtResource("188_lrnvw")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Signs/Last Stage Signs/LastLast/Actionable"]
 position = Vector2(4424, 504)
 shape = SubResource("CircleShape2D_qqeav")
+
+[node name="Animals" type="Node" parent="."]
+
+[node name="Tutorial" type="Node" parent="Animals"]
+
+[node name="Mouse" parent="Animals/Tutorial" node_paths=PackedStringArray("endpoint") instance=ExtResource("190_cegpd")]
+position = Vector2(198, 158)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Tutorial/Mouse"]
+position = Vector2(36, -4)
+
+[node name="Mouse2" parent="Animals/Tutorial" node_paths=PackedStringArray("endpoint") instance=ExtResource("190_cegpd")]
+position = Vector2(313, 329)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Tutorial/Mouse2"]
+position = Vector2(15, 24)
+
+[node name="Mole" parent="Animals/Tutorial" node_paths=PackedStringArray("endpoint") instance=ExtResource("190_d8rsy")]
+position = Vector2(335, 211)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Tutorial/Mole"]
+position = Vector2(-51, -1)
+
+[node name="Racoon" parent="Animals/Tutorial" node_paths=PackedStringArray("endpoint") instance=ExtResource("191_nby24")]
+position = Vector2(408, 163)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Tutorial/Racoon"]
+position = Vector2(72, -29)
+
+[node name="Mole2" parent="Animals/Tutorial" node_paths=PackedStringArray("endpoint") instance=ExtResource("190_d8rsy")]
+position = Vector2(521, 304)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Tutorial/Mole2"]
+position = Vector2(38, -26)
+
+[node name="Racoon2" parent="Animals/Tutorial" node_paths=PackedStringArray("endpoint") instance=ExtResource("191_nby24")]
+position = Vector2(122, 288)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Tutorial/Racoon2"]
+position = Vector2(-70, 7)
+
+[node name="Forest" type="Node" parent="Animals"]
+
+[node name="Snake" parent="Animals/Forest" node_paths=PackedStringArray("endpoint") instance=ExtResource("189_j0o2y")]
+position = Vector2(1028, 358)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Forest/Snake"]
+position = Vector2(-60, -4)
+
+[node name="Owl" parent="Animals/Forest" node_paths=PackedStringArray("endpoint") instance=ExtResource("193_qsuu5")]
+position = Vector2(1268, 554)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Forest/Owl"]
+position = Vector2(79, 10)
+
+[node name="Dragon" parent="Animals/Forest" node_paths=PackedStringArray("endpoint") instance=ExtResource("194_qlw5y")]
+position = Vector2(1407, -242)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Forest/Dragon"]
+position = Vector2(-62, -5)
+
+[node name="Dragon2" parent="Animals/Forest" node_paths=PackedStringArray("endpoint") instance=ExtResource("194_qlw5y")]
+position = Vector2(1026, 55)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Forest/Dragon2"]
+position = Vector2(65, 16)
+
+[node name="Snake2" parent="Animals/Forest" node_paths=PackedStringArray("endpoint") instance=ExtResource("189_j0o2y")]
+position = Vector2(1550, 590)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Forest/Snake2"]
+position = Vector2(-83, -2)
+
+[node name="Owl2" parent="Animals/Forest" node_paths=PackedStringArray("endpoint") instance=ExtResource("193_qsuu5")]
+position = Vector2(2241, 293)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Forest/Owl2"]
+position = Vector2(-53, 3)
+
+[node name="Snow" type="Node" parent="Animals"]
+
+[node name="Snowball" parent="Animals/Snow" node_paths=PackedStringArray("endpoint") instance=ExtResource("195_rlh6d")]
+position = Vector2(3208, -252)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Snow/Snowball"]
+position = Vector2(-73, -1)
+
+[node name="ButterflyBlue" parent="Animals/Snow" node_paths=PackedStringArray("endpoint") instance=ExtResource("196_1ov0g")]
+position = Vector2(3254, -543)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Snow/ButterflyBlue"]
+position = Vector2(-102, 52)
+
+[node name="AxolotlX" parent="Animals/Snow" node_paths=PackedStringArray("endpoint") instance=ExtResource("197_whcd1")]
+position = Vector2(3815, -216)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Snow/AxolotlX"]
+position = Vector2(-192, -2)
+
+[node name="ButterflyBlue2" parent="Animals/Snow" node_paths=PackedStringArray("endpoint") instance=ExtResource("196_1ov0g")]
+position = Vector2(3558, -542)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Snow/ButterflyBlue2"]
+position = Vector2(82, 108)
+
+[node name="Desert" type="Node" parent="Animals"]
+
+[node name="Fireball" parent="Animals/Desert" node_paths=PackedStringArray("endpoint") instance=ExtResource("191_63rpx")]
+position = Vector2(2926, 782)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Desert/Fireball"]
+position = Vector2(87, 20)
+
+[node name="AxolotlY" parent="Animals/Desert" node_paths=PackedStringArray("endpoint") instance=ExtResource("199_11b8n")]
+position = Vector2(2765, 1410)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Desert/AxolotlY"]
+position = Vector2(66, -51)
+
+[node name="ButterflyRed" parent="Animals/Desert" node_paths=PackedStringArray("endpoint") instance=ExtResource("200_383sx")]
+position = Vector2(2590, 1079)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Desert/ButterflyRed"]
+position = Vector2(83, 27)
+
+[node name="Last" type="Node" parent="Animals"]
+
+[node name="Mushroom" parent="Animals/Last" node_paths=PackedStringArray("endpoint") instance=ExtResource("201_mhj6a")]
+position = Vector2(3314, 185)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Last/Mushroom"]
+position = Vector2(-30, 64)
+
+[node name="MouseBlack" parent="Animals/Last" node_paths=PackedStringArray("endpoint") instance=ExtResource("202_q8ea4")]
+position = Vector2(3622, 264)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Last/MouseBlack"]
+position = Vector2(308, 40)
+
+[node name="Lizard" parent="Animals/Last" node_paths=PackedStringArray("endpoint") instance=ExtResource("203_vuoid")]
+position = Vector2(4257, 435)
+endpoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Animals/Last/Lizard"]
+position = Vector2(321, -4)
 
 [connection signal="closed" from="Code Editor/Code Editor" to="." method="_on_code_editor_closed"]
 [connection signal="opened" from="Code Editor/Code Editor" to="." method="_on_code_editor_opened"]
