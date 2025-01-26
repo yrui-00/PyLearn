@@ -26,6 +26,9 @@ func _on_load_pressed():
 
 
 func _on_feedback_pressed():
+	#feedbackform webpage
+	#var search_engine_url = "http://localhost/myproject/feedbackform.php"
+	#original code
 	var search_engine_url = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=yuritsantos00@gmail.com, magallanes.cielo@gmail.com&su=Feedback"
 	var search_url = search_engine_url 
 	#+ search_query
