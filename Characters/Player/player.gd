@@ -9,7 +9,7 @@ class_name Player extends CharacterBody2D
 @onready var name_label = $Label
 var score_counter = 0
 var move_dir: Vector2
-const SPEED = 125.0
+const SPEED = 75.0
 var last_direction: String = "down"
 
 func _ready():
