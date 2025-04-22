@@ -22,7 +22,7 @@ func _on_editor_state_changed(editor_open: bool):
 	if editor_open:
 		velocity = Vector2.ZERO
 
-func _unhandled_input(event: InputEvent) -> void:
+func _unhandled_input(_event: InputEvent) -> void:
 	if not input_enabled:
 		return
 		
